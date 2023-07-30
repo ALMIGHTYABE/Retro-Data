@@ -40,3 +40,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 341, in worksheet
     raise WorksheetNotFound(title)
 gspread.exceptions.WorksheetNotFound: Master
+[2023-07-30 13:56:44,941] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 13:56:45,355] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 13:56:45,864] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 13:56:48,900] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
