@@ -25,7 +25,7 @@ try:
     # Request
     response = requests.get(url=fusion_api)
     data = response.json()["data"]
-    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type', 'gauge.fee', 'gauge.address']]
+    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
     ids_df.to_csv("data/ids_data.csv", index=False)
 
     logger.info("ID Data Ended")
