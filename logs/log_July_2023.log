@@ -1,0 +1,23 @@
+[2023-07-30 17:48:11,527] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 17:48:12,031] 	ERROR 	33 	id_data.py 	<module>() 	Error occurred during ID Data process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "id_data.py", line 27, in <module>
+    data = response.json()["data"]
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-07-30 17:48:53,398] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 17:48:53,919] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
