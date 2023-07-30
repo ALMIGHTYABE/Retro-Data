@@ -21,3 +21,22 @@ Traceback (most recent call last):
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [2023-07-30 17:48:53,398] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
 [2023-07-30 17:48:53,919] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 13:55:06,364] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 13:55:06,819] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 13:55:07,660] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 13:55:09,168] 	ERROR 	128 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: Master
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 335, in worksheet
+    item = finditem(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/utils.py", line 133, in finditem
+    return next(item for item in seq if func(item))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "day_data.py", line 116, in <module>
+    worksheet1 = gs.worksheet("Master")
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 341, in worksheet
+    raise WorksheetNotFound(title)
+gspread.exceptions.WorksheetNotFound: Master
