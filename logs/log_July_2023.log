@@ -263,3 +263,13 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-07-31 12:36:58,263] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-07-31 12:36:59,217] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
 [2023-07-31 12:37:39,744] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 13:21:25,947] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 13:21:26,415] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 13:21:26,996] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 13:21:29,591] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 13:21:30,712] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 13:21:42,052] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 13:21:42,890] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 13:22:28,522] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 13:22:29,364] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 13:23:12,737] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
