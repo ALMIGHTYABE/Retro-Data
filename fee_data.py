@@ -34,7 +34,7 @@ try:
     price_api = config["api"]["price_api"]
     fee_csv = config["files"]["fee_data"]
 
-    # Pulling Bribe Data
+    # Pulling Fee Data
     logger.info("Fee Data Started")
 
     ids_df = pd.read_csv(id_data)
