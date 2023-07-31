@@ -211,3 +211,5 @@ Traceback (most recent call last):
     self._reader = parsers.TextReader(src, **kwds)
   File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
+[2023-07-31 08:11:26,388] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 08:12:02,928] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
