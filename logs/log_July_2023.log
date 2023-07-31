@@ -182,3 +182,32 @@ gspread.exceptions.WorksheetNotFound: Master
 [2023-07-31 07:16:59,429] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-07-31 08:01:14,003] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
 [2023-07-31 08:01:50,352] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 08:05:16,750] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 08:05:17,280] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 08:05:17,953] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 08:05:20,222] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 08:05:21,455] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 08:05:32,097] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 08:05:32,988] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 08:06:11,448] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 08:06:12,368] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 08:06:49,600] 	ERROR 	139 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: No columns to parse from file
+Traceback (most recent call last):
+  File "fee_data.py", line 112, in <module>
+    feeor = pd.read_csv(fee_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
