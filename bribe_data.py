@@ -103,8 +103,6 @@ try:
         bribe_amount.append((amt / int(decimal)))
 
     bribe_df["bribe_amount"] = bribe_amount
-
-    print(bribe_df)
     bribe_df["epoch"] = epoch
     bribe_df.drop(["bribes", "decimals"], axis=1, inplace=True)
     bribe_df.columns = ['name_pool', 'address', 'name_token', 'price', 'bribe_amount', 'epoch']
