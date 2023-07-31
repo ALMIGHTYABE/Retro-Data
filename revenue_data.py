@@ -26,24 +26,31 @@ try:
     # Params Data
     bribe_data = config["files"]["bribe_data"]
     fee_data = config["files"]["fee_data"]
+    pair_data = config["files"]["pair_data_fusion"]
     emissions_data = config["files"]["emissions_data"]
 
     # Read Data
     bribe_df = pd.read_csv(bribe_data)
     fee_df = pd.read_csv(fee_data)
+    pair_df = pd.read_csv(pair_data)
     emissions_df = pd.read_csv(emissions_data)
 
     # Data Wrangling
+    pair_df.columns = ['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1', 'token0Price', 'token1Price', 'feesUSD', '__typename', 'name_pool', 'underlyingPool', 'type', 'epoch']
+    epoch_wise_pair_fees = pair_df.groupby(["epoch", "name_pool"], as_index=False)["feesUSD"].sum()
     epoch_wise_fees = fee_df.groupby(["epoch", "name_pool"], as_index=False)["fee_amount"].sum()
     epoch_wise_bribes = bribe_df.groupby(["epoch", "name_pool"], as_index=False)["bribe_amount"].sum()
-    df = pd.merge(epoch_wise_fees, epoch_wise_bribes, on=["epoch", "name_pool"], how="outer")
+    df = pd.merge(epoch_wise_fees, epoch_wise_pair_fees, on=["epoch", "name_pool"], how="outer")
+    df = pd.merge(df, epoch_wise_bribes, on=["epoch", "name_pool"], how="outer")
     df.replace(np.nan, 0, inplace=True)
-    df["revenue"] = df["fee_amount"] + df["bribe_amount"]
+    df.columns = ['epoch', 'name_pool', 'fee_amount', 'total_feesUSD', 'bribe_amount']
+    df["voter_share"] = df["fee_amount"] + df["bribe_amount"]
+    df["revenue"] = df["total_feesUSD"] + df["bribe_amount"]
     bribe_df_offset = epoch_wise_bribes.copy(deep=True)
     bribe_df_offset["epoch"] = bribe_df_offset["epoch"] + 1
     bribe_df_offset.columns = ["epoch", "name_pool", "bribe_amount_offset"]
     df = pd.merge(df, bribe_df_offset, on=["epoch", "name_pool"], how="outer")
-
+    
     # final_df = pd.merge(df, emissions_df, on=["epoch", "name"], how="outer")
     final_df = df
     final_df.replace(np.nan, 0, inplace=True)
