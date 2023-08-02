@@ -33,6 +33,7 @@ try:
     bribe_data = config["files"]["bribe_data"]
     fee_data = config["files"]["fee_data"]
     pair_data = config["files"]["pair_data_fusion"]
+    emissions_data = config["files"]["emissions_data"]
     id_data = config["files"]["id_data"]
     epoch_csv = config["files"]["epoch_data"]
     provider_url = config["web3"]["provider_url"]
@@ -43,6 +44,7 @@ try:
     bribe_df = pd.read_csv(bribe_data)
     fee_df = pd.read_csv(fee_data)
     pair_df = pd.read_csv(pair_data)
+    emissions_df = pd.read_csv(emissions_data)
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
@@ -131,6 +133,16 @@ try:
     final_df["RETRO_price"] = RETRO_price
     final_df["votevalue"] = final_df["voteweight"] * final_df["RETRO_price"]
     final_df["vote_apr"] = final_df["voter_share"] / final_df["votevalue"] * 100 * 52
+    emissions_df.columns = [
+        "epoch",
+        "name_pool",
+        "emissions",
+        "emissions_value",
+        "RETRO_price",
+    ]
+    emissions_df = emissions_df[["epoch", "name_pool", "emissions", "emissions_value"]]
+    final_df = pd.merge(final_df, emissions_df, on=["epoch", "name_pool"], how="outer")
+    final_df.replace(np.nan, 0, inplace=True)
     final_df.replace(np.nan, 0, inplace=True)
     final_df.replace([np.inf, -np.inf], 0, inplace=True)
     final_df.sort_values(by="epoch", axis=0, ignore_index=True, inplace=True)
