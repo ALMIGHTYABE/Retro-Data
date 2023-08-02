@@ -40,7 +40,7 @@ try:
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
-    if todayDate.isoweekday() == 4:
+    if todayDate.isoweekday() == 4 and todayDate.hour > 4:
         nextThursday = todayDate + relativedelta(weekday=TH(2))
         my_time = datetime.min.time()
         my_datetime = datetime.combine(nextThursday, my_time)
@@ -73,12 +73,18 @@ try:
 
             rewardTokens = []
             for reward_num in range(rewardsListLength):
-                rewardTokens.append(contract_instance.functions.rewardTokens(reward_num).call())
+                rewardTokens.append(
+                    contract_instance.functions.rewardTokens(reward_num).call()
+                )
 
             for reward_addy in rewardTokens:
-                rewarddata = contract_instance.functions.rewardData(reward_addy, timestamp).call()
+                rewarddata = contract_instance.functions.rewardData(
+                    reward_addy, timestamp
+                ).call()
                 if rewarddata[1] > 0:
-                    bribes_list.append({"name": name, "bribes": rewarddata[1], "address": reward_addy})
+                    bribes_list.append(
+                        {"name": name, "bribes": rewarddata[1], "address": reward_addy}
+                    )
 
     bribe_df = pd.DataFrame(bribes_list)
     bribe_df["address"] = bribe_df["address"].apply(str.lower)
@@ -92,7 +98,9 @@ try:
     price_df = pd.DataFrame(pricelist, columns=["name", "address", "price", "decimals"])
 
     # Bribe Amounts
-    bribe_df = bribe_df.merge(price_df[["name", "address", "price", "decimals"]], on="address", how="left")
+    bribe_df = bribe_df.merge(
+        price_df[["name", "address", "price", "decimals"]], on="address", how="left"
+    )
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
 
     bribe_amount = []
@@ -104,7 +112,14 @@ try:
     bribe_df["bribe_amount"] = bribe_amount
     bribe_df["epoch"] = epoch
     bribe_df.drop(["bribes", "decimals"], axis=1, inplace=True)
-    bribe_df.columns = ['name_pool', 'address', 'name_token', 'price', 'bribe_amount', 'epoch']
+    bribe_df.columns = [
+        "name_pool",
+        "address",
+        "name_token",
+        "price",
+        "bribe_amount",
+        "epoch",
+    ]
     print(bribe_df)
 
     # Rewriting current Epoch's Bribe Data
@@ -135,4 +150,6 @@ try:
 
     logger.info("Bribe Data Ended")
 except Exception as e:
-    logger.error("Error occurred during Bribe Data process. Error: %s" % e, exc_info=True)
+    logger.error(
+        "Error occurred during Bribe Data process. Error: %s" % e, exc_info=True
+    )
