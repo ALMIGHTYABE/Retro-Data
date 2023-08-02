@@ -406,3 +406,9 @@
 [2023-08-02 11:15:27,819] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-08-02 11:15:28,591] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-02 11:15:31,794] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-02 12:31:49,165] 	INFO 	29 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-02 12:31:51,259] 	ERROR 	136 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: name 'epoch' is not defined
+Traceback (most recent call last):
+  File "revenue_data.py", line 46, in <module>
+    ids_df["epoch"] = epoch-1
+NameError: name 'epoch' is not defined
