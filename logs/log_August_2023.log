@@ -412,3 +412,9 @@ Traceback (most recent call last):
   File "revenue_data.py", line 46, in <module>
     ids_df["epoch"] = epoch-1
 NameError: name 'epoch' is not defined
+[2023-08-02 12:36:45,640] 	INFO 	29 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-02 12:36:47,682] 	ERROR 	163 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: name 'requests' is not defined
+Traceback (most recent call last):
+  File "revenue_data.py", line 70, in <module>
+    response = requests.get(price_api)
+NameError: name 'requests' is not defined
