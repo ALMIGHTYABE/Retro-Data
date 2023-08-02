@@ -3,6 +3,11 @@ import numpy as np
 import yaml
 import json
 import os
+from datetime import datetime, timezone
+from dateutil.relativedelta import relativedelta, T
+from web3 import Web3
+from web3.middleware import validation
+import jmespath
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
@@ -27,13 +32,56 @@ try:
     bribe_data = config["files"]["bribe_data"]
     fee_data = config["files"]["fee_data"]
     pair_data = config["files"]["pair_data_fusion"]
-    emissions_data = config["files"]["emissions_data"]
+    id_data = config["files"]["id_data"]
+    epoch_csv = config["files"]["epoch_data"]
+    provider_url = config["web3"]["provider_url"]
+    bribe_abi = config["web3"]["bribe_abi"]
+    price_api = config["api"]["price_api"]
 
     # Read Data
     bribe_df = pd.read_csv(bribe_data)
     fee_df = pd.read_csv(fee_data)
     pair_df = pd.read_csv(pair_data)
-    emissions_df = pd.read_csv(emissions_data)
+    ids_df = pd.read_csv(id_data)
+    ids_df["epoch"] = epoch-1
+
+    # Get Epoch Timestamp
+    todayDate = datetime.utcnow()
+    if todayDate.isoweekday() == 4 and todayDate.hour>4:
+        nextThursday = todayDate + relativedelta(weekday=TH(2))
+        my_time = datetime.min.time()
+        my_datetime = datetime.combine(nextThursday, my_time)
+        timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+        print("Yes, The next Thursday date:", my_datetime, timestamp)
+    else:
+        nextThursday = todayDate + relativedelta(weekday=TH(0))
+        my_time = datetime.min.time()
+        my_datetime = datetime.combine(nextThursday, my_time)
+        timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+        print("No, The next Thursday date:", my_datetime, timestamp)
+
+    # Read Epoch Data
+    epoch_data = pd.read_csv(epoch_csv)
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+
+    # Pull Prices
+    response = requests.get(price_api)
+    RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
+
+    # Web3
+    validation.METHODS_TO_VALIDATE = []
+    w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
+
+    voteweight = []
+    for bribe in ids_df["gauge.bribe"]:
+        print(ids_df[ids_df['gauge.bribe']==bribe]['symbol'].values[0])
+        if bribe == "0x0000000000000000000000000000000000000000":
+            voteweight.append(0)
+        else:
+            contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+            voteweight.append(contract_instance.functions.totalSupplyAt(timestamp).call() / 1000000000000000000)
+    ids_df["voteweight"] = voteweight
+
 
     # Data Wrangling
     pair_df.columns = ['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1', 'token0Price', 'token1Price', 'feesUSD', '__typename', 'name_pool', 'underlyingPool', 'type', 'epoch']
@@ -50,10 +98,14 @@ try:
     bribe_df_offset["epoch"] = bribe_df_offset["epoch"] + 1
     bribe_df_offset.columns = ["epoch", "name_pool", "bribe_amount_offset"]
     df = pd.merge(df, bribe_df_offset, on=["epoch", "name_pool"], how="outer")
-    
-    # final_df = pd.merge(df, emissions_df, on=["epoch", "name"], how="outer")
-    final_df = df
+    ids_df = ids_df[['symbol', 'epoch', 'voteweight']]
+    ids_df.columns = ['name_pool', 'epoch', 'voteweight']
+    final_df = pd.merge(df, ids_df, on=["epoch", "name_pool"], how="outer")
+    final_df["RETRO_price"] = RETRO_price
+    final_df["votevalue"] = final_df["voteweight"] * final_df["RETRO_price"]
+    final_df['vote_apr'] = final_df['voter_share']/final_df['votevalue']*100*52
     final_df.replace(np.nan, 0, inplace=True)
+    final_df.replace([np.inf, -np.inf], 0, inplace=True)
     final_df.sort_values(by="epoch", axis=0, ignore_index=True, inplace=True)
     latest_epoch = final_df["epoch"].iloc[-1]
     latest_data_index = final_df[final_df["epoch"] == latest_epoch].index
