@@ -62,16 +62,6 @@ try:
             weeklyreward.append(contract_instance.functions.gaugeParams().call()[3] / 1000000000000000000)
 
     ids_df["emissions"] = weeklyreward
-
-    voteweight = []
-    for bribe in ids_df["gauge.bribe"]:
-        if bribe == "0x0000000000000000000000000000000000000000":
-            voteweight.append(0)
-        else:
-            contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
-            voteweight.append(contract_instance.functions.totalSupplyAt(timestamp).call() / 1000000000000000000)
-                            
-    ids_df["voteweight"] = voteweight
     
     # Pull Prices
     response = requests.get(price_api)
@@ -80,8 +70,7 @@ try:
     # Cleanup
     ids_df["RETRO_price"] = RETRO_price
     ids_df["value"] = ids_df["emissions"] * ids_df["RETRO_price"]
-    ids_df = ids_df[["epoch", "symbol", "voteweight","emissions", "value", "RETRO_price"]]
-    ids_df = ids_df[ids_df["voteweight"] > 0]
+    ids_df = ids_df[["epoch", "symbol", "emissions", "value", "RETRO_price"]]
     df_values = ids_df.values.tolist()
 
     # Write to GSheets
