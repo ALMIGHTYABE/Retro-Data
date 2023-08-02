@@ -4,7 +4,7 @@ import yaml
 import json
 import os
 from datetime import datetime, timezone
-from dateutil.relativedelta import relativedelta, T
+from dateutil.relativedelta import relativedelta, TH
 from web3 import Web3
 from web3.middleware import validation
 import jmespath
