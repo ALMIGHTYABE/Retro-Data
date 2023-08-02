@@ -1,3 +1,4 @@
+import requests
 import pandas as pd
 import numpy as np
 import yaml
@@ -5,12 +6,12 @@ import json
 import os
 from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta, TH
-from web3 import Web3
-from web3.middleware import validation
-import jmespath
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
+from web3 import Web3
+from web3.middleware import validation
+import jmespath
 
 
 # Params
@@ -76,7 +77,6 @@ try:
 
     voteweight = []
     for bribe in ids_df["gauge.bribe"]:
-        print(ids_df[ids_df["gauge.bribe"] == bribe]["symbol"].values[0])
         if bribe == "0x0000000000000000000000000000000000000000":
             voteweight.append(0)
         else:
