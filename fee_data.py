@@ -40,7 +40,7 @@ try:
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
-    if todayDate.isoweekday() == 4:
+    if todayDate.isoweekday() == 4 and todayDate.hour > 4:
         nextThursday = todayDate + relativedelta(weekday=TH(2))
         my_time = datetime.min.time()
         my_datetime = datetime.combine(nextThursday, my_time)
@@ -73,12 +73,18 @@ try:
 
             rewardTokens = []
             for reward_num in range(rewardsListLength):
-                rewardTokens.append(contract_instance.functions.rewardTokens(reward_num).call())
+                rewardTokens.append(
+                    contract_instance.functions.rewardTokens(reward_num).call()
+                )
 
             for reward_addy in rewardTokens:
-                rewarddata = contract_instance.functions.rewardData(reward_addy, timestamp).call()
+                rewarddata = contract_instance.functions.rewardData(
+                    reward_addy, timestamp
+                ).call()
                 if rewarddata[1] > 0:
-                    fees_list.append({"name": name, "fees": rewarddata[1], "address": reward_addy})
+                    fees_list.append(
+                        {"name": name, "fees": rewarddata[1], "address": reward_addy}
+                    )
 
     fee_df = pd.DataFrame(fees_list)
     fee_df["address"] = fee_df["address"].apply(str.lower)
@@ -92,7 +98,9 @@ try:
     price_df = pd.DataFrame(pricelist, columns=["name", "address", "price", "decimals"])
 
     # Fee Amounts
-    fee_df = fee_df.merge(price_df[["name", "address", "price", "decimals"]], on="address", how="left")
+    fee_df = fee_df.merge(
+        price_df[["name", "address", "price", "decimals"]], on="address", how="left"
+    )
     fee_df["fee_amount"] = fee_df["price"] * fee_df["fees"]
 
     fee_amount = []
@@ -104,7 +112,14 @@ try:
     fee_df["fee_amount"] = fee_amount
     fee_df["epoch"] = epoch
     fee_df.drop(["fees", "decimals"], axis=1, inplace=True)
-    fee_df.columns = ['name_pool', 'address', 'name_token', 'price', 'fee_amount', 'epoch']
+    fee_df.columns = [
+        "name_pool",
+        "address",
+        "name_token",
+        "price",
+        "fee_amount",
+        "epoch",
+    ]
     print(fee_df)
 
     # Rewriting current Epoch's Fee Data
