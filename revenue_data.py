@@ -35,8 +35,6 @@ try:
     pair_data = config["files"]["pair_data_fusion"]
     vote_data = config["files"]["vote_data"]
     emissions_data = config["files"]["emissions_data"]
-    id_data = config["files"]["id_data"]
-    epoch_csv = config["files"]["epoch_data"]
     provider_url = config["web3"]["provider_url"]
     bribe_abi = config["web3"]["bribe_abi"]
     price_api = config["api"]["price_api"]
@@ -62,14 +60,6 @@ try:
         my_datetime = datetime.combine(nextThursday, my_time)
         timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
         print("No, The next Thursday date:", my_datetime, timestamp)
-
-    # Read Epoch Data
-    epoch_data = pd.read_csv(epoch_csv)
-    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
-
-    # Read IDS Data
-    ids_df = pd.read_csv(id_data)
-    ids_df["epoch"] = epoch - 1
 
     # Pull Prices
     response = requests.get(price_api)

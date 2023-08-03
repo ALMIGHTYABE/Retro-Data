@@ -58,6 +58,7 @@ try:
 
     # Read IDS Data
     vote_df = pd.read_csv(id_data)
+    vote_df["epoch"] = epoch
 
     # Pull Prices
     response = requests.get(price_api)
