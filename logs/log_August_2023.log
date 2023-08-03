@@ -1829,3 +1829,15 @@ KeyError: 'address'
 [2023-08-03 17:15:30,959] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
 [2023-08-03 17:28:10,925] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-03 17:28:16,078] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-03 17:30:12,515] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-03 17:30:18,335] 	ERROR 	120 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: "['epoch'] not in index"
+Traceback (most recent call last):
+  File "vote_data.py", line 87, in <module>
+    vote_df = vote_df[["symbol", "epoch", "voteweight"]]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6133, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['epoch'] not in index"
