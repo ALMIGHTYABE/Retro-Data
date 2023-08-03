@@ -109,6 +109,7 @@ try:
     df = pd.merge(df, bribe_df_offset, on=["epoch", "name_pool"], how="outer")
     final_df = pd.merge(df, vote_df, on=["epoch", "name_pool"], how="outer")
     final_df.replace(np.nan, 0, inplace=True)
+    final_df["vote_apr"] = final_df["voter_share"] / final_df["votevalue"] * 100 * 52
     emissions_df.columns = [
         "epoch",
         "name_pool",
@@ -124,8 +125,6 @@ try:
     latest_epoch = final_df["epoch"].iloc[-1]
     latest_data_index = final_df[final_df["epoch"] == latest_epoch].index
     final_df.drop(latest_data_index, inplace=True)
-
-    print(final_df)
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
