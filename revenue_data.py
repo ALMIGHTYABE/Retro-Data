@@ -33,6 +33,7 @@ try:
     bribe_data = config["files"]["bribe_data"]
     fee_data = config["files"]["fee_data"]
     pair_data = config["files"]["pair_data_fusion"]
+    vote_data = config["files"]["vote_data"]
     emissions_data = config["files"]["emissions_data"]
     id_data = config["files"]["id_data"]
     epoch_csv = config["files"]["epoch_data"]
@@ -44,6 +45,7 @@ try:
     bribe_df = pd.read_csv(bribe_data)
     fee_df = pd.read_csv(fee_data)
     pair_df = pd.read_csv(pair_data)
+    vote_df = pd.read_csv(vote_data)
     emissions_df = pd.read_csv(emissions_data)
 
     # Get Epoch Timestamp
@@ -76,18 +78,6 @@ try:
     # Web3
     validation.METHODS_TO_VALIDATE = []
     w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
-
-    voteweight = []
-    for bribe in ids_df["gauge.bribe"]:
-        if bribe == "0x0000000000000000000000000000000000000000":
-            voteweight.append(0)
-        else:
-            contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
-            voteweight.append(
-                contract_instance.functions.totalSupplyAt(timestamp).call()
-                / 1000000000000000000
-            )
-    ids_df["voteweight"] = voteweight
 
     # Data Wrangling
     pair_df.columns = [
@@ -127,10 +117,8 @@ try:
     bribe_df_offset["epoch"] = bribe_df_offset["epoch"] + 1
     bribe_df_offset.columns = ["epoch", "name_pool", "bribe_amount_offset"]
     df = pd.merge(df, bribe_df_offset, on=["epoch", "name_pool"], how="outer")
-    ids_df = ids_df[["symbol", "epoch", "voteweight"]]
-    ids_df.columns = ["name_pool", "epoch", "voteweight"]
-    final_df = pd.merge(df, ids_df, on=["epoch", "name_pool"], how="outer")
-    final_df["RETRO_price"] = RETRO_price
+    final_df = pd.merge(df, vote_df, on=["epoch", "name_pool"], how="outer")
+    final_df.replace(np.nan, 0, inplace=True)
     final_df["votevalue"] = final_df["voteweight"] * final_df["RETRO_price"]
     final_df["vote_apr"] = final_df["voter_share"] / final_df["votevalue"] * 100 * 52
     emissions_df.columns = [
@@ -143,12 +131,13 @@ try:
     emissions_df = emissions_df[["epoch", "name_pool", "emissions", "emissions_value"]]
     final_df = pd.merge(final_df, emissions_df, on=["epoch", "name_pool"], how="outer")
     final_df.replace(np.nan, 0, inplace=True)
-    final_df.replace(np.nan, 0, inplace=True)
     final_df.replace([np.inf, -np.inf], 0, inplace=True)
     final_df.sort_values(by="epoch", axis=0, ignore_index=True, inplace=True)
     latest_epoch = final_df["epoch"].iloc[-1]
     latest_data_index = final_df[final_df["epoch"] == latest_epoch].index
     final_df.drop(latest_data_index, inplace=True)
+
+    print(final_df)
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
