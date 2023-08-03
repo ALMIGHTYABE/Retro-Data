@@ -119,8 +119,6 @@ try:
     df = pd.merge(df, bribe_df_offset, on=["epoch", "name_pool"], how="outer")
     final_df = pd.merge(df, vote_df, on=["epoch", "name_pool"], how="outer")
     final_df.replace(np.nan, 0, inplace=True)
-    final_df["votevalue"] = final_df["voteweight"] * final_df["RETRO_price"]
-    final_df["vote_apr"] = final_df["voter_share"] / final_df["votevalue"] * 100 * 52
     emissions_df.columns = [
         "epoch",
         "name_pool",
