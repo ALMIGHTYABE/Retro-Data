@@ -58,7 +58,6 @@ try:
 
     # Read IDS Data
     vote_df = pd.read_csv(id_data)
-    vote_df["epoch"] = epoch - 1
 
     # Pull Prices
     response = requests.get(price_api)
