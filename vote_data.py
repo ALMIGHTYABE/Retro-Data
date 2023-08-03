@@ -102,7 +102,7 @@ try:
     gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
-    sheetkey = config["gsheets"]["fee_data_sheet_key"]
+    sheetkey = config["gsheets"]["vote_data_sheet_key"]
     gs = gc.open_by_key(sheetkey)
 
     # Select a work sheet from its name
