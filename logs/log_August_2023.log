@@ -1690,3 +1690,9 @@ Traceback (most recent call last):
 KeyError: 'address'
 [2023-08-03 10:19:26,970] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-03 10:19:36,324] 	INFO 	173 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-03 11:58:01,089] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-03 11:58:01,090] 	ERROR 	60 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: 'merkl_abi'
+Traceback (most recent call last):
+  File "pool_data.py", line 27, in <module>
+    merkl_abi = config["web3"]["merkl_abi"]
+KeyError: 'merkl_abi'
