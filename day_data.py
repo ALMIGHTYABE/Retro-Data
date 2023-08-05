@@ -93,7 +93,7 @@ try:
     # Request
     day_data_fusion_query["variables"]["startTime"] = timestamp
     response = requests.post(url=subgraph, json=day_data_fusion_query)
-    data = response.json()["data"]["fusionDayDatas"]
+    data = response.json()["data"]["uniswapDayDatas"]
     day_data_fusion_df = pd.DataFrame(data)
     day_data_fusion_df["date"] = day_data_fusion_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
     
