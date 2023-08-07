@@ -3343,3 +3343,9 @@ TypeError: integer argument expected, got float
 [2023-08-07 15:31:14,817] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-07 15:31:15,677] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-07 15:31:24,510] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-07 16:07:26,337] 	INFO 	25 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-08-07 16:07:26,442] 	ERROR 	86 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "emissions_data.py", line 43, in <module>
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
+IndexError: index 0 is out of bounds for axis 0 with size 0
