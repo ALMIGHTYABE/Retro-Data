@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import numpy as np
 import yaml
 import json
 import os
@@ -7,9 +8,6 @@ from datetime import datetime, timezone
 from application_logging.logger import logger
 import jmespath
 import gspread
-from web3 import Web3
-from web3.middleware import validation
-
 
 # Params
 params_path = "params.yaml"
@@ -30,9 +28,8 @@ try:
     id_data = config["files"]["id_data"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
-    provider_url = config["web3"]["provider_url"]
-    gauge_abi = config["web3"]["gauge_abi"]
-    bribe_abi = config["web3"]["bribe_abi"]
+    dune_data = config["files"]["dune_emission_data"]
+
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
@@ -48,21 +45,20 @@ try:
     # Read IDS Data
     ids_df = pd.read_csv(id_data)
     ids_df["epoch"] = epoch
+    ids_df["gauge.address"] = ids_df["gauge.address"].str.lower()
 
-    # Web3
-    validation.METHODS_TO_VALIDATE = []
-    w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
+    # Read Dune Data and wrangling
+    dune_credentials = os.environ["DUNE"]
+    dune_data = dune_data + dune_credentials
+    df = pd.read_csv(dune_data)
+    df.drop(labels=["evt_tx_hash", "evt_index", "evt_block_time", "evt_block_number"], axis=1, inplace=True)
+    df['reward'] = df['reward'].astype(float) / 1e18
+    df.columns = ["gauge.address", "emissions"]
+    df["gauge.address"] = df["gauge.address"].str.lower()
+    ids_df = pd.merge(ids_df, df, on="gauge.address", how="outer")
+    ids_df.replace(np.nan, 0, inplace=True)
+    ids_df = ids_df[ids_df["emissions"]!=0]
 
-    weeklyreward = []
-    for gauge in ids_df["gauge.address"]:
-        if gauge == "0x0000000000000000000000000000000000000000":
-            weeklyreward.append(0)
-        else:
-            contract_instance = w3.eth.contract(address=gauge, abi=gauge_abi)
-            weeklyreward.append(contract_instance.functions.gaugeParams().call()[3] / 1000000000000000000)
-
-    ids_df["emissions"] = weeklyreward
-    
     # Pull Prices
     response = requests.get(price_api)
     RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
@@ -72,11 +68,11 @@ try:
     ids_df["value"] = ids_df["emissions"] * ids_df["RETRO_price"]
     ids_df = ids_df[["epoch", "symbol", "emissions", "value", "RETRO_price"]]
     df_values = ids_df.values.tolist()
-
+    
     # Write to GSheets
-    credentials = os.environ["GKEY"]
-    credentials = json.loads(credentials)
-    gc = gspread.service_account_from_dict(credentials)
+    sheet_credentials = os.environ["GKEY"]
+    sheet_credentials = json.loads(sheet_credentials)
+    gc = gspread.service_account_from_dict(sheet_credentials)
 
     # Open a google sheet
     sheetkey = config["gsheets"]["emissions_data_sheet_key"]
