@@ -3320,3 +3320,26 @@ TypeError: integer argument expected, got float
 [2023-08-07 14:19:07,373] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-07 14:19:08,287] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-07 14:19:17,046] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-07 15:17:01,815] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-07 15:17:02,553] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-07 15:17:03,168] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-07 15:18:30,832] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-07 15:18:31,880] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-07 15:19:32,293] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-08-07 15:20:32,402] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-08-07 15:21:32,538] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-08-07 15:28:01,970] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-07 15:28:02,927] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-07 15:29:31,484] 	INFO 	151 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-07 15:29:32,466] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-07 15:30:57,679] 	ERROR 	153 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: integer argument expected, got float
+Traceback (most recent call last):
+  File "fee_data.py", line 109, in <module>
+    decimal = decimal.ljust(dec + 1, "0")
+TypeError: integer argument expected, got float
+[2023-08-07 15:30:58,655] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-07 15:31:07,927] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-07 15:31:08,930] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-07 15:31:14,817] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-07 15:31:15,677] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-07 15:31:24,510] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
