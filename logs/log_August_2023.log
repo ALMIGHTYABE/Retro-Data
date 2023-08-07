@@ -3349,3 +3349,5 @@ Traceback (most recent call last):
   File "emissions_data.py", line 43, in <module>
     epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
 IndexError: index 0 is out of bounds for axis 0 with size 0
+[2023-08-07 16:10:35,709] 	INFO 	25 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-08-07 16:10:37,937] 	INFO 	84 	emissions_data.py 	<module>() 	Emissions Data Ended
