@@ -3473,3 +3473,23 @@ TypeError: integer argument expected, got float
 [2023-08-07 20:19:40,419] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-07 20:19:41,206] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-07 20:19:47,230] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-07 21:13:50,254] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-07 21:13:50,659] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-07 21:13:51,223] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-07 21:13:54,736] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-07 21:13:55,640] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-07 21:14:11,788] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-07 21:14:12,649] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-07 21:15:12,388] 	INFO 	151 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-07 21:15:13,258] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-07 21:16:09,869] 	ERROR 	153 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: integer argument expected, got float
+Traceback (most recent call last):
+  File "fee_data.py", line 109, in <module>
+    decimal = decimal.ljust(dec + 1, "0")
+TypeError: integer argument expected, got float
+[2023-08-07 21:16:10,744] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-07 21:16:17,494] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-07 21:16:18,370] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-07 21:16:23,111] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-07 21:16:23,888] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-07 21:16:29,513] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
