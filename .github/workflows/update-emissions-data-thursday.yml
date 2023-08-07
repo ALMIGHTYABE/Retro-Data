@@ -23,6 +23,7 @@ jobs:
 
       - name: Run Script
         env:
+          DUNE: ${{ secrets.DUNE }}
           GKEY: ${{ secrets.GKEY }}
         run: |
           python emissions_data.py
