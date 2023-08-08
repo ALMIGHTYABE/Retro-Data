@@ -39,7 +39,7 @@ try:
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
-    if todayDate.isoweekday() == 4 and todayDate.hour > 4:
+    if todayDate.isoweekday() == 4 and todayDate.hour > 1:
         nextThursday = todayDate + relativedelta(weekday=TH(2))
         my_time = datetime.min.time()
         my_datetime = datetime.combine(nextThursday, my_time)
