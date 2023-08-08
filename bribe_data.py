@@ -101,9 +101,15 @@ try:
     bribe_df = bribe_df.merge(
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
+    null_data = bribe_df[bribe_df.isnull().any(axis=1)]
+
+    logger.error("Error occurred during Bribe Data process. Error: %s" % null_data)
+
+    bribe_df = bribe_df.dropna(axis=0)
+    bribe_df.reset_index(drop=True, inplace=True)
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
     bribe_df["decimals"] = bribe_df["decimals"].astype(int)
-
+    
     bribe_amount = []
     for dec, amt in zip(bribe_df["decimals"], bribe_df["bribe_amount"]):
         decimal = "1"
