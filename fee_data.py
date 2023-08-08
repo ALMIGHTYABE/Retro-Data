@@ -101,7 +101,14 @@ try:
     fee_df = fee_df.merge(
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
+    null_data = fee_df[fee_df.isnull().any(axis=1)]
+
+    logger.error("Error occurred during Fee Data process. Error: %s" % null_data)
+    
+    fee_df = fee_df.dropna(axis=0)
+    fee_df.reset_index(drop=True, inplace=True)
     fee_df["fee_amount"] = fee_df["price"] * fee_df["fees"]
+    fee_df["decimals"] = fee_df["decimals"].astype(int)
 
     fee_amount = []
     for dec, amt in zip(fee_df["decimals"], fee_df["fee_amount"]):
