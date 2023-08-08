@@ -102,6 +102,7 @@ try:
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
+    bribe_df["decimals"] = bribe_df["decimals"].astype(int)
 
     bribe_amount = []
     for dec, amt in zip(bribe_df["decimals"], bribe_df["bribe_amount"]):
