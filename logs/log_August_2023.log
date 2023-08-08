@@ -3923,3 +3923,26 @@ Index: []
 [2023-08-08 13:03:13,421] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-08 13:03:14,477] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-08 13:03:19,602] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-08 13:23:17,882] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-08 13:23:18,129] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-08 13:23:18,798] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-08 13:23:22,338] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-08 13:23:23,407] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-08 13:23:37,634] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-08 13:23:38,646] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-08 13:24:36,905] 	ERROR 	106 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Empty DataFrame
+Columns: [name_x, bribes, address, name_y, price, decimals]
+Index: []
+[2023-08-08 13:24:39,429] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-08 13:24:40,438] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-08 13:25:33,557] 	ERROR 	106 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error:                 name_x    fees  ... price decimals
+80  CASH/wUSDR (0.05%)  316180  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-08-08 13:25:36,193] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-08 13:25:37,200] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-08 13:25:44,039] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-08 13:25:45,052] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-08 13:25:50,017] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-08 13:25:50,895] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-08 13:25:56,036] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
