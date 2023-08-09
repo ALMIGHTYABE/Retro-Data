@@ -102,6 +102,8 @@ try:
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
     null_data = bribe_df[bribe_df.isnull().any(axis=1)]
+    if null_data:
+        logger.error("Null Data. Error: %s" % null_data)
 
     bribe_df = bribe_df.dropna(axis=0)
     bribe_df.reset_index(drop=True, inplace=True)
@@ -158,4 +160,3 @@ except Exception as e:
     logger.error(
         "Error occurred during Bribe Data process. Error: %s" % e, exc_info=True
     )
-    logger.error("Null Data. Error: %s" % null_data)

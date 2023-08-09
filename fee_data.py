@@ -102,7 +102,9 @@ try:
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
     null_data = fee_df[fee_df.isnull().any(axis=1)]
-    
+    if null_data:
+        logger.error("Null Data. Error: %s" % null_data)
+
     fee_df = fee_df.dropna(axis=0)
     fee_df.reset_index(drop=True, inplace=True)
     fee_df["fee_amount"] = fee_df["price"] * fee_df["fees"]
@@ -156,5 +158,3 @@ try:
     logger.info("Fee Data Ended")
 except Exception as e:
     logger.error("Error occurred during Fee Data process. Error: %s" % e, exc_info=True)
-    logger.error("Null Data. Error: %s" % null_data)
-
