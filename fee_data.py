@@ -27,7 +27,7 @@ config = read_params(params_path)
 try:
     # Params Data
     id_data = config["files"]["id_data"]
-    provider_url = config["web3"]["provider_url"]
+    provider_url = os.environ["RPC"]
     bribe_abi = config["web3"]["bribe_abi"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
