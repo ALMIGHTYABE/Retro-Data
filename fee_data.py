@@ -102,7 +102,7 @@ try:
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
     null_data = fee_df[fee_df.isnull().any(axis=1)]
-    if null_data:
+    if not null_data.empty:
         logger.error("Null Data. Error: %s" % null_data)
 
     fee_df = fee_df.dropna(axis=0)
