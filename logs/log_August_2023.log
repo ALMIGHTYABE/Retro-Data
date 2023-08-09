@@ -5802,3 +5802,25 @@ Index: []
 [2023-08-09 16:33:33,044] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-09 16:33:34,035] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-09 16:33:46,292] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-09 16:43:20,330] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-09 16:43:21,008] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-09 16:43:21,854] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-09 16:43:24,713] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-09 16:43:26,062] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-09 16:43:41,062] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-09 16:43:42,298] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-09 16:45:38,101] 	ERROR 	106 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Empty DataFrame
+Columns: [name_x, bribes, address, name_y, price, decimals]
+Index: []
+[2023-08-09 16:45:40,539] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-09 16:45:41,736] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-09 16:47:20,160] 	ERROR 	106 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Empty DataFrame
+Columns: [name_x, fees, address, name_y, price, decimals]
+Index: []
+[2023-08-09 16:47:22,781] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-09 16:47:23,948] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-09 16:47:33,282] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-09 16:47:34,503] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-09 16:47:39,436] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-09 16:47:40,439] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-09 16:47:52,381] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
