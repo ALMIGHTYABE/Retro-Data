@@ -1,7 +1,7 @@
 name: Update Data
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 */15 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,6 +24,7 @@ jobs:
       - name: Run Script
         env:
           GKEY: ${{ secrets.GKEY }}
+          RPC: ${{ secrets.RPC }}
         run: |
           python id_data.py
           python day_data.py
@@ -32,11 +33,10 @@ jobs:
           python fee_data.py
           python vote_data.py
           python revenue_data.py
-          python pool_data.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add logs data
+          git add logs
           git commit -m "Updated Data on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
