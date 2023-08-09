@@ -24,7 +24,6 @@ jobs:
       - name: Run Script
         env:
           GKEY: ${{ secrets.GKEY }}
-          RPC: ${{ secrets.RPC }}
         run: |
           python id_data.py
           python day_data.py
