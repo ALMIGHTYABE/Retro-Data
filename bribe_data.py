@@ -27,7 +27,7 @@ config = read_params(params_path)
 try:
     # Params Data
     id_data = config["files"]["id_data"]
-    provider_url = os.environ["RPC"]
+    provider_url = config["web3"]["provider_url"]
     bribe_abi = config["web3"]["bribe_abi"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
@@ -103,8 +103,6 @@ try:
     )
     null_data = bribe_df[bribe_df.isnull().any(axis=1)]
 
-    logger.error("Error occurred during Bribe Data process. Error: %s" % null_data)
-
     bribe_df = bribe_df.dropna(axis=0)
     bribe_df.reset_index(drop=True, inplace=True)
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
@@ -160,3 +158,4 @@ except Exception as e:
     logger.error(
         "Error occurred during Bribe Data process. Error: %s" % e, exc_info=True
     )
+    logger.error("Null Data. Error: %s" % null_data)

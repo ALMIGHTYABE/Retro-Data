@@ -27,7 +27,7 @@ config = read_params(params_path)
 try:
     # Params Data
     id_data = config["files"]["id_data"]
-    provider_url = os.environ["RPC"]
+    provider_url = config["web3"]["provider_url"]
     bribe_abi = config["web3"]["bribe_abi"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
@@ -102,8 +102,6 @@ try:
         price_df[["name", "address", "price", "decimals"]], on="address", how="left"
     )
     null_data = fee_df[fee_df.isnull().any(axis=1)]
-
-    logger.error("Error occurred during Fee Data process. Error: %s" % null_data)
     
     fee_df = fee_df.dropna(axis=0)
     fee_df.reset_index(drop=True, inplace=True)
@@ -158,3 +156,5 @@ try:
     logger.info("Fee Data Ended")
 except Exception as e:
     logger.error("Error occurred during Fee Data process. Error: %s" % e, exc_info=True)
+    logger.error("Null Data. Error: %s" % null_data)
+
