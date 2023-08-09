@@ -5666,3 +5666,26 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-08-09 14:20:12,559] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-09 14:20:13,631] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-09 14:20:19,764] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-09 14:39:16,408] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-09 14:39:16,962] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-09 14:39:17,627] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-09 14:39:19,447] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-09 14:39:20,540] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-09 14:39:34,664] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-09 14:39:35,619] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-09 14:40:32,340] 	ERROR 	106 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Empty DataFrame
+Columns: [name_x, bribes, address, name_y, price, decimals]
+Index: []
+[2023-08-09 14:40:35,995] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-09 14:40:36,960] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-09 14:41:27,932] 	ERROR 	106 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error:                 name_x    fees  ... price decimals
+85  CASH/wUSDR (0.05%)  316180  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-08-09 14:41:30,618] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-09 14:41:31,580] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-09 14:41:39,289] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-09 14:41:40,234] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-09 14:41:44,578] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-09 14:41:45,413] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-09 14:41:50,694] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
