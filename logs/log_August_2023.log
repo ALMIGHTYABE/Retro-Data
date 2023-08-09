@@ -6136,3 +6136,19 @@ ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), 
 [2023-08-09 22:13:02,280] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-09 22:13:03,364] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-09 22:13:11,440] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-09 22:26:13,947] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-09 22:26:14,715] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-09 22:26:15,422] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-09 22:26:17,435] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-09 22:26:18,509] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-09 22:26:35,336] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-09 22:26:36,280] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-09 22:28:20,007] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-09 22:28:20,958] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-09 22:29:59,566] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-09 22:30:00,551] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-09 22:30:10,479] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-09 22:30:11,460] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-09 22:30:16,032] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-09 22:30:16,882] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-09 22:30:26,441] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
