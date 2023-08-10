@@ -6266,3 +6266,38 @@ ValueError: The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), 
 [2023-08-10 01:00:57,838] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
 [2023-08-10 01:18:32,309] 	INFO 	25 	emissions_data.py 	<module>() 	Emissions Data Started
 [2023-08-10 01:18:35,036] 	INFO 	84 	emissions_data.py 	<module>() 	Emissions Data Ended
+[2023-08-10 02:05:48,848] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-10 02:05:49,544] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-10 02:05:50,313] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-10 02:05:54,068] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-10 02:05:55,333] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-10 02:06:14,160] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-10 02:06:15,119] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-10 02:08:19,519] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-10 02:08:20,487] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-10 02:10:00,411] 	ERROR 	160 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'address'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    fee_df["address"] = fee_df["address"].apply(str.lower)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'address'
+[2023-08-10 02:10:01,404] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-10 02:10:13,083] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-10 02:10:14,052] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-10 02:10:19,671] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-10 02:10:20,514] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-10 02:10:32,960] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
