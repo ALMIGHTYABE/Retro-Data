@@ -8926,3 +8926,38 @@ KeyError: 'address'
 [2023-08-10 22:38:30,699] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-10 22:38:31,731] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-10 22:38:40,219] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-10 22:49:16,498] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-10 22:49:17,008] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-10 22:49:17,925] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-10 22:49:21,150] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-10 22:49:22,625] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-10 22:49:37,980] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-10 22:49:39,090] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-10 22:51:07,516] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-10 22:51:08,651] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-10 22:52:29,333] 	ERROR 	160 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'address'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    fee_df["address"] = fee_df["address"].apply(str.lower)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'address'
+[2023-08-10 22:52:30,466] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-10 22:52:40,027] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-10 22:52:41,212] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-10 22:52:46,045] 	INFO 	149 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-10 22:52:47,025] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-10 22:52:56,187] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
