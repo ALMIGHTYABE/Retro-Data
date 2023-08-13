@@ -62,12 +62,15 @@ try:
     # Pull Prices
     response = requests.get(price_api)
     RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
+    oRETRO_price = jmespath.search("data[?name == 'oRETRO'].price", response.json())[0]
 
     # Cleanup
     ids_df["RETRO_price"] = RETRO_price
-    ids_df["value"] = ids_df["emissions"] * ids_df["RETRO_price"]
-    ids_df = ids_df[["epoch", "symbol", "emissions", "value", "RETRO_price"]]
+    ids_df["oRETRO_price"] = oRETRO_price
+    ids_df["value"] = ids_df["emissions"] * ids_df["oRETRO_price"]
+    ids_df = ids_df[["epoch", "symbol", "emissions", "value", "RETRO_price", "oRETRO_price"]]
     df_values = ids_df.values.tolist()
+    print(ids_df)
     
     # Write to GSheets
     sheet_credentials = os.environ["GKEY"]

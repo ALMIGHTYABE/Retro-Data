@@ -116,6 +116,7 @@ try:
         "emissions",
         "emissions_value",
         "RETRO_price",
+        "oRETRO_price"
     ]
     emissions_df = emissions_df[["epoch", "name_pool", "emissions", "emissions_value"]]
     final_df = pd.merge(final_df, emissions_df, on=["epoch", "name_pool"], how="outer")
