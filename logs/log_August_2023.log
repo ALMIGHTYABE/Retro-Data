@@ -16054,3 +16054,43 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2023-08-14 07:36:53,390] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-14 07:36:54,247] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-14 07:36:59,493] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-14 07:49:19,333] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-14 07:49:19,742] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-14 07:49:20,354] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-14 07:49:20,542] 	ERROR 	128 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+Traceback (most recent call last):
+  File "day_data.py", line 96, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+KeyError: 'data'
+[2023-08-14 07:49:21,708] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-14 07:49:41,930] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: 'data'
+[2023-08-14 07:49:42,111] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2023-08-14 07:49:42,284] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: 'data'
+[2023-08-14 07:49:42,461] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/WETH (0.05%), Address: 0xCE67850420c82dB45eb7fEeCcD2d181300D2BDB3, Error: 'data'
+[2023-08-14 07:49:42,640] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: 'data'
+[2023-08-14 07:49:42,817] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0xB580229645b240A368768ec3E88cb67A41eBBC5B, Error: 'data'
+[2023-08-14 07:49:42,981] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x63ca6ED3D390C725b7FEb617BAdcab78a61038E8, Error: 'data'
+[2023-08-14 07:49:43,153] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0x0A46B0712974F201BeD15c2458a023EbED25eF4F, Error: 'data'
+[2023-08-14 07:49:43,335] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/CASH (0.01%), Address: 0x619259F699839dD1498FFC22297044462483bD27, Error: 'data'
+[2023-08-14 07:49:43,507] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0x160FBF00AB5fbF0200c0Cd4929aEaa2AdD25FB5b, Error: 'data'
+[2023-08-14 07:49:43,680] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0x1e683586fCB45a769ef2C7d9d7b1803E9C1AEE79, Error: 'data'
+[2023-08-14 07:49:43,855] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xeB80047F7d5D4C4A3BC6319250d6b1b8aEe2d0D2, Error: 'data'
+[2023-08-14 07:49:44,016] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xb98F8DF0DC6750A3e54540A1e094186C8bED780a, Error: 'data'
+[2023-08-14 07:49:44,209] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/agEUR (0.05%), Address: 0xC2CB03a819F785bD8eb8D628BAD41Cd7c1C71F4B, Error: 'data'
+[2023-08-14 07:49:44,391] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x72289129Dc4937a5d406d1ECeD8b2A17d007A650, Error: 'data'
+[2023-08-14 07:49:44,562] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.3%), Address: 0x7C2b4c5691dfde96c2e2169B2599e377b5090C91, Error: 'data'
+[2023-08-14 07:49:44,730] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC (0.3%), Address: 0x8c862d100B94d95a49D91958c9e8C2c348d00F04, Error: 'data'
+[2023-08-14 07:49:44,905] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0xb47A07966cE6812702C0567d03725F1b37E27877, Error: 'data'
+[2023-08-14 07:49:45,087] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0x35394eED0Be676ec6470fE6531daD809265310ff, Error: 'data'
+[2023-08-14 07:50:19,637] 	ERROR 	151 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x0F73E719a76947752E4b26A2c3FC80a580e68fB4, Error: 'data'
+[2023-08-14 07:50:30,980] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-14 07:50:31,853] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-14 07:51:27,110] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-14 07:51:27,999] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-14 07:52:18,728] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-14 07:52:19,618] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-14 07:52:25,899] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-14 07:52:26,795] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-14 07:52:30,753] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-14 07:52:31,534] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-14 07:52:35,891] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
