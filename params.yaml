@@ -18,6 +18,7 @@ gsheets:
   vote_data_sheet_key: 1QBAfaPlrO25kXxozGiI2uhG9qqDUoU6yM3JHvaHxiPE
   emissions_data_sheet_key: 1Q4-X93BlSOo6skjDB8oIDblxmnKZ-XdrnCgTDaxVR1w
   revenue_data_sheet_key: 1BVVV5ZW7uN3zCzlT0KWEr1cWQGMekVXnQJ0Pg7lyFgI
+  partner_vote_data_sheet_key: 1A6XH0x7V_ahAq4qbj-8nFXJUllo8iU6tPJ-10YaxHcQ
   
 api:
   price_api: https://retro-backend.stabl.finance/api/v1/assets
@@ -35,4 +36,4 @@ files:
   dune_emission_data: https://api.dune.com/api/v1/query/2823233/results/csv?api_key=
   emissions_data: https://docs.google.com/spreadsheets/d/1Q4-X93BlSOo6skjDB8oIDblxmnKZ-XdrnCgTDaxVR1w/export?format=csv
   revenue_data: https://docs.google.com/spreadsheets/d/1BVVV5ZW7uN3zCzlT0KWEr1cWQGMekVXnQJ0Pg7lyFgI/export?format=csv
-  
+  partner_data: https://raw.githubusercontent.com/ALMIGHTYABE/Retro-Data/main/data/partners.csv
