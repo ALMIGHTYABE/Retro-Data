@@ -18131,3 +18131,57 @@ urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>
 [2023-08-15 17:11:59,206] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-15 17:12:00,181] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-15 17:12:06,579] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-15 17:24:00,061] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-15 17:24:00,751] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-15 17:24:01,518] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-15 17:24:08,244] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-15 17:24:09,517] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-15 17:24:22,564] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-15 17:24:23,525] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-15 17:25:23,266] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-15 17:25:24,225] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-15 17:26:18,846] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-15 17:26:19,813] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-15 17:26:26,814] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-15 17:26:27,843] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-15 17:26:29,846] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "revenue_data.py", line 66, in <module>
+    RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-08-15 17:26:30,773] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-15 17:26:30,966] 	ERROR 	60 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "pool_data.py", line 32, in <module>
+    data = response.json()["data"]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
