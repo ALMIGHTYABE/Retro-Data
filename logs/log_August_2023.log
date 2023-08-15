@@ -17166,3 +17166,88 @@ KeyError: 'data'
 [2023-08-15 02:39:27,917] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-15 02:39:28,756] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-15 02:39:40,032] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-15 02:49:12,787] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-15 02:49:13,253] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-15 02:49:13,929] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-15 02:49:16,796] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-15 02:49:17,915] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-15 02:49:33,008] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-15 02:49:34,084] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-15 02:55:45,364] 	ERROR 	160 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: <urlopen error [Errno 104] Connection reset by peer>
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 1354, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/http/client.py", line 1425, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bribe_data.py", line 133, in <module>
+    bribor = pd.read_csv(bribe_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 1397, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 1357, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>
+[2023-08-15 02:55:46,575] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-15 02:57:13,027] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-15 02:57:14,132] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-15 02:57:23,235] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-15 02:57:24,303] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-15 02:57:28,485] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-15 02:57:29,432] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-15 02:57:40,275] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
