@@ -19497,3 +19497,19 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [2023-08-16 15:53:21,879] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-16 15:53:22,738] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-16 15:53:34,893] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-16 16:13:16,546] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-16 16:13:16,919] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-16 16:13:17,592] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-16 16:13:22,795] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-16 16:13:23,914] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-16 16:13:41,999] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-16 16:13:42,958] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-16 16:15:43,296] 	INFO 	158 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-16 16:15:44,263] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-16 16:17:22,130] 	INFO 	158 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-16 16:17:23,106] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-16 16:17:32,935] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-16 16:17:33,903] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-16 16:17:38,938] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-16 16:17:39,787] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-16 16:17:51,778] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
