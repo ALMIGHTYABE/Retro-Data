@@ -1,4 +1,4 @@
-import requests
+from requests import get, post
 import pandas as pd
 import numpy as np
 import yaml
@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from application_logging.logger import logger
 import jmespath
 import gspread
+import time
 
 # Params
 params_path = "params.yaml"
@@ -28,8 +29,6 @@ try:
     id_data = config["files"]["id_data"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
-    dune_data = config["files"]["dune_emission_data"]
-
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
@@ -48,9 +47,48 @@ try:
     ids_df["gauge.address"] = ids_df["gauge.address"].str.lower()
 
     # Read Dune Data and wrangling
-    dune_credentials = os.environ["DUNE"]
-    dune_data = dune_data + dune_credentials
-    df = pd.read_csv(dune_data)
+    API_KEY = os.environ["DUNE"]
+    HEADER = {"x-dune-api-key" : API_KEY}   
+
+    BASE_URL = "https://api.dune.com/api/v1/"
+
+    def make_api_url(module, action, ID):
+        url = BASE_URL + module + "/" + ID + "/" + action
+        return url
+    
+    def execute_query(query_id, engine="medium"):
+        url = make_api_url("query", "execute", query_id)
+        params = {
+            "performance": engine,
+        }
+        response = post(url, headers=HEADER, params=params)
+        execution_id = response.json()['execution_id']
+        return execution_id
+
+    def get_query_status(execution_id):
+        url = make_api_url("execution", "status", execution_id)
+        response = get(url, headers=HEADER, timeout=60)
+        return response
+
+    def get_query_results(execution_id):
+        url = make_api_url("execution", "results", execution_id)
+        response = get(url, headers=HEADER)
+        return response
+
+    def check_query_completion(execution_id):
+        while True:
+            time.sleep(5)
+            response = get_query_status(execution_id)
+            if response.json()['state'] == 'QUERY_STATE_COMPLETED':
+                break
+        return True
+
+    execution_id = execute_query("2823233","medium")
+
+    if check_query_completion(execution_id) == True:
+        response = get_query_results(execution_id)
+        df = pd.DataFrame(response.json()['result']['rows'])
+
     df.drop(labels=["evt_tx_hash", "evt_index", "evt_block_time", "evt_block_number"], axis=1, inplace=True)
     df['reward'] = df['reward'].astype(float) / 1e18
     df.columns = ["gauge.address", "emissions"]
@@ -60,7 +98,7 @@ try:
     ids_df = ids_df[ids_df["emissions"]!=0]
 
     # Pull Prices
-    response = requests.get(price_api)
+    response = get(price_api)
     RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
     oRETRO_price = jmespath.search("data[?name == 'oRETRO'].price", response.json())[0]
 
