@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Script
         env:
-          DUNE: ${{ secrets.RPC }}
+          RPC: ${{ secrets.RPC }}
           GKEY: ${{ secrets.GKEY }}
         run: |
           python partner_data.py
