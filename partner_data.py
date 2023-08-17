@@ -102,7 +102,7 @@ try:
     gc = gspread.service_account_from_dict(sheet_credentials)
 
     # Open a google sheet
-    sheetkey = config["gsheets"]["partner_data_sheet_key"]
+    sheetkey = config["gsheets"]["partner_vote_data_sheet_key"]
     gs = gc.open_by_key(sheetkey)
 
     # Append to Worksheet
