@@ -31,7 +31,6 @@ try:
     provider_url = os.environ["RPC"]
     bribe_abi = config["web3"]["bribe_abi"]
     epoch_csv = config["files"]["epoch_data"]
-    epoch_daily_csv = config["files"]["epoch_daily_data"]
     partner_data = config["files"]["partner_data"]
     revenue_data = config["files"]["revenue_data"]
 
@@ -48,12 +47,8 @@ try:
     ids_df = ids_df[ids_df["gauge.bribe"] != "0x0000000000000000000000000000000000000000"]
 
     epoch_data = pd.read_csv(epoch_csv)
-    epoch_data["epoch"] = epoch_data["epoch"]-1
+    current_epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
     epoch_data = epoch_data[epoch_data["epoch"]>=0]
-
-    epoch_daily_data = pd.read_csv(epoch_daily_csv)
-    current_epoch = epoch_daily_data[epoch_daily_data["timestamp"] == timestamp]["epoch"].values[0]
-    epoch_range = epoch_data[epoch_data["epoch"] == current_epoch-1]
 
     partners_df = pd.read_csv(partner_data)
     revenue_df = pd.read_csv(revenue_data)
@@ -63,20 +58,22 @@ try:
     w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
 
     def get_vote_data(partner_name, timestamp, bribe_ca):
-        partner_address = Web3.to_checksum_address(partners_df.loc[(partners_df["partner_name"] == partner_name), ['nft_address']].values[0][0])
-        contract_instance = w3.eth.contract(address=bribe_ca, abi=bribe_abi)
-        voteweight = contract_instance.functions.balanceOfOwnerAt(partner_address, timestamp).call()
-        epoch = epoch_range.loc[(epoch_range["timestamp"] == timestamp), ['epoch']].values[0][0]
-        symbol = ids_df.loc[(ids_df["gauge.bribe"] == bribe_ca), ['symbol']].values[0][0]      
-        if voteweight != 0:
-            vote_data.append({'partner_name':partner_name,'partner_address':partner_address, 'epoch':epoch, 'symbol':symbol, 'voteweight':voteweight/1e18})
+        try:
+            partner_address = Web3.toChecksumAddress(partners_df.loc[(partners_df["partner_name"] == partner_name), ['nft_address']].values[0][0])
+            contract_instance = w3.eth.contract(address=bribe_ca, abi=bribe_abi)
+            voteweight = contract_instance.functions.balanceOfOwnerAt(partner_address, timestamp).call()
+            symbol = ids_df.loc[(ids_df["gauge.bribe"] == bribe_ca), ['symbol']].values[0][0]
+            if voteweight != 0:
+                vote_data.append({'partner_name': partner_name, 'partner_address': partner_address, 'epoch': current_epoch, 'symbol': symbol, 'voteweight': voteweight / 1e18})
+        except Exception as e:
+            print(f"Error processing {partner_name}: {e}")
 
     vote_data = []
     with concurrent.futures.ThreadPoolExecutor() as executor:
         futures = []
-        for args in itertools.product(partners_df['partner_name'], epoch_range['timestamp'], ids_df['gauge.bribe']):
+        for args in itertools.product(partners_df['partner_name'], [timestamp], ids_df['gauge.bribe']):
             futures.append(executor.submit(get_vote_data, *args))
-
+    
     vote_df = pd.DataFrame(vote_data)
     vote_df.sort_values("epoch", ascending=False, inplace=True)
     total_vote = vote_df.groupby(['partner_name', 'epoch'])['voteweight'].transform(lambda g: g.sum())
