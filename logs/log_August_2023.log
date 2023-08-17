@@ -21465,3 +21465,9 @@ KeyError: 'address'
 [2023-08-17 12:23:20,691] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-17 12:23:21,592] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-17 12:23:32,464] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-17 12:37:40,114] 	INFO 	27 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2023-08-17 12:38:09,748] 	ERROR 	113 	partner_data.py 	<module>() 	Error occurred during Partner Vote Data process. Error: 'partner_data_sheet_key'
+Traceback (most recent call last):
+  File "partner_data.py", line 105, in <module>
+    sheetkey = config["gsheets"]["partner_data_sheet_key"]
+KeyError: 'partner_data_sheet_key'
