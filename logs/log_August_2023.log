@@ -21543,3 +21543,9 @@ KeyError: 'address'
 [2023-08-17 13:16:07,121] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-17 13:16:07,912] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-17 13:16:19,346] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-17 13:17:27,014] 	INFO 	27 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2023-08-17 13:17:59,538] 	ERROR 	113 	partner_data.py 	<module>() 	Error occurred during Partner Vote Data process. Error: name 'df_values' is not defined
+Traceback (most recent call last):
+  File "partner_data.py", line 109, in <module>
+    gs.values_append("Master", {"valueInputOption": "RAW"}, {"values": df_values})
+NameError: name 'df_values' is not defined
