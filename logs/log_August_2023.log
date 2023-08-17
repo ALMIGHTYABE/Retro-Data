@@ -21549,3 +21549,5 @@ Traceback (most recent call last):
   File "partner_data.py", line 109, in <module>
     gs.values_append("Master", {"valueInputOption": "RAW"}, {"values": df_values})
 NameError: name 'df_values' is not defined
+[2023-08-17 13:22:16,602] 	INFO 	27 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2023-08-17 13:22:43,457] 	INFO 	112 	partner_data.py 	<module>() 	Partner Vote Data Ended
