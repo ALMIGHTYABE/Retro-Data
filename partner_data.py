@@ -47,7 +47,7 @@ try:
     ids_df = ids_df[ids_df["gauge.bribe"] != "0x0000000000000000000000000000000000000000"]
 
     epoch_data = pd.read_csv(epoch_csv)
-    current_epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
+    current_epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
     epoch_data = epoch_data[epoch_data["epoch"]>=0]
 
     partners_df = pd.read_csv(partner_data)
@@ -64,7 +64,7 @@ try:
             voteweight = contract_instance.functions.balanceOfOwnerAt(partner_address, timestamp).call()
             symbol = ids_df.loc[(ids_df["gauge.bribe"] == bribe_ca), ['symbol']].values[0][0]
             if voteweight != 0:
-                vote_data.append({'partner_name': partner_name, 'partner_address': partner_address, 'epoch': current_epoch, 'symbol': symbol, 'voteweight': voteweight / 1e18})
+                vote_data.append({'partner_name': partner_name, 'partner_address': partner_address, 'epoch': current_epoch-1, 'symbol': symbol, 'voteweight': voteweight / 1e18})
         except Exception as e:
             print(f"Error processing {partner_name}: {e}")
 
@@ -85,6 +85,7 @@ try:
     revenue_df_offset = revenue_df_offset[revenue_df_offset["epoch"] == current_epoch-1]
     revenue_df_offset = revenue_df_offset[['epoch', 'symbol', 'emissions', 'emissions_value', 'oRETRO_price']]
     revenue_df = revenue_df[['epoch', 'symbol', 'bribe_amount', 'total_voteweight']]
+    revenue_df = revenue_df[revenue_df["epoch"] == current_epoch-1]
 
     vote_df = pd.merge(vote_df, revenue_df, on=["epoch", "symbol"], how="left")
     vote_df = pd.merge(vote_df, revenue_df_offset, on=["epoch", "symbol"], how="left")
@@ -93,7 +94,6 @@ try:
     vote_df['Bribe ROI'] = vote_df['emissions_value']/vote_df['Spend']
     vote_df.replace(np.nan, 0, inplace=True)
     vote_df.replace(np.inf, 0, inplace=True)
-    df_values = vote_df.values.tolist()
     print(vote_df)
     
     # Write to GSheets
