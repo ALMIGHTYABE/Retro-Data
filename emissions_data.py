@@ -48,21 +48,21 @@ try:
 
     # Read Dune Data and wrangling
     API_KEY = os.environ["DUNE"]
-    HEADER = {"x-dune-api-key" : API_KEY}   
+    HEADER = {"x-dune-api-key": API_KEY}
 
     BASE_URL = "https://api.dune.com/api/v1/"
 
     def make_api_url(module, action, ID):
         url = BASE_URL + module + "/" + ID + "/" + action
         return url
-    
-    def execute_query(query_id, engine="medium"):
+
+    def execute_query(query_id, engine="large"):
         url = make_api_url("query", "execute", query_id)
         params = {
             "performance": engine,
         }
         response = post(url, headers=HEADER, params=params)
-        execution_id = response.json()['execution_id']
+        execution_id = response.json()["execution_id"]
         return execution_id
 
     def get_query_status(execution_id):
@@ -79,23 +79,27 @@ try:
         while True:
             time.sleep(5)
             response = get_query_status(execution_id)
-            if response.json()['state'] == 'QUERY_STATE_COMPLETED':
+            if response.json()["state"] == "QUERY_STATE_COMPLETED":
                 break
         return True
 
-    execution_id = execute_query("2823233","medium")
+    execution_id = execute_query("2823233", "large")
 
     if check_query_completion(execution_id) == True:
         response = get_query_results(execution_id)
-        df = pd.DataFrame(response.json()['result']['rows'])
+        df = pd.DataFrame(response.json()["result"]["rows"])
 
-    df.drop(labels=["evt_tx_hash", "evt_index", "evt_block_time", "evt_block_number"], axis=1, inplace=True)
-    df['reward'] = df['reward'].astype(float) / 1e18
+    df.drop(
+        labels=["evt_tx_hash", "evt_index", "evt_block_time", "evt_block_number"],
+        axis=1,
+        inplace=True,
+    )
+    df["reward"] = df["reward"].astype(float) / 1e18
     df.columns = ["gauge.address", "emissions"]
     df["gauge.address"] = df["gauge.address"].str.lower()
     ids_df = pd.merge(ids_df, df, on="gauge.address", how="outer")
     ids_df.replace(np.nan, 0, inplace=True)
-    ids_df = ids_df[ids_df["emissions"]!=0]
+    ids_df = ids_df[ids_df["emissions"] != 0]
 
     # Pull Prices
     response = get(price_api)
@@ -106,10 +110,12 @@ try:
     ids_df["RETRO_price"] = RETRO_price
     ids_df["oRETRO_price"] = oRETRO_price
     ids_df["value"] = ids_df["emissions"] * ids_df["oRETRO_price"]
-    ids_df = ids_df[["epoch", "symbol", "emissions", "value", "RETRO_price", "oRETRO_price"]]
+    ids_df = ids_df[
+        ["epoch", "symbol", "emissions", "value", "RETRO_price", "oRETRO_price"]
+    ]
     df_values = ids_df.values.tolist()
     print(ids_df)
-    
+
     # Write to GSheets
     sheet_credentials = os.environ["GKEY"]
     sheet_credentials = json.loads(sheet_credentials)
@@ -124,4 +130,6 @@ try:
 
     logger.info("Emissions Data Ended")
 except Exception as e:
-    logger.error("Error occurred during Emissions Data process. Error: %s" % e, exc_info=True)
+    logger.error(
+        "Error occurred during Emissions Data process. Error: %s" % e, exc_info=True
+    )
