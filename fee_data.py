@@ -87,6 +87,8 @@ try:
                     )
 
     fee_df = pd.DataFrame(fees_list)
+    if fee_df.empty:
+        raise Exception("Fee DF is Empty.")
     fee_df["address"] = fee_df["address"].apply(str.lower)
 
     # Pull Prices

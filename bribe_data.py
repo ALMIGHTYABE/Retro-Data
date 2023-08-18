@@ -87,6 +87,8 @@ try:
                     )
 
     bribe_df = pd.DataFrame(bribes_list)
+    if bribe_df.empty:
+        raise Exception("Bribe DF is Empty.")
     bribe_df["address"] = bribe_df["address"].apply(str.lower)
 
     # Pull Prices
