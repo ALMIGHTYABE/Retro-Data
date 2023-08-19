@@ -6,6 +6,7 @@ import os
 from datetime import datetime, timezone, timedelta
 from application_logging.logger import logger
 import gspread
+from gspread_dataframe import set_with_dataframe
 
 
 # Params
@@ -98,10 +99,9 @@ try:
     
     day_data_fusion_old = pd.read_csv(daily_data_fusion_csv)
     drop_index = day_data_fusion_old[day_data_fusion_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
-    index_list = drop_index.to_list()
-    index_list = list(map(lambda x: x + 2, index_list))
+    day_data_fusion_old.drop(drop_index, inplace=True)
+    day_data_fusion_df = pd.concat([day_data_fusion_old, day_data_fusion_df], ignore_index=True, axis=0)
     day_data_fusion_df['__typename'] = 'Fusion'
-    df_values = day_data_fusion_df.values.tolist()
     
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -114,10 +114,14 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    worksheet1.delete_rows(index_list[0], index_list[-1])
-
-    # Append to Worksheet
-    gs.values_append("Master", {"valueInputOption": "RAW"}, {"values": df_values})
+    worksheet1.clear()
+    set_with_dataframe(
+        worksheet=worksheet1,
+        dataframe=day_data_fusion_df,
+        include_index=False,
+        include_column_header=True,
+        resize=True,
+    )
 
     logger.info("Day Data Fusion Ended")
 except Exception as e:
