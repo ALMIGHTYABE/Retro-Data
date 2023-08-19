@@ -7,7 +7,6 @@ from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta, TH
 from application_logging.logger import logger
 import gspread
-from gspread_dataframe import set_with_dataframe
 from web3 import Web3
 from web3.middleware import validation
 
@@ -133,9 +132,10 @@ try:
 
     # Rewriting current Epoch's Bribe Data
     bribor = pd.read_csv(bribe_csv)
-    current_bribe_index = bribor[bribor["epoch"] == epoch].index
-    bribor.drop(current_bribe_index, inplace=True)
-    bribe_df = pd.concat([bribor, bribe_df], ignore_index=True, axis=0)
+    drop_index = bribor[bribor["epoch"] == epoch].index
+    index_list = drop_index.to_list()
+    index_list = list(map(lambda x: x + 2, index_list))
+    df_values = bribe_df.values.tolist()
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -148,14 +148,11 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    worksheet1.clear()
-    set_with_dataframe(
-        worksheet=worksheet1,
-        dataframe=bribe_df,
-        include_index=False,
-        include_column_header=True,
-        resize=True,
-    )
+    if index_list != []:
+        worksheet1.delete_rows(index_list[0], index_list[-1])
+
+    # Append to Worksheet
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
 
     logger.info("Bribe Data Ended")
 except Exception as e:
