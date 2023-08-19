@@ -6,6 +6,7 @@ import os
 from datetime import datetime, timezone, timedelta
 from application_logging.logger import logger
 import gspread
+from gspread_dataframe import set_with_dataframe
 from web3 import Web3
 from web3.middleware import validation
 
@@ -159,10 +160,9 @@ try:
     
     pairdata_fusion_old = pd.read_csv(pair_data_fusion_csv)
     drop_index = pairdata_fusion_old[pairdata_fusion_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
-    index_list = drop_index.to_list()
-    index_list = list(map(lambda x: x + 2, index_list))
+    pairdata_fusion_old.drop(drop_index, inplace=True)
+    pairdata_fusion_df = pd.concat([pairdata_fusion_old, pairdata_fusion_df], ignore_index=True, axis=0)
     pairdata_fusion_df['__typename'] = 'Fusion'
-    df_values = pairdata_fusion_df.values.tolist()
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -175,10 +175,14 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    worksheet1.delete_rows(index_list[0], index_list[-1])
-
-    # Append to Worksheet
-    gs.values_append("Master", {"valueInputOption": "RAW"}, {"values": df_values})
+    worksheet1.clear()
+    set_with_dataframe(
+        worksheet=worksheet1,
+        dataframe=pairdata_fusion_df,
+        include_index=False,
+        include_column_header=True,
+        resize=True,
+    )
 
     logger.info("Pair Data Fusion Ended")
 except Exception as e:
@@ -220,4 +224,3 @@ except Exception as e:
 #     logger.info("Pair Data Combined Ended")
 # except Exception as e:
 #     logger.error("Error occurred during Pair Data Combined process. Error: %s" % e, exc_info=True)
-
