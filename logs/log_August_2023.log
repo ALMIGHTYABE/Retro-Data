@@ -26200,3 +26200,32 @@ AttributeError: 'str' object has no attribute 'date'
 [2023-08-19 09:48:53,714] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-19 09:48:54,742] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-19 09:49:07,107] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-19 10:09:43,916] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-19 10:09:44,344] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-19 10:09:45,162] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-19 10:09:48,881] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-19 10:09:50,271] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-19 10:10:03,630] 	ERROR 	103 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'str' object has no attribute 'date'
+Traceback (most recent call last):
+  File "pair_data.py", line 73, in <module>
+    pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda date: datetime.strftime(date, "%d-%m-%Y").date())
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/series.py", line 4771, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/apply.py", line 1123, in apply
+    return self.apply_standard()
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/apply.py", line 1174, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas/_libs/lib.pyx", line 2924, in pandas._libs.lib.map_infer
+  File "pair_data.py", line 73, in <lambda>
+    pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda date: datetime.strftime(date, "%d-%m-%Y").date())
+AttributeError: 'str' object has no attribute 'date'
+[2023-08-19 10:10:04,802] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-19 10:12:04,776] 	INFO 	160 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-19 10:12:05,932] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-19 10:13:39,869] 	INFO 	160 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-19 10:13:41,125] 	INFO 	38 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-19 10:13:50,301] 	INFO 	119 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-19 10:13:51,501] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-19 10:13:55,948] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-19 10:13:57,008] 	INFO 	22 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-19 10:14:11,526] 	INFO 	58 	pool_data.py 	<module>() 	Pool Data Ended
