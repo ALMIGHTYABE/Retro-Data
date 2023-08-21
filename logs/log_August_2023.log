@@ -29237,3 +29237,20 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2023-08-21 12:22:30,236] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-21 12:22:31,244] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-21 12:22:40,788] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-21 12:48:30,337] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-21 12:48:31,247] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-21 12:48:31,949] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-21 12:48:34,027] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-21 12:48:35,283] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-21 12:49:44,306] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC/miMATIC (0.3%), Address: 0xb090BE2D2F02646057d4DF997A7A983dFb265de0, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-08-21 12:49:52,262] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-21 12:49:53,203] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-21 12:52:06,411] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-21 12:52:07,298] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-21 12:54:01,279] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-21 12:54:02,217] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-21 12:54:12,588] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-21 12:54:13,535] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-21 12:54:18,357] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-21 12:54:19,187] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-21 12:54:31,668] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
