@@ -123,7 +123,11 @@ try:
         bribe_amount.append((amt / int(decimal)))
 
     bribe_df["bribe_amount"] = bribe_amount
-    bribe_df.drop(labels=['reward_amount', 'reward_provider', 'reward_token', 'name', 'address', 'price', 'decimals'], axis=1, inplace=True)
+    ids_df["gauge.bribe"] = ids_df["gauge.bribe"].str.lower()
+    bribe_df = bribe_df.merge(ids_df, left_on="reward_pool", right_on="gauge.bribe")
+    bribe_df.drop(labels=['reward_amount', 'reward_provider', 'reward_token', 'name', 'address', 'price', 'decimals', 'gauge.bribe'], axis=1, inplace=True)
+    bribe_df["epoch"] = current_epoch-1
+    bribe_df = bribe_df[['partner_name', 'nft_address', 'epoch', 'symbol', 'reward_pool', 'bribe_amount']]
 
     # Web3 and more pandas
     validation.METHODS_TO_VALIDATE = []
@@ -132,11 +136,12 @@ try:
     def get_vote_data(partner_name, timestamp, bribe_ca):
         try:
             partner_address = Web3.toChecksumAddress(partners_df.loc[(partners_df["partner_name"] == partner_name), ['nft_address']].values[0][0])
+            bribe_ca = Web3.toChecksumAddress(bribe_ca)
             contract_instance = w3.eth.contract(address=bribe_ca, abi=bribe_abi)
             voteweight = contract_instance.functions.balanceOfOwnerAt(partner_address, timestamp).call()
-            symbol = ids_df.loc[(ids_df["gauge.bribe"] == bribe_ca), ['symbol']].values[0][0]
+            symbol = ids_df.loc[(ids_df["gauge.bribe"] == bribe_ca.lower()), ['symbol']].values[0][0]
             if voteweight != 0:
-                vote_data.append({'partner_name': partner_name, 'partner_address': partner_address, 'epoch': current_epoch-1, 'symbol': symbol, 'reward_pool': bribe_ca.lower(), 'voteweight': voteweight / 1e18})
+                vote_data.append({'partner_name': partner_name, 'nft_address': partner_address.lower(), 'epoch': current_epoch-1, 'symbol': symbol, 'reward_pool': bribe_ca.lower(), 'voteweight': voteweight / 1e18})
         except Exception as e:
             print(f"Error processing {partner_name}: {e}")
 
@@ -150,7 +155,10 @@ try:
     vote_df.sort_values("epoch", ascending=False, inplace=True)
     total_vote = vote_df.groupby(['partner_name', 'epoch'])['voteweight'].transform(lambda g: g.sum())
     vote_df['Vote %'] = vote_df['voteweight']/total_vote * 100
-    vote_df = pd.merge(vote_df, bribe_df[["reward_pool", "bribe_amount"]], on="reward_pool", how="outer")
+    vote_df = pd.merge(vote_df, bribe_df[["nft_address", "reward_pool", "bribe_amount"]], on=["nft_address", "reward_pool"], how="outer")
+    vote_df['partner_name'] = pd.merge(vote_df[['nft_address']], partners_df, on="nft_address", how="left")['partner_name']
+    vote_df['epoch'] = current_epoch-1
+    vote_df['symbol'] = pd.merge(vote_df[['reward_pool']], ids_df, left_on="reward_pool", right_on="gauge.bribe", how="left")["symbol"]
     vote_df.replace(np.nan, 0, inplace=True)
 
     revenue_df.rename(columns = {'name_pool':'symbol', 'voteweight':'total_voteweight'}, inplace = True)
@@ -167,6 +175,7 @@ try:
     vote_df['Voting Revenue'] = vote_df['bribe_amount']*vote_df['voteweight']/(vote_df['total_voteweight']+0.001)
     vote_df['Spend'] = vote_df['bribe_amount'] - vote_df['Voting Revenue']
     vote_df['Bribe ROI'] = vote_df['emissions_value']/vote_df['Spend']
+    vote_df.drop("reward_pool", axis=1, inplace=True)
     vote_df.replace(np.inf, 0, inplace=True)
     df_values = vote_df.values.tolist()
     print(vote_df)
