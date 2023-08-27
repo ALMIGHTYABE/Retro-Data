@@ -38381,3 +38381,155 @@ Exception: Fee DF is Empty.
 [2023-08-27 14:12:56,265] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-27 14:12:57,238] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-27 14:13:06,220] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-27 14:23:01,698] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-27 14:23:02,041] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-27 14:23:02,775] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-27 14:23:04,833] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-27 14:23:05,810] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-27 14:23:12,528] 	ERROR 	103 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: HTTP Error 500: Internal Server Error
+Traceback (most recent call last):
+  File "pair_data.py", line 38, in <module>
+    ids_df = pd.read_csv(id_data)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+[2023-08-27 14:23:13,547] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-27 14:23:19,464] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: HTTP Error 500: Internal Server Error
+Traceback (most recent call last):
+  File "bribe_data.py", line 56, in <module>
+    epoch_data = pd.read_csv(epoch_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+[2023-08-27 14:23:20,406] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-27 14:23:21,157] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: HTTP Error 500: Internal Server Error
+Traceback (most recent call last):
+  File "fee_data.py", line 56, in <module>
+    epoch_data = pd.read_csv(epoch_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+[2023-08-27 14:23:22,093] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-27 14:23:22,699] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: HTTP Error 500: Internal Server Error
+Traceback (most recent call last):
+  File "vote_data.py", line 55, in <module>
+    epoch_data = pd.read_csv(epoch_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+[2023-08-27 14:23:23,641] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-27 14:23:32,296] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-27 14:23:33,137] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-27 14:23:42,422] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
