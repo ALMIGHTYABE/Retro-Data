@@ -41669,3 +41669,35 @@ urllib.error.HTTPError: HTTP Error 500: Internal Server Error
 [2023-08-29 20:26:48,313] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-29 20:26:49,376] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-08-29 20:26:55,839] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-08-29 20:35:14,448] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-08-29 20:35:14,902] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-08-29 20:35:15,797] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-29 20:35:18,440] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-29 20:35:19,893] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-29 20:35:36,735] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-29 20:35:37,927] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-29 20:36:46,815] 	ERROR 	107 	bribe_data.py 	<module>() 	Null Data. Error:                    name_x                   bribes  ... price decimals
+2     WMATIC/WETH (0.05%)   5000000000000000000000  ...   NaN      NaN
+5     WMATIC/USDC (0.05%)   5000000000000000000000  ...   NaN      NaN
+8       USDC/WETH (0.05%)   5000000000000000000000  ...   NaN      NaN
+10      WBTC/WETH (0.05%)   7500000000000000000000  ...   NaN      NaN
+15      USDC/CASH (0.01%)  15000000000000000000000  ...   NaN      NaN
+22        CASH/RETRO (1%)   2500000000000000000000  ...   NaN      NaN
+23        WETH/RETRO (1%)   2500000000000000000000  ...   NaN      NaN
+24      WMATIC/RETRO (1%)   2500000000000000000000  ...   NaN      NaN
+25  WMATIC/MaticX (0.01%)    300000000000000000000  ...   NaN      NaN
+32        CASH/ERN (0.3%)  40000000000000000000000  ...   NaN      NaN
+34        JRT/WETH (0.3%)  20000000000000000000000  ...   NaN      NaN
+36    axlLqdr/CASH (0.3%)   3500000000000000000000  ...   NaN      NaN
+39      wUSDR/CASH (0.3%)           14000000000000  ...   NaN      NaN
+
+[13 rows x 6 columns]
+[2023-08-29 20:36:49,361] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-29 20:36:50,639] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-29 20:37:51,074] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-29 20:37:52,329] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-08-29 20:37:59,097] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-08-29 20:38:00,312] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-29 20:38:05,591] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-29 20:38:06,675] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-08-29 20:38:17,685] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
