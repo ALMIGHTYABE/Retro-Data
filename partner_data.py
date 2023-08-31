@@ -190,7 +190,7 @@ try:
     gs = gc.open_by_key(sheetkey)
 
     # Append to Worksheet
-    gs.values_append("Master", {"valueInputOption": "RAW"}, {"values": df_values})
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
 
     logger.info("Partner Vote Data Ended")
 except Exception as e:
