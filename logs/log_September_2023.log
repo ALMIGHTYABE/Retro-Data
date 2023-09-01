@@ -1316,3 +1316,19 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+[2023-09-01 17:24:23,585] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-01 17:24:23,834] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-01 17:24:24,419] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-01 17:24:27,298] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-01 17:24:28,241] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-01 17:24:44,889] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-01 17:24:45,807] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-01 17:26:06,360] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-01 17:26:07,293] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-01 17:27:14,781] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-01 17:27:15,693] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-01 17:27:23,465] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-01 17:27:24,375] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-01 17:27:29,220] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-01 17:27:30,026] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-01 17:27:38,277] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
