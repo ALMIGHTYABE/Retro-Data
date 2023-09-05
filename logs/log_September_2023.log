@@ -7226,3 +7226,19 @@ KeyError: "None of [Index(['symbol', 'underlyingPool'], dtype='object')] are in 
 [2023-09-05 22:14:47,958] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-05 22:14:48,860] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-09-05 22:15:05,659] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-09-05 22:25:33,067] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-05 22:25:33,306] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-05 22:25:34,087] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-05 22:25:36,199] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-05 22:25:37,378] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-05 22:25:52,586] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-05 22:25:53,623] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-05 22:27:06,769] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-05 22:27:07,832] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-05 22:28:11,834] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-05 22:28:12,815] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-05 22:28:20,749] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-05 22:28:21,734] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-05 22:28:26,647] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-05 22:28:27,507] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-05 22:28:33,714] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
