@@ -7078,3 +7078,39 @@ urllib.error.HTTPError: HTTP Error 500: Internal Server Error
 [2023-09-05 20:16:47,316] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-05 20:16:48,126] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-09-05 20:17:03,898] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-09-05 20:21:55,191] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-05 20:21:55,681] 	ERROR 	33 	id_data.py 	<module>() 	Error occurred during ID Data process. Error: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "id_data.py", line 28, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'address', 'isGamma', 'feeLevel', 'underlyingPool', 'type',\n       'gauge.address', 'gauge.fee', 'gauge.bribe'],\n      dtype='object')] are in the [columns]"
+[2023-09-05 20:21:56,422] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-05 20:21:58,426] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-05 20:21:59,580] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-05 20:22:14,007] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-05 20:22:14,992] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-05 20:23:27,051] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-05 20:23:28,056] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-05 20:24:28,813] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-05 20:24:29,823] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-05 20:24:36,860] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-05 20:24:37,873] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-05 20:24:42,235] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-05 20:24:43,115] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-05 20:24:43,568] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: "None of [Index(['symbol', 'underlyingPool'], dtype='object')] are in the [columns]"
+Traceback (most recent call last):
+  File "pool_data.py", line 43, in <module>
+    pool_df = pd.json_normalize(response.json()["data"])[["symbol", "underlyingPool"]]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['symbol', 'underlyingPool'], dtype='object')] are in the [columns]"
