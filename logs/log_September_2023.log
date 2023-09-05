@@ -7114,3 +7114,19 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6130, in _raise_if_missing
     raise KeyError(f"None of [{key}] are in the [{axis_name}]")
 KeyError: "None of [Index(['symbol', 'underlyingPool'], dtype='object')] are in the [columns]"
+[2023-09-05 20:34:55,086] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-05 20:34:55,331] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-05 20:34:56,013] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-05 20:34:58,057] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-05 20:34:59,225] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-05 20:35:14,575] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-05 20:35:15,501] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-05 20:36:31,873] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-05 20:36:32,828] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-05 20:37:40,372] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-05 20:37:41,319] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-05 20:37:48,745] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-05 20:37:49,693] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-05 20:37:56,642] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-05 20:37:57,473] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-05 20:38:04,008] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
