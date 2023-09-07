@@ -1,0 +1,405 @@
+[2023-07-30 17:48:11,527] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 17:48:12,031] 	ERROR 	33 	id_data.py 	<module>() 	Error occurred during ID Data process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\json\__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "id_data.py", line 27, in <module>
+    data = response.json()["data"]
+  File "C:\Users\Admin\Documents\Projects\Retro-Data\env\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-07-30 17:48:53,398] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 17:48:53,919] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 13:55:06,364] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 13:55:06,819] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 13:55:07,660] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 13:55:09,168] 	ERROR 	128 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: Master
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 335, in worksheet
+    item = finditem(
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/utils.py", line 133, in finditem
+    return next(item for item in seq if func(item))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "day_data.py", line 116, in <module>
+    worksheet1 = gs.worksheet("Master")
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 341, in worksheet
+    raise WorksheetNotFound(title)
+gspread.exceptions.WorksheetNotFound: Master
+[2023-07-30 13:56:44,941] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 13:56:45,355] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 13:56:45,864] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 13:56:48,900] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 14:13:19,028] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 14:13:19,626] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 14:13:20,166] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 14:13:22,632] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 14:15:38,667] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 14:15:39,129] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 15:15:12,637] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 15:15:12,946] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 15:15:13,609] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 15:15:15,793] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 15:36:21,936] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 15:36:33,288] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 15:40:09,862] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 15:40:10,346] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 15:40:11,138] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 15:40:31,590] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 15:43:39,763] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 15:43:40,439] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 15:43:41,126] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 15:43:43,891] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 15:43:45,053] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 15:43:56,941] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 16:19:33,497] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 16:19:33,817] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 16:19:34,470] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 16:19:36,651] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 16:19:37,994] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 16:19:48,574] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 16:26:21,243] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 16:26:31,703] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 16:56:48,805] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 16:56:59,189] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 17:13:31,078] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 17:13:31,569] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 17:13:32,282] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 17:13:34,777] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 17:13:36,072] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 17:13:47,611] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 18:19:11,504] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 18:19:11,828] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 18:19:12,619] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 18:19:15,296] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 18:19:16,693] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 18:19:28,172] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 19:12:10,629] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 19:12:11,098] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 19:12:11,806] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 19:12:13,928] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 19:12:15,233] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 19:12:26,385] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 20:15:41,189] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 20:15:41,553] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 20:15:42,121] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 20:15:44,144] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 20:15:45,239] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 20:15:55,875] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 21:13:23,839] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 21:13:24,063] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 21:13:24,676] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 21:13:26,575] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 21:13:27,649] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 21:13:39,005] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 21:36:11,739] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-30 21:36:53,630] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-30 22:14:44,890] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 22:14:45,318] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 22:14:46,071] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 22:14:48,889] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 22:14:50,358] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 22:15:01,314] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 22:15:02,182] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-30 22:16:04,357] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-30 23:15:30,941] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-30 23:15:31,454] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-30 23:15:32,204] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-30 23:15:35,249] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-30 23:15:36,504] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-30 23:15:49,726] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-30 23:15:50,710] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-30 23:16:36,627] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 01:24:23,103] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 01:24:23,585] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 01:24:24,230] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 01:24:27,659] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 01:24:28,852] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 01:24:40,941] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 01:24:41,832] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 01:25:43,710] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 02:33:23,857] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 02:33:24,289] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 02:33:24,930] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 02:33:28,278] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 02:33:29,348] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 02:33:41,447] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 02:33:42,447] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 02:34:43,928] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 03:17:10,619] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 03:17:10,984] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 03:17:11,576] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 03:17:13,842] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 03:17:14,848] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 03:17:24,495] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 03:17:25,426] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 03:18:03,922] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 04:19:46,475] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 04:19:46,976] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 04:19:47,671] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 04:19:49,534] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 04:19:50,802] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 04:20:00,342] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 04:20:01,259] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 04:20:37,719] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 05:15:53,033] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 05:15:53,449] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 05:15:54,114] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 05:15:56,780] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 05:15:57,875] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 05:16:09,066] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 05:16:10,222] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 05:16:53,463] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 06:22:18,652] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 06:22:19,419] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 06:22:20,042] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 06:22:22,629] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 06:22:23,851] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 06:22:35,477] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 06:22:36,396] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 06:23:32,975] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 07:15:57,871] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 07:15:58,353] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 07:15:59,208] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 07:16:02,655] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 07:16:04,027] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 07:16:16,482] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 07:16:17,678] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 07:16:59,429] 	INFO 	139 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 08:01:14,003] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 08:01:50,352] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 08:05:16,750] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 08:05:17,280] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 08:05:17,953] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 08:05:20,222] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 08:05:21,455] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 08:05:32,097] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 08:05:32,988] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 08:06:11,448] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 08:06:12,368] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 08:06:49,600] 	ERROR 	139 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: No columns to parse from file
+Traceback (most recent call last):
+  File "fee_data.py", line 112, in <module>
+    feeor = pd.read_csv(fee_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2023-07-31 08:11:26,388] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 08:12:02,928] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 08:22:14,195] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 08:22:14,439] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 08:22:15,010] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 08:22:17,133] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 08:22:18,226] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 08:22:31,853] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 08:22:32,683] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 08:23:11,587] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 08:23:12,427] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 08:23:50,277] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 09:17:29,626] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 09:17:30,126] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 09:17:30,900] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 09:17:33,469] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 09:17:34,887] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 09:17:45,550] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 09:17:46,478] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 09:18:23,942] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 09:18:25,006] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 09:18:59,675] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 10:18:35,765] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 10:18:36,311] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 10:18:36,847] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 10:18:39,229] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 10:18:40,105] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 10:18:51,359] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 10:18:52,206] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 10:19:31,855] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 10:19:32,694] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 10:20:11,216] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 11:14:04,750] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 11:14:05,233] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 11:14:05,882] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 11:14:08,589] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 11:14:09,550] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 11:14:20,158] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 11:14:20,987] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 11:14:59,701] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 11:15:00,533] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 11:15:40,157] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 12:36:01,364] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 12:36:01,649] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 12:36:02,302] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 12:36:04,391] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 12:36:05,574] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 12:36:16,383] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 12:36:17,580] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 12:36:58,263] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 12:36:59,217] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 12:37:39,744] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 13:21:25,947] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 13:21:26,415] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 13:21:26,996] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 13:21:29,591] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 13:21:30,712] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 13:21:42,052] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 13:21:42,890] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 13:22:28,522] 	INFO 	137 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 13:22:29,364] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 13:23:12,737] 	INFO 	137 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 14:16:41,697] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 14:16:42,052] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 14:16:42,752] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 14:16:44,417] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 14:16:45,678] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 14:16:56,421] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 14:16:57,485] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 14:17:52,019] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 14:17:53,088] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 14:18:47,595] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 14:44:08,202] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 14:44:08,715] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 14:44:09,469] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 14:44:11,772] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 14:44:13,095] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 14:44:24,047] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 14:44:25,156] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 14:45:19,265] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 14:45:20,403] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 14:46:16,115] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 14:46:16,865] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 14:46:19,192] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 15:18:34,981] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 15:18:35,456] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 15:18:36,223] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 15:18:39,568] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 15:18:40,929] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 15:18:52,288] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 15:18:53,411] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 15:19:34,750] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 15:19:35,879] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 15:20:19,831] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 15:20:20,658] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 15:20:24,298] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 16:22:30,479] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 16:22:30,921] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 16:22:31,984] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 16:22:35,093] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 16:22:36,924] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 16:22:49,527] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 16:22:50,730] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 16:23:33,536] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 16:23:34,778] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 16:24:16,715] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 16:24:17,552] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 16:24:20,600] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 17:14:44,221] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 17:14:44,637] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 17:14:45,445] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 17:14:48,514] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 17:14:50,082] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 17:15:01,321] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 17:15:02,413] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 17:15:49,975] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 17:15:51,056] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 17:16:34,863] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 17:16:35,624] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 17:16:38,505] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 18:20:49,060] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 18:20:49,610] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 18:20:50,410] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 18:20:53,297] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 18:20:54,785] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 18:21:06,181] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 18:21:07,233] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 18:21:53,311] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 18:21:54,406] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 18:22:39,577] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 18:22:40,333] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 18:22:44,491] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 19:13:13,943] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 19:13:14,332] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 19:13:14,992] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 19:13:18,070] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 19:13:19,269] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 19:13:29,015] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 19:13:29,895] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 19:14:09,379] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 19:14:10,271] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 19:14:49,663] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 19:14:50,265] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 19:14:53,465] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 20:17:15,193] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 20:17:15,749] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 20:17:16,566] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 20:17:19,538] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 20:17:21,017] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 20:17:32,300] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 20:17:33,387] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 20:18:17,593] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 20:18:18,721] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 20:19:01,358] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 20:19:02,100] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 20:19:06,195] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 21:14:45,485] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 21:14:46,012] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 21:14:46,739] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 21:14:48,466] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 21:14:49,703] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 21:14:59,735] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 21:15:00,669] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 21:15:40,189] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 21:15:41,122] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 21:16:20,419] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 21:16:21,039] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 21:16:23,646] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 22:15:59,049] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 22:15:59,519] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 22:16:00,197] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 22:16:03,562] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 22:16:04,925] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 22:16:17,420] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 22:16:18,540] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 22:16:59,895] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 22:17:01,012] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 22:17:42,057] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 22:17:42,795] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 22:17:46,871] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-31 23:16:11,951] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-07-31 23:16:12,286] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-07-31 23:16:12,982] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-31 23:16:14,665] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-31 23:16:16,018] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-31 23:16:26,489] 	INFO 	187 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-31 23:16:27,432] 	INFO 	37 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-31 23:17:11,232] 	INFO 	136 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-31 23:17:12,184] 	INFO 	37 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-31 23:17:54,220] 	INFO 	136 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-31 23:17:54,888] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-31 23:17:58,062] 	INFO 	82 	revenue_data.py 	<module>() 	Revenue Data Ended
