@@ -10275,3 +10275,24 @@ Exception: Fee DF is Empty.
 [2023-09-07 20:25:55,515] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-07 20:25:56,509] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-09-07 20:26:03,799] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-09-07 20:35:06,503] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-07 20:35:07,110] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-07 20:35:08,071] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-07 20:35:09,984] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-07 20:35:11,660] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-07 20:35:26,278] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x2C8F7d92Dc7A414D343CbFB687E31a11F525d29e, Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2023-09-07 20:35:28,585] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-07 20:35:29,887] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-07 20:36:51,663] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-07 20:36:53,024] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-07 20:38:09,261] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-09-07 20:38:10,626] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-07 20:38:17,743] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-07 20:38:19,110] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-07 20:38:23,570] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-07 20:38:24,735] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-07 20:38:32,209] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
