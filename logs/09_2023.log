@@ -11544,3 +11544,23 @@ Exception: Fee DF is Empty.
 [2023-09-08 14:28:29,586] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-08 14:28:30,484] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-09-08 14:28:37,505] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-09-08 14:35:04,423] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-08 14:35:04,944] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-08 14:35:05,875] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-08 14:35:44,857] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-08 14:35:46,423] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-08 14:36:46,879] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-09-08 14:37:47,042] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fE272540Ecd34661B91252f2aB4b7f7A4CE, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-09-08 14:38:47,157] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2023-09-08 14:38:47,339] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2023-09-08 14:53:55,822] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-08 14:53:57,083] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-08 14:56:08,348] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-08 14:56:09,701] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-08 14:58:13,953] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-08 14:58:15,276] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-08 14:58:24,456] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-08 14:58:25,819] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-08 14:58:30,811] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-08 14:58:31,937] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-08 14:58:44,444] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
