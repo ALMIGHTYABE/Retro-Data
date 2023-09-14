@@ -19244,3 +19244,23 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 513, in prepare_body
     raise InvalidJSONError(ve, request=self)
 requests.exceptions.InvalidJSONError: Out of range float values are not JSON compliant
+[2023-09-14 02:27:46,243] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-14 02:27:46,576] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-14 02:27:47,441] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-14 02:27:50,719] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-14 02:27:52,184] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-14 02:28:11,185] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-14 02:28:12,368] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-14 02:29:48,632] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-14 02:29:49,807] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-14 02:31:12,471] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-09-14 02:31:13,644] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-14 02:31:22,240] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-14 02:31:23,441] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-14 02:31:29,258] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-14 02:31:30,302] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-14 02:31:48,725] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
