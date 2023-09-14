@@ -1,7 +1,7 @@
 name: Update Partner Data
 on:
   schedule:
-    - cron: '0 2 * * THU'
+    - cron: '7 2 * * THU'
   workflow_dispatch:
 
 jobs:
