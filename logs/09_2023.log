@@ -31330,3 +31330,61 @@ Exception: Fee DF is Empty.
 [2023-09-21 23:30:02,771] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-21 23:30:03,704] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-09-21 23:30:32,611] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-09-21 23:34:39,338] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-21 23:34:39,876] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-21 23:34:40,477] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-21 23:34:41,997] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-21 23:34:42,919] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-21 23:34:59,706] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-21 23:35:00,599] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-21 23:35:42,771] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 502 Server Error: Bad Gateway for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "bribe_data.py", line 76, in <module>
+    contract_instance.functions.rewardTokens(reward_num).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 502 Server Error: Bad Gateway for url: https://rpc.ankr.com/polygon
+[2023-09-21 23:35:43,666] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-21 23:37:30,713] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-09-21 23:37:31,615] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-21 23:38:26,892] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-21 23:38:27,797] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-21 23:38:36,478] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-21 23:38:37,275] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-21 23:38:52,822] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
