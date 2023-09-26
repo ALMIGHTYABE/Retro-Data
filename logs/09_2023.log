@@ -37490,3 +37490,19 @@ Traceback (most recent call last):
 urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-09-26 05:53:19,505] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-09-26 05:53:31,611] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-09-26 06:14:31,812] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-09-26 06:14:32,275] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-09-26 06:14:32,937] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-26 06:14:34,681] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-26 06:14:35,628] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-26 06:14:52,229] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-26 06:14:53,144] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-26 06:16:42,677] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-26 06:16:43,614] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-26 06:18:04,318] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-26 06:18:05,235] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-09-26 06:18:12,771] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-09-26 06:18:13,693] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-26 06:18:18,447] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-26 06:18:19,255] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-09-26 06:18:27,556] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
