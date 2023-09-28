@@ -174,7 +174,7 @@ try:
     vote_df.replace(np.nan, 0, inplace=True)
     vote_df['Voting Revenue'] = vote_df['bribe_amount']*vote_df['voteweight']/(vote_df['total_voteweight']+0.001)
     vote_df['Spend'] = vote_df['bribe_amount'] - vote_df['Voting Revenue']
-    vote_df['Bribe ROI'] = vote_df['emissions_value']/(vote_df['Spend']+0.001)
+    vote_df['Bribe ROI'] = vote_df['emissions_value']/vote_df['Spend']
     vote_df.drop("reward_pool", axis=1, inplace=True)
     vote_df.replace(np.inf, 0, inplace=True)
     vote_df.replace(np.nan, 0, inplace=True)
