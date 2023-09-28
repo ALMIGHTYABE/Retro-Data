@@ -177,6 +177,7 @@ try:
     vote_df['Bribe ROI'] = vote_df['emissions_value']/(vote_df['Spend']+0.001)
     vote_df.drop("reward_pool", axis=1, inplace=True)
     vote_df.replace(np.inf, 0, inplace=True)
+    vote_df.replace(np.nan, 0, inplace=True)
     print(vote_df)
     df_values = vote_df.values.tolist()
     
