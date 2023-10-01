@@ -1126,3 +1126,19 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2023-10-01 19:12:30,224] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-01 19:12:31,119] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-01 19:12:43,421] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-01 19:19:26,143] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-01 19:19:26,624] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-01 19:19:27,425] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-01 19:19:29,142] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-01 19:19:30,291] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 19:19:50,426] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-01 19:19:51,333] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-01 19:21:43,993] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-01 19:21:44,900] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-01 19:23:14,170] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-01 19:23:15,079] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-01 19:23:23,952] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-01 19:23:24,869] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-01 19:23:30,281] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-01 19:23:31,084] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-01 19:23:45,376] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
