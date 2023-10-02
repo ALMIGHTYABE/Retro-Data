@@ -1892,3 +1892,33 @@ ValueError: {'code': -32603, 'message': 'internal error'}
 [2023-10-02 08:42:24,888] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-02 08:42:25,882] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-02 08:42:40,975] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-02 08:49:37,708] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-02 08:49:38,043] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-02 08:49:38,912] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-02 08:49:42,069] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-02 08:49:43,526] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-02 08:50:02,325] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-02 08:50:03,577] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-02 08:51:20,106] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': -32603, 'message': 'internal error'}
+Traceback (most recent call last):
+  File "bribe_data.py", line 76, in <module>
+    contract_instance.functions.rewardTokens(reward_num).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32603, 'message': 'internal error'}
+[2023-10-02 08:51:21,382] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-02 08:52:36,264] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-02 08:52:37,449] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-02 08:52:46,448] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-02 08:52:47,709] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-02 08:52:53,735] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-02 08:52:54,810] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-02 08:53:10,760] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
