@@ -6391,3 +6391,23 @@ Exception: Fee DF is Empty.
 [2023-10-05 11:53:53,563] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-05 11:53:54,394] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-05 11:54:06,988] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-05 12:21:43,409] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-05 12:21:44,138] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-05 12:21:44,844] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-05 12:21:46,935] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-05 12:21:48,055] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-05 12:22:08,336] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-05 12:22:09,228] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-05 12:23:52,433] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-05 12:23:53,343] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-05 12:25:23,249] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-10-05 12:25:24,145] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-05 12:25:32,275] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-05 12:25:33,184] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-05 12:25:39,071] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-05 12:25:39,859] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-05 12:25:56,936] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
