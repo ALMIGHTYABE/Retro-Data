@@ -8947,3 +8947,31 @@ Exception: Fee DF is Empty.
 [2023-10-07 03:15:57,931] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-07 03:15:58,781] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-07 03:16:30,774] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-07 03:22:45,865] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-07 03:22:46,841] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-07 03:22:47,770] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-07 03:22:49,333] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-07 03:22:50,977] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-07 03:23:09,983] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-07 03:23:11,286] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-07 03:25:30,131] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-07 03:25:31,381] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-07 03:27:26,382] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-07 03:27:27,668] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-07 03:27:37,991] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-07 03:27:39,244] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-07 03:30:47,680] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "revenue_data.py", line 137, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2023-10-07 03:30:48,810] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-07 03:31:12,543] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
