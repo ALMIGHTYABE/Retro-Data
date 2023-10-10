@@ -14213,3 +14213,23 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2023-10-10 14:27:23,712] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-10 14:27:24,117] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-10 14:27:24,833] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-10 14:27:26,725] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-10 14:27:28,083] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-10 14:27:45,757] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-10 14:27:46,742] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-10 14:32:30,423] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-10 14:32:31,435] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-10 14:35:47,322] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:              name_x               fees  ... price decimals
+128  USDC/IBEX (1%)  68636710825921375  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-10-10 14:35:49,863] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-10 14:35:50,868] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-10 14:36:08,793] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-10 14:36:09,809] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-10 14:36:14,715] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-10 14:36:15,588] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-10 14:36:51,755] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
