@@ -32309,3 +32309,33 @@ ValueError: {'code': -32055, 'message': 'No nodes available'}
 [2023-10-22 21:27:45,376] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-22 21:27:46,280] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-22 21:28:29,010] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-22 21:34:36,825] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-22 21:34:37,279] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-22 21:34:38,039] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-22 21:34:41,681] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-22 21:34:42,953] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-22 21:35:00,067] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-22 21:35:01,073] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-22 21:38:44,523] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-22 21:38:45,535] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-22 21:40:05,239] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': -32064, 'message': 'Retry failed'}
+Traceback (most recent call last):
+  File "fee_data.py", line 71, in <module>
+    rewardsListLength = contract_instance.functions.rewardsListLength().call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32064, 'message': 'Retry failed'}
+[2023-10-22 21:40:06,259] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-22 21:40:51,755] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-22 21:40:52,751] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-22 21:40:59,239] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-22 21:41:00,104] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-22 21:41:46,822] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
