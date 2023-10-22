@@ -31011,3 +31011,33 @@ ValueError: {'code': -32064, 'message': 'Retry failed'}
 [2023-10-22 01:57:07,451] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-22 01:57:08,269] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-22 01:57:28,469] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-22 02:21:00,227] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-22 02:21:00,545] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-22 02:21:01,356] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-22 02:21:03,434] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-22 02:21:04,764] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-22 02:21:23,587] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-22 02:21:24,730] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-22 02:23:17,215] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-22 02:23:18,381] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-22 02:23:54,687] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': -32055, 'message': 'No nodes available'}
+Traceback (most recent call last):
+  File "fee_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32055, 'message': 'No nodes available'}
+[2023-10-22 02:23:55,849] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-22 02:24:03,873] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-22 02:24:05,054] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-22 02:24:14,116] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-22 02:24:15,133] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-22 02:24:44,685] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
