@@ -35195,3 +35195,19 @@ gspread.exceptions.APIError: {'code': 404, 'message': 'Requested entity was not 
 [2023-10-24 21:53:26,649] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-24 21:53:27,769] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-24 21:53:43,255] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-24 22:10:08,602] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-24 22:10:08,864] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-24 22:10:09,645] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-24 22:10:11,349] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-24 22:10:12,448] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-24 22:10:31,518] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-24 22:10:32,604] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-24 22:13:02,769] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-24 22:13:03,993] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-24 22:14:50,817] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-24 22:14:51,923] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-24 22:15:02,544] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-24 22:15:03,652] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-24 22:15:08,755] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-24 22:15:09,690] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-24 22:15:43,645] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
