@@ -35781,3 +35781,75 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-10-25 08:18:29,666] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-25 08:18:30,538] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-10-25 08:19:08,151] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-10-25 08:29:49,737] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-25 08:29:50,050] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-25 08:29:50,793] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-25 08:29:54,319] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-25 08:29:55,618] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-25 08:30:15,216] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-25 08:30:16,440] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-25 08:30:39,071] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "bribe_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2023-10-25 08:30:40,215] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-25 08:31:22,072] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "fee_data.py", line 76, in <module>
+    contract_instance.functions.rewardTokens(reward_num).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2023-10-25 08:31:23,235] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-25 08:31:23,707] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "vote_data.py", line 79, in <module>
+    contract_instance.functions.totalSupplyAt(timestamp).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2023-10-25 08:31:24,850] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-25 08:31:31,232] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-25 08:31:32,258] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-25 08:31:33,028] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
