@@ -38937,3 +38937,23 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2023-10-27 05:34:47,742] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-10-27 05:34:48,292] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-10-27 05:34:49,156] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-27 05:34:52,516] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-27 05:34:53,733] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-27 05:35:15,632] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-27 05:35:16,827] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-27 05:38:27,580] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-27 05:38:28,802] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-27 05:40:42,001] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-10-27 05:40:43,173] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-10-27 05:40:56,009] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-10-27 05:40:57,249] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-27 05:41:07,644] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-27 05:41:08,700] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-10-27 05:41:58,272] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
