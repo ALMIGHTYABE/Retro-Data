@@ -3744,3 +3744,31 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-11-03 07:56:57,307] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-03 07:56:58,392] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-03 07:57:37,748] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-03 08:13:37,672] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-03 08:13:37,923] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-03 08:13:38,621] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-03 08:13:40,880] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-03 08:13:42,090] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-03 08:14:09,623] 	ERROR 	103 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "pair_data.py", line 91, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2023-11-03 08:14:10,628] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-03 08:16:30,771] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-03 08:16:31,782] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-03 08:17:58,388] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-03 08:17:59,436] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-03 08:18:22,429] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-03 08:18:23,460] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-03 08:18:28,523] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-03 08:18:29,420] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-03 08:19:01,975] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
