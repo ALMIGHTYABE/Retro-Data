@@ -13533,3 +13533,65 @@ Exception: Fee DF is Empty.
 [2023-11-09 13:43:50,694] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-09 13:43:51,373] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-09 13:44:39,720] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-09 13:49:16,468] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-09 13:49:17,036] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-09 13:49:17,876] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-09 13:49:19,731] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-09 13:49:21,048] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-09 13:49:44,322] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-09 13:49:45,513] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-09 13:52:20,942] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-09 13:52:22,142] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-09 13:53:46,924] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-11-09 13:53:48,112] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-09 13:53:56,448] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-09 13:53:57,640] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-09 13:59:00,973] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: IncompleteRead(192538 bytes read)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 556, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 523, in _read_next_chunk_size
+    return int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 573, in _readall_chunked
+    chunk_left = self._get_chunk_left()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 558, in _get_chunk_left
+    raise IncompleteRead(b'')
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "revenue_data.py", line 45, in <module>
+    pair_df = pd.read_csv(pair_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 368, in _get_filepath_or_buffer
+    reader = BytesIO(req.read())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 466, in read
+    return self._readall_chunked()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 580, in _readall_chunked
+    raise IncompleteRead(b''.join(value))
+http.client.IncompleteRead: IncompleteRead(192538 bytes read)
+[2023-11-09 13:59:02,171] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-09 13:59:30,243] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
