@@ -14830,3 +14830,19 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2023-11-10 07:49:26,871] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-10 07:49:27,328] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-10 07:49:28,097] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-10 07:49:30,456] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-10 07:49:31,834] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-10 07:49:49,183] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-10 07:49:50,196] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-10 07:53:13,123] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-10 07:53:14,156] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-10 07:55:01,864] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-10 07:55:02,932] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-10 07:55:11,358] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-10 07:55:12,418] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-10 07:55:17,137] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-10 07:55:18,063] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-10 07:56:14,523] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
