@@ -18752,3 +18752,63 @@ ValueError: {'code': -32603, 'message': 'internal error'}
 [2023-11-12 21:52:59,509] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-12 21:53:00,403] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-12 21:53:17,266] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-12 22:09:35,312] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-12 22:09:35,574] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-12 22:09:36,063] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-12 22:09:38,243] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-12 22:09:39,122] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-12 22:09:55,009] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-12 22:09:55,762] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-12 22:12:12,109] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-12 22:12:12,875] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-12 22:13:49,815] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-12 22:13:50,590] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-12 22:13:58,856] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-12 22:13:59,622] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-12 22:16:47,428] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "revenue_data.py", line 47, in <module>
+    emissions_df = pd.read_csv(emissions_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2023-11-12 22:16:48,151] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-12 22:17:18,199] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
