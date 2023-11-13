@@ -20074,3 +20074,33 @@ ValueError: {'code': -32603, 'message': 'internal error'}
 [2023-11-13 18:43:29,461] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-13 18:43:30,139] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-13 18:44:00,238] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-13 18:49:02,192] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-13 18:49:02,658] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-13 18:49:03,236] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-13 18:49:04,989] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-13 18:49:06,039] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-13 18:49:19,126] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-13 18:49:19,903] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-13 18:52:14,133] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-13 18:52:14,981] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-13 18:53:44,241] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': -32603, 'message': 'internal error'}
+Traceback (most recent call last):
+  File "fee_data.py", line 71, in <module>
+    rewardsListLength = contract_instance.functions.rewardsListLength().call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32603, 'message': 'internal error'}
+[2023-11-13 18:53:45,046] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-13 18:53:54,491] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-13 18:53:55,283] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-13 18:54:02,711] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-13 18:54:03,411] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-13 18:54:44,727] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
