@@ -35058,3 +35058,31 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-11-23 12:24:31,298] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-23 12:24:31,989] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-23 12:25:00,882] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-23 12:50:03,373] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-23 12:50:03,687] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-23 12:50:04,297] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-23 12:50:06,193] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-23 12:50:07,156] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-23 12:50:18,671] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-23 12:50:19,438] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-23 12:52:19,913] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-23 12:52:20,710] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-23 12:53:51,252] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-23 12:53:52,066] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-23 12:54:00,201] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-23 12:54:00,987] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-23 12:55:10,854] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "revenue_data.py", line 137, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2023-11-23 12:55:11,571] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-23 12:55:49,101] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
