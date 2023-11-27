@@ -1,4 +1,4 @@
-name: Update Partner Data
+name: Update Partner & APR Data
 on:
   schedule:
     - cron: '7 2 * * THU'
@@ -6,7 +6,7 @@ on:
 
 jobs:
   update_symbol_list:
-    name: Update Partner Data Thursday
+    name: Update Partner & APR Thursday
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,10 +28,11 @@ jobs:
           GKEY: ${{ secrets.GKEY }}
         run: |
           python partner_data.py
+          python apr_data
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add logs
-          git commit -m "Updated Partner Data on `date` with GitHub Actions" || echo "No Changes to Commit"
+          git commit -m "Updated Partner & APR Data on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
