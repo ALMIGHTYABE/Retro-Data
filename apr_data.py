@@ -35,7 +35,6 @@ try:
     my_datetime = datetime.combine(todayDate, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
     print("Today's date:", my_datetime, timestamp)
-    timestamp = 1700697600
 
     # Read Data
     epoch_data = pd.read_csv(epoch_csv)
@@ -85,7 +84,6 @@ try:
        'voting_apr', 'rebase_apr']]
 
     print(epoch_wise_df)
-    epoch_wise_df.to_csv("apr_data.csv", index=False)
     df_values = epoch_wise_df.values.tolist()
     
     # Write to GSheets
