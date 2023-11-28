@@ -47064,3 +47064,133 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-11-28 14:54:14,244] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-28 14:54:15,016] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-28 14:54:54,794] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-28 15:12:09,165] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-28 15:12:09,731] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-28 15:12:10,243] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-28 15:12:12,593] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-28 15:12:13,395] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-28 15:12:27,341] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-28 15:12:28,134] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-28 15:14:15,574] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-28 15:14:16,383] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-28 15:14:59,232] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "fee_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+[2023-11-28 15:15:00,003] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-28 15:15:00,389] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "vote_data.py", line 79, in <module>
+    contract_instance.functions.totalSupplyAt(timestamp).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+[2023-11-28 15:15:01,154] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-28 15:15:07,747] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-28 15:15:08,460] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-28 15:15:09,070] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
