@@ -46810,3 +46810,19 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 975, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2023-11-28 10:49:09,330] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-28 10:49:11,737] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-28 10:49:12,242] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-28 10:49:15,213] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-28 10:49:16,043] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-28 10:49:30,774] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-28 10:49:31,556] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-28 10:51:13,133] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-28 10:51:13,911] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-28 10:52:33,306] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-28 10:52:34,085] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-28 10:52:41,165] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-28 10:52:41,947] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-28 10:52:46,870] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-28 10:52:47,552] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-28 10:53:11,542] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
