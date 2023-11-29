@@ -48508,3 +48508,33 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-11-29 13:32:04,235] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-29 13:32:04,915] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-29 13:33:00,362] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-29 13:36:27,986] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-29 13:36:28,196] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-29 13:36:28,835] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-29 13:36:31,791] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-29 13:36:32,834] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-29 13:36:45,747] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-29 13:36:46,491] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-29 13:38:42,373] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-29 13:38:43,145] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-29 13:40:13,578] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-29 13:40:14,339] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-29 13:40:21,286] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-29 13:40:22,056] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-29 13:40:25,944] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-29 13:40:26,619] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-29 13:40:42,219] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
