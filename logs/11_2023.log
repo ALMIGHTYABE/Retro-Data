@@ -50316,3 +50316,50 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-11-30 16:53:59,588] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-30 16:54:00,300] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-11-30 16:54:32,122] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-11-30 17:10:48,853] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-11-30 17:10:49,249] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-11-30 17:10:49,911] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-30 17:10:51,678] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-30 17:10:52,605] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-30 17:11:04,378] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-30 17:11:05,147] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-30 17:13:32,292] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-30 17:13:33,141] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-30 17:15:24,292] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+Traceback (most recent call last):
+  File "fee_data.py", line 150, in <module>
+    worksheet1 = gs.worksheet("Master")
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 333, in worksheet
+    sheet_data = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[2023-11-30 17:15:25,071] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-11-30 17:15:33,970] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-11-30 17:15:34,750] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-30 17:15:39,148] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-30 17:15:39,829] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-11-30 17:16:16,012] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
