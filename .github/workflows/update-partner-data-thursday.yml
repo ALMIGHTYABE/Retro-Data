@@ -28,7 +28,7 @@ jobs:
           GKEY: ${{ secrets.GKEY }}
         run: |
           python partner_data.py
-          python apr_data
+          python apr_data.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
