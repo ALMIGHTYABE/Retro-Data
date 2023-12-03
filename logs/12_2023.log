@@ -3726,3 +3726,23 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2023-12-03 08:32:02,410] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-03 08:32:03,113] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-03 08:32:32,459] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-03 08:36:11,837] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-03 08:36:12,097] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-03 08:36:12,644] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-03 08:36:14,534] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-03 08:36:15,458] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-03 08:36:29,105] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-03 08:36:29,868] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-03 08:38:08,622] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-03 08:38:09,406] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-03 08:39:18,500] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:              name_x                fees  ... price decimals
+108  USDC/IBEX (1%)  131435698041869802  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-12-03 08:39:20,517] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-03 08:39:21,318] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-03 08:39:28,094] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-03 08:39:28,872] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-03 08:39:36,163] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-03 08:39:36,898] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-03 08:39:49,177] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
