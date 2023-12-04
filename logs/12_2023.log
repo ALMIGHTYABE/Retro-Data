@@ -5459,3 +5459,23 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2023-12-04 06:41:02,680] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-04 06:41:03,360] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-04 06:41:27,749] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-04 06:49:34,611] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-04 06:49:34,809] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-04 06:49:35,625] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-04 06:49:37,180] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-04 06:49:38,639] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-04 06:49:52,068] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-04 06:49:52,847] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-04 06:52:21,414] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-04 06:52:22,207] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-04 06:53:42,942] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:              name_x                fees  ... price decimals
+110  USDC/IBEX (1%)  131435698041869802  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-12-04 06:53:44,615] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-04 06:53:45,414] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-04 06:53:52,654] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-04 06:53:53,446] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-04 06:53:59,280] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-04 06:53:59,965] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-04 06:54:48,649] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
