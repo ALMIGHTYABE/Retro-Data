@@ -5010,3 +5010,52 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2023-12-04 00:52:40,908] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-04 00:52:41,104] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-04 00:52:41,650] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-04 00:52:43,315] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-04 00:52:44,217] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-04 00:52:57,542] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-04 00:52:58,308] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-04 00:55:25,992] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Could not decode contract function call to rewardData with return data: b'', output_types: ['uint256', 'uint256', 'uint256']
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1537, in call_contract_function
+    output_data = web3.codec.decode(output_types, return_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_abi/codec.py", line 210, in decode
+    return decoder(stream)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_abi/decoding.py", line 127, in __call__
+    return self.decode(stream)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_utils/functional.py", line 45, in inner
+    return callback(fn(*args, **kwargs))
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_abi/decoding.py", line 173, in decode
+    yield decoder(stream)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_abi/decoding.py", line 127, in __call__
+    return self.decode(stream)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_abi/decoding.py", line 198, in decode
+    raw_data = self.read_data_from_stream(stream)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/eth_abi/decoding.py", line 305, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes.  Only got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "bribe_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1554, in call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not decode contract function call to rewardData with return data: b'', output_types: ['uint256', 'uint256', 'uint256']
+[2023-12-04 00:55:26,769] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-04 00:57:57,314] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:              name_x                fees  ... price decimals
+108  USDC/IBEX (1%)  131435698041869802  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-12-04 00:57:59,277] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-04 00:58:00,058] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-04 00:58:09,605] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-04 00:58:10,401] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-04 00:58:14,326] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-04 00:58:15,012] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-04 00:58:45,656] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
