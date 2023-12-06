@@ -9423,3 +9423,37 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-12-06 10:16:44,313] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-06 10:16:45,012] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-06 10:17:31,993] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-06 10:30:46,539] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-06 10:30:46,858] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-06 10:30:47,374] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-06 10:30:49,865] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-06 10:30:50,671] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-06 10:31:01,769] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-06 10:31:02,547] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-06 10:33:17,781] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-06 10:33:18,572] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-06 10:35:02,628] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:              name_x                fees  ... price decimals
+111  USDC/IBEX (1%)  131435698041869802  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2023-12-06 10:35:05,891] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-06 10:35:06,686] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-06 10:35:15,284] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-06 10:35:16,068] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-06 10:35:19,856] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-06 10:35:20,553] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-06 10:35:36,720] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
