@@ -10541,3 +10541,7 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-12-07 02:00:53,034] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-07 02:00:53,715] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-07 02:01:51,771] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-07 02:31:16,097] 	INFO 	29 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2023-12-07 02:32:10,704] 	INFO 	196 	partner_data.py 	<module>() 	Partner Vote Data Ended
+[2023-12-07 02:32:11,508] 	INFO 	24 	apr_data.py 	<module>() 	APR Data Started
+[2023-12-07 02:32:14,427] 	INFO 	101 	apr_data.py 	<module>() 	APR Data Ended
