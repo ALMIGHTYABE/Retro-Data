@@ -14591,3 +14591,19 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2023-12-09 18:53:46,876] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-09 18:53:47,583] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-09 18:54:20,967] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-09 19:08:17,937] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-09 19:08:18,328] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-09 19:08:18,842] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-09 19:08:21,778] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-09 19:08:22,572] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-09 19:08:37,426] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-09 19:08:38,188] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-09 19:10:31,053] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-09 19:10:31,826] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-09 19:11:57,885] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-09 19:11:58,669] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-09 19:12:07,440] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-09 19:12:08,226] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-09 19:12:13,418] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-09 19:12:14,105] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-09 19:12:38,245] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
