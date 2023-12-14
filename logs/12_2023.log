@@ -22079,3 +22079,67 @@ Exception: Fee DF is Empty.
 [2023-12-14 18:44:44,674] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-14 18:44:45,407] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-14 18:44:59,351] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-14 18:49:33,710] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-14 18:49:34,295] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-14 18:49:35,126] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-14 18:49:36,505] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-14 18:49:37,874] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-14 18:50:07,016] 	ERROR 	103 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: HTTP Error 502: Bad Gateway
+Traceback (most recent call last):
+  File "pair_data.py", line 75, in <module>
+    pairdata_fusion_old = pd.read_csv(pair_data_fusion_csv)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 502: Bad Gateway
+[2023-12-14 18:50:07,868] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-14 18:52:24,473] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-14 18:52:25,302] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-14 18:54:05,503] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2023-12-14 18:54:06,342] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-14 18:54:15,509] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-14 18:54:16,329] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-14 18:54:20,882] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-14 18:54:21,598] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-14 18:54:49,089] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
