@@ -30079,3 +30079,19 @@ requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected(
 [2023-12-19 14:14:09,231] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-19 14:14:09,909] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-19 14:14:41,780] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-19 14:25:09,142] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-19 14:25:09,522] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-19 14:25:10,020] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-19 14:25:11,920] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-19 14:25:12,710] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-19 14:25:29,535] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-19 14:25:30,296] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-19 14:27:40,416] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-19 14:27:41,183] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-19 14:29:24,291] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-19 14:29:25,063] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-19 14:29:34,256] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-19 14:29:35,027] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-19 14:29:40,009] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-19 14:29:40,686] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-19 14:29:51,598] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
