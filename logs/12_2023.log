@@ -32237,3 +32237,99 @@ Traceback (most recent call last):
 IndexError: list index out of range
 [2023-12-20 12:45:19,115] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-20 12:45:30,236] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-20 12:51:19,668] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-20 12:51:20,050] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-20 12:51:20,567] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-20 12:51:23,766] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-20 12:51:24,574] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-20 12:51:40,798] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-20 12:51:41,584] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-20 12:53:57,597] 	ERROR 	107 	bribe_data.py 	<module>() 	Null Data. Error:                     name_x                   bribes  ... price decimals
+0      WMATIC/WETH (0.05%)       460007138984126741  ...   NaN      NaN
+1        WBTC/WETH (0.05%)  10000000000000000000000  ...   NaN      NaN
+2      WMATIC/CASH (0.05%)     12371754151650391711  ...   NaN      NaN
+3        CASH/WETH (0.05%)      9745583351161666630  ...   NaN      NaN
+4        USDC/CASH (0.01%)    120537342903621220535  ...   NaN      NaN
+5        USDC/CASH (0.01%)  30000000000000000000000  ...   NaN      NaN
+6        CASH/USDT (0.01%)      2229761782996852751  ...   NaN      NaN
+7         CASH/DAI (0.01%)         9209784334283552  ...   NaN      NaN
+8     CASH/miMATIC (0.01%)            1621319884139  ...   NaN      NaN
+9      CASH/MaticX (0.05%)      1831970626280109715  ...   NaN      NaN
+10       FRAX/CASH (0.01%)      2731219174684184165  ...   NaN      NaN
+11       FRAX/CASH (0.01%)      1005643845822121736  ...   NaN      NaN
+12         CASH/RETRO (1%)    179299055184478043198  ...   NaN      NaN
+13         CASH/RETRO (1%)                400000000  ...   NaN      NaN
+14         CASH/RETRO (1%)  55000000000000000000000  ...   NaN      NaN
+15         WETH/RETRO (1%)  50000000000000000000000  ...   NaN      NaN
+16       WMATIC/RETRO (1%)  50000000000000000000000  ...   NaN      NaN
+17         WBTC/RETRO (1%)  50000000000000000000000  ...   NaN      NaN
+18         USDC/RETRO (1%)  10000000000000000000000  ...   NaN      NaN
+19       USDC/USDT (0.01%)  45000000000000000000000  ...   NaN      NaN
+20   WMATIC/MaticX (0.01%)    510000000000000000000  ...   NaN      NaN
+21     WETH/frxETH (0.01%)      8743446072888272249  ...   NaN      NaN
+22     FRAX/frxETH (0.05%)       736469990985631173  ...   NaN      NaN
+23   WMATIC/frxETH (0.05%)      1273964120488364146  ...   NaN      NaN
+24  xbb-t-USD/CASH (0.01%)         3901114177847295  ...   NaN      NaN
+25       CASH/LUCHA (0.3%)     11484331680220012693  ...   NaN      NaN
+26       CASH/LUCHA (0.3%)  17500000000000000000000  ...   NaN      NaN
+27     USDC/miMATIC (0.3%)   1212000000000000000000  ...   NaN      NaN
+28     USDC/miMATIC (0.3%)   7000000000000000000000  ...   NaN      NaN
+29         CASH/ERN (0.3%)     19766519375865274708  ...   NaN      NaN
+30      WMATIC/ICHI (0.3%)    500000000000000000000  ...   NaN      NaN
+31       LUCHA/WETH (0.3%)   7500000000000000000000  ...   NaN      NaN
+32     axlLqdr/CASH (0.3%)     65335652362020267941  ...   NaN      NaN
+33          ICHI/CASH (1%)     59804546891712408374  ...   NaN      NaN
+34       wUSDR/CASH (0.3%)        18383442892326722  ...   NaN      NaN
+35       CASH/STAR (0.05%)    623309264649286780258  ...   NaN      NaN
+36         tUSDC/CASH (1%)     37460557027914691386  ...   NaN      NaN
+37         tUSDC/CASH (1%)                199954424  ...   NaN      NaN
+38        WBTC/CASH (0.3%)      1450824410270510941  ...   NaN      NaN
+39        WMATIC/DEUS (1%)      8500000000000000000  ...   NaN      NaN
+40       CASH/TAROT (0.3%)       674802713534128460  ...   NaN      NaN
+41     CASH/fxDOLA (0.05%)     67955661078665707133  ...   NaN      NaN
+42     CASH/fxDOLA (0.05%)    500000000000000000000  ...   NaN      NaN
+43     CASH/fxDOLA (0.05%)   7000000000000000000000  ...   NaN      NaN
+44    RETRO/liveRetro (1%)  11888386250481042079061  ...   NaN      NaN
+45    RETRO/liveRetro (1%)       430254860706993785  ...   NaN      NaN
+46      USDC/fxDOLA (0.3%)    500000000000000000000  ...   NaN      NaN
+47      USDC/fxDOLA (0.3%)   7000000000000000000000  ...   NaN      NaN
+48        USDC/FRAX (0.3%)     65000000000000000000  ...   NaN      NaN
+49         WETH/ERN (0.3%)        41642673427081275  ...   NaN      NaN
+50         WETH/ERN (0.3%)    259310701505375442978  ...   NaN      NaN
+51         WETH/ERN (0.3%)    107398382870179641600  ...   NaN      NaN
+52         WETH/ERN (0.3%)    289349080655236272663  ...   NaN      NaN
+53      WETH/JARVIS (0.3%)    755000000000000000000  ...   NaN      NaN
+54       jEUR/CASH (0.05%)    754583300134393697838  ...   NaN      NaN
+
+[55 rows x 6 columns]
+[2023-12-20 12:53:58,880] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-20 12:53:59,662] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-20 12:55:35,248] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:                   name_x                    fees  ... price decimals
+0    WMATIC/WETH (0.05%)  5052764342721296699523  ...   NaN      NaN
+1    WMATIC/WETH (0.05%)     1885220341071082094  ...   NaN      NaN
+2    WMATIC/USDC (0.05%)  3955783046825611555165  ...   NaN      NaN
+3    WMATIC/USDC (0.05%)              3300806018  ...   NaN      NaN
+4      USDC/WETH (0.05%)              1692822051  ...   NaN      NaN
+..                   ...                     ...  ...   ...      ...
+115     USDC/FRAX (0.3%)    74235544607948427200  ...   NaN      NaN
+116     WBTC/USDC (0.3%)                   91679  ...   NaN      NaN
+117     WBTC/USDC (0.3%)                44035611  ...   NaN      NaN
+118      WETH/ERN (0.3%)        3268006295332353  ...   NaN      NaN
+119      WETH/ERN (0.3%)     8349969609768234981  ...   NaN      NaN
+
+[120 rows x 6 columns]
+[2023-12-20 12:55:36,839] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-20 12:55:37,635] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-20 12:55:37,871] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: list index out of range
+Traceback (most recent call last):
+  File "vote_data.py", line 64, in <module>
+    RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
+IndexError: list index out of range
+[2023-12-20 12:55:38,667] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-20 12:55:41,163] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: list index out of range
+Traceback (most recent call last):
+  File "revenue_data.py", line 66, in <module>
+    RETRO_price = jmespath.search("data[?name == 'RETRO'].price", response.json())[0]
+IndexError: list index out of range
+[2023-12-20 12:55:41,856] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-20 12:55:51,903] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
