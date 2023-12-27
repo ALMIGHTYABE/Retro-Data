@@ -43023,3 +43023,31 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-12-27 08:40:55,423] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-27 08:40:56,138] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-27 08:41:07,964] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-27 08:49:16,950] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-27 08:49:17,245] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-27 08:49:18,088] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-27 08:49:20,376] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-27 08:49:21,739] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-27 08:49:37,236] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-27 08:49:37,998] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-27 08:54:33,260] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "bribe_data.py", line 152, in <module>
+    worksheet1.delete_rows(index_list[0], index_list[-1])
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1952, in delete_rows
+    return self.delete_dimension(Dimension.rows, start_index, end_index)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1933, in delete_dimension
+    return self.spreadsheet.batch_update(body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 131, in batch_update
+    r = self.client.request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2023-12-27 08:54:34,035] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-27 08:56:00,745] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-27 08:56:01,519] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-27 08:56:09,393] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-27 08:56:10,176] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-27 08:56:16,726] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-27 08:56:17,409] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-27 08:56:42,018] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
