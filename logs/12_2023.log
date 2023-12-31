@@ -48879,3 +48879,19 @@ ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
 [2023-12-31 02:30:09,352] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-31 02:30:10,031] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2023-12-31 02:30:22,435] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2023-12-31 02:40:42,251] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2023-12-31 02:40:42,676] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2023-12-31 02:40:43,251] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-31 02:40:46,229] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-31 02:40:47,180] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-31 02:41:02,632] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-31 02:41:03,443] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-31 02:43:09,676] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-31 02:43:10,452] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-31 02:44:44,996] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-31 02:44:45,775] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2023-12-31 02:44:54,215] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2023-12-31 02:44:55,005] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-31 02:45:01,838] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-31 02:45:02,545] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2023-12-31 02:45:30,071] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
