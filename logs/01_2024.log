@@ -4580,3 +4580,33 @@ Exception: Fee DF is Empty.
 [2024-01-04 02:53:40,091] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-04 02:53:40,788] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
 [2024-01-04 02:53:53,294] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
+[2024-01-04 03:12:13,207] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-01-04 03:12:13,920] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-01-04 03:12:14,510] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-04 03:12:16,236] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-04 03:12:17,266] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-04 03:12:32,317] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-04 03:12:33,083] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-04 03:14:38,372] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-04 03:14:39,151] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-04 03:16:21,684] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-01-04 03:16:22,454] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-01-04 03:17:31,737] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "vote_data.py", line 109, in <module>
+    worksheet1 = gs.worksheet("Master")
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 333, in worksheet
+    sheet_data = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-01-04 03:17:32,530] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-04 03:17:39,131] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-04 03:17:39,818] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-01-04 03:17:52,159] 	INFO 	80 	pool_data.py 	<module>() 	Pool Data Ended
