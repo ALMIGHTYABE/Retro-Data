@@ -15234,3 +15234,5 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-01-11 01:12:04,720] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-01-11 01:13:05,775] 	INFO 	131 	emissions_data.py 	<module>() 	Emissions Data Ended
