@@ -30699,3 +30699,81 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-01-16 13:28:09,361] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-01-16 13:28:09,711] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-01-16 13:28:10,407] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-16 13:28:13,061] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-16 13:28:14,382] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-16 13:28:30,107] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-16 13:28:30,937] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-16 13:30:36,165] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-16 13:30:36,981] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-16 13:32:13,618] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-16 13:32:14,492] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-01-16 13:32:22,883] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-01-16 13:32:23,740] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-16 13:37:14,786] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: IncompleteRead(126994 bytes read)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 556, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 523, in _read_next_chunk_size
+    return int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 573, in _readall_chunked
+    chunk_left = self._get_chunk_left()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 558, in _get_chunk_left
+    raise IncompleteRead(b'')
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "revenue_data.py", line 43, in <module>
+    bribe_df = pd.read_csv(bribe_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 368, in _get_filepath_or_buffer
+    reader = BytesIO(req.read())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 466, in read
+    return self._readall_chunked()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 580, in _readall_chunked
+    raise IncompleteRead(b''.join(value))
+http.client.IncompleteRead: IncompleteRead(126994 bytes read)
+[2024-01-16 13:37:15,535] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-01-16 13:37:25,475] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: execution reverted
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 170, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 70, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+  File "cytoolz/functoolz.pyx", line 680, in cytoolz.functoolz.pipe
+  File "cytoolz/functoolz.pyx", line 655, in cytoolz.functoolz.c_pipe
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
+    raise ContractLogicError('execution reverted')
+web3.exceptions.ContractLogicError: execution reverted
