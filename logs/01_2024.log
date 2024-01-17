@@ -32104,3 +32104,83 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-01-17 00:53:09,986] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-01-17 00:53:10,347] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-01-17 00:53:10,872] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-17 00:53:13,828] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-17 00:53:14,644] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-17 00:53:31,612] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-17 00:53:32,393] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-17 00:55:46,479] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-17 00:55:47,276] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-17 00:57:22,472] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-17 00:57:23,263] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-01-17 00:57:30,301] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-01-17 00:57:31,122] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-17 00:57:49,321] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 502: Bad Gateway
+Traceback (most recent call last):
+  File "revenue_data.py", line 44, in <module>
+    fee_df = pd.read_csv(fee_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 502: Bad Gateway
+[2024-01-17 00:57:50,054] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-01-17 00:57:51,046] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: execution reverted
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 170, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 70, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+  File "cytoolz/functoolz.pyx", line 680, in cytoolz.functoolz.pipe
+  File "cytoolz/functoolz.pyx", line 655, in cytoolz.functoolz.c_pipe
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
+    raise ContractLogicError('execution reverted')
+web3.exceptions.ContractLogicError: execution reverted
