@@ -35114,3 +35114,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-01-18 02:32:37,713] 	INFO 	29 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2024-01-18 02:32:58,333] 	INFO 	196 	partner_data.py 	<module>() 	Partner Vote Data Ended
+[2024-01-18 02:32:59,131] 	INFO 	24 	apr_data.py 	<module>() 	APR Data Started
+[2024-01-18 02:33:01,454] 	INFO 	101 	apr_data.py 	<module>() 	APR Data Ended
