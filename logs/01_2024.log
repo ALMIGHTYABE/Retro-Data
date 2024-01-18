@@ -36978,3 +36978,55 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2024-01-18 16:33:25,969] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-01-18 16:33:26,215] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-01-18 16:33:26,755] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-18 16:33:29,145] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-18 16:33:30,124] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-18 16:33:43,242] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-18 16:33:44,017] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-18 16:36:34,101] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "bribe_data.py", line 147, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-01-18 16:36:34,886] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-18 16:38:39,114] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-01-18 16:38:39,890] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-01-18 16:38:51,418] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-01-18 16:38:52,200] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-18 16:38:57,572] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-18 16:38:58,251] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-01-18 16:39:04,176] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: execution reverted
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 170, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 70, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+  File "cytoolz/functoolz.pyx", line 680, in cytoolz.functoolz.pipe
+  File "cytoolz/functoolz.pyx", line 655, in cytoolz.functoolz.c_pipe
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
+    raise ContractLogicError('execution reverted')
+web3.exceptions.ContractLogicError: execution reverted
