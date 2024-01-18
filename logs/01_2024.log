@@ -37138,3 +37138,37 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-01-18 17:35:39,798] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-01-18 17:35:39,997] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-01-18 17:35:40,638] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-18 17:35:42,207] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-18 17:35:43,106] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-18 17:35:58,540] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-18 17:35:59,319] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-18 17:38:16,357] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-18 17:38:17,150] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-18 17:40:06,141] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-01-18 17:40:06,920] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-01-18 17:40:16,518] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-01-18 17:40:17,319] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-18 17:40:22,841] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-18 17:40:23,539] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-01-18 17:40:34,308] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
