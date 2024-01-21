@@ -43518,3 +43518,39 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-01-21 00:57:15,249] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-01-21 00:57:15,835] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-01-21 00:57:16,709] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-21 00:57:18,393] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-21 00:57:20,084] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-21 00:57:35,350] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-21 00:57:36,121] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-21 00:59:43,413] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-21 00:59:44,228] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-21 01:01:25,398] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-21 01:01:26,233] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-01-21 01:01:33,730] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-01-21 01:01:34,593] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-21 01:01:40,932] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-21 01:01:41,626] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-01-21 01:01:46,403] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: execution reverted
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 170, in formatted_response
+    apply_error_formatters(error_formatters, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 70, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+  File "cytoolz/functoolz.pyx", line 680, in cytoolz.functoolz.pipe
+  File "cytoolz/functoolz.pyx", line 655, in cytoolz.functoolz.c_pipe
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
+    raise ContractLogicError('execution reverted')
+web3.exceptions.ContractLogicError: execution reverted
