@@ -21,6 +21,7 @@ jobs:
 
       - name: Run Script
         env:
+          RPC: ${{ secrets.RPC }}
           GKEY: ${{ secrets.GKEY }}
         run: |
           python apr_data.py
