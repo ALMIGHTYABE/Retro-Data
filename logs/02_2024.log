@@ -90,3 +90,7 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2024-02-01 02:27:07,700] 	INFO 	29 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2024-02-01 02:27:24,138] 	INFO 	196 	partner_data.py 	<module>() 	Partner Vote Data Ended
+[2024-02-01 02:27:24,931] 	INFO 	24 	apr_data.py 	<module>() 	APR Data Started
+[2024-02-01 02:27:26,807] 	INFO 	101 	apr_data.py 	<module>() 	APR Data Ended
