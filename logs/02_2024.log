@@ -13406,3 +13406,45 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2024-02-05 15:49:13,543] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-05 15:49:13,812] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-05 15:49:14,517] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-05 15:49:18,054] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-05 15:49:19,165] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-05 15:49:35,636] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-05 15:49:36,436] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-05 15:51:49,146] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-05 15:51:49,980] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-05 15:53:29,436] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-02-05 15:53:30,238] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-05 15:53:38,628] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-02-05 15:53:39,453] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-05 15:56:48,436] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "revenue_data.py", line 137, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-02-05 15:56:49,148] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-02-05 15:56:57,584] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
