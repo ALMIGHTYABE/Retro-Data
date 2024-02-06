@@ -16106,3 +16106,45 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/method_formatters.py", line 580, in raise_solidity_error_on_revert
     raise ContractLogicError('execution reverted')
 web3.exceptions.ContractLogicError: execution reverted
+[2024-02-06 14:25:39,826] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-06 14:25:40,035] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-06 14:25:40,606] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-06 14:25:42,256] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-06 14:25:43,106] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-06 14:25:57,831] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-06 14:25:58,645] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-06 14:29:02,232] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "bribe_data.py", line 147, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-02-06 14:29:03,029] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-06 14:31:05,081] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-02-06 14:31:05,882] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-06 14:31:17,084] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-02-06 14:31:17,910] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-06 14:31:24,076] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-06 14:31:24,784] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-02-06 14:31:35,456] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
