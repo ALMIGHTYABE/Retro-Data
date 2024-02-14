@@ -39204,3 +39204,34 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
     raise ValueError(response["error"])
 ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+[2024-02-14 14:49:20,976] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-14 14:49:21,160] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-14 14:49:21,864] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-14 14:49:24,505] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-14 14:49:25,772] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-14 14:49:27,927] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xeB80047F7d5D4C4A3BC6319250d6b1b8aEe2d0D2, Error: Expecting value: line 1 column 1 (char 0)
+[2024-02-14 14:49:40,178] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-14 14:49:40,960] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-14 14:52:23,674] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-14 14:52:24,453] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-14 14:54:21,643] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-02-14 14:54:22,421] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-14 14:54:33,546] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-02-14 14:54:34,338] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-14 14:54:38,827] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-14 14:54:39,521] 	INFO 	20 	pool_data.py 	<module>() 	Pool Data Started
+[2024-02-14 14:54:49,396] 	ERROR 	82 	pool_data.py 	<module>() 	Error occurred during Pool Data process. Error: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
+Traceback (most recent call last):
+  File "pool_data.py", line 53, in <module>
+    pool_data = contract_instance.functions.getActivePoolDistributions(pool_address).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': -32000, 'message': 'execution aborted (timeout = 5s)'}
