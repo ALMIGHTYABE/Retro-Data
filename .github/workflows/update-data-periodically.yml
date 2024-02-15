@@ -32,7 +32,6 @@ jobs:
           python fee_data.py
           python vote_data.py
           python revenue_data.py
-          python pool_data.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
