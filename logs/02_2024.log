@@ -44399,3 +44399,25 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-02-17 06:41:17,098] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-02-17 06:41:18,001] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-02-17 06:41:24,736] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-17 06:49:10,866] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-17 06:49:11,123] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-17 06:49:11,808] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-17 06:49:13,964] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-17 06:49:14,849] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-17 06:49:29,679] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-17 06:49:30,476] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-17 06:52:05,816] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-17 06:52:06,627] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-17 06:54:06,481] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-02-17 06:54:07,289] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-17 06:55:54,273] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "vote_data.py", line 114, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-02-17 06:55:55,063] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-17 06:56:02,103] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
