@@ -47607,3 +47607,31 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-02-19 13:18:53,425] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-02-19 13:18:54,228] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-02-19 13:19:00,401] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-19 13:23:23,252] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-19 13:23:23,466] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-19 13:23:24,125] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-19 13:23:25,966] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-19 13:23:26,983] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-19 13:23:41,812] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-19 13:23:42,602] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-19 13:27:17,671] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-19 13:27:18,522] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-19 13:29:36,556] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "fee_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2024-02-19 13:29:37,392] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-19 13:29:58,917] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-02-19 13:29:59,723] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-19 13:30:06,201] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
