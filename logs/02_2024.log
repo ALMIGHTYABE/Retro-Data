@@ -49861,3 +49861,45 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-02-20 22:17:40,550] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-02-20 22:17:41,355] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-02-20 22:17:50,801] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-20 22:26:14,176] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-20 22:26:14,820] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-20 22:26:15,321] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-20 22:26:17,058] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-20 22:26:17,854] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-20 22:26:32,092] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-20 22:26:32,858] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-20 22:30:48,240] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-20 22:30:49,012] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-20 22:31:22,144] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "fee_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2024-02-20 22:31:22,933] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-20 22:31:23,551] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "vote_data.py", line 79, in <module>
+    contract_instance.functions.totalSupplyAt(timestamp).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2024-02-20 22:31:24,319] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-20 22:31:29,501] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
