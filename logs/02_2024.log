@@ -49597,3 +49597,17 @@ Traceback (most recent call last):
 ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-02-20 17:35:34,668] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-02-20 17:35:40,433] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-20 17:49:06,717] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-02-20 17:49:07,162] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-02-20 17:49:07,784] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-20 17:49:10,276] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-20 17:49:11,144] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-20 17:49:26,384] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-20 17:49:27,158] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-20 17:53:02,740] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-20 17:53:03,572] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-20 17:55:44,351] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-02-20 17:55:45,141] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-02-20 17:56:00,738] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-02-20 17:56:01,530] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-20 17:56:08,229] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
