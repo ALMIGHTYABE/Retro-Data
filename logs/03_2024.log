@@ -4941,3 +4941,29 @@ urllib.error.HTTPError: HTTP Error 500: Internal Server Error
 [2024-03-05 06:54:21,615] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-05 06:54:22,475] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-05 06:54:35,930] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-05 07:10:15,082] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-05 07:10:15,288] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-05 07:10:15,908] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-05 07:10:17,863] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-05 07:10:19,029] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-05 07:10:35,874] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-05 07:10:36,661] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-05 07:12:48,603] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-05 07:12:49,411] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-05 07:14:30,541] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:                    name_x                    fees  ... price decimals
+78         stERN/ERN (1%)      221147258038899510  ...   NaN      NaN
+103     CASH/TAROT (0.3%)      608400000000000000  ...   NaN      NaN
+105   CASH/fxDOLA (0.05%)       23014191733908684  ...   NaN      NaN
+107  RETRO/liveRetro (1%)  2581558494695820984604  ...   NaN      NaN
+108         MVX/WETH (1%)        8052141738900504  ...   NaN      NaN
+111   WMATIC/elRETRO (1%)    29058082145066624594  ...   NaN      NaN
+116  USDC.e/fxDOLA (0.3%)        4076891783008734  ...   NaN      NaN
+124    WETH/JARVIS (0.3%)   236946936160589560435  ...   NaN      NaN
+128   USDC.e/USDC (0.01%)                17418341  ...   NaN      NaN
+
+[9 rows x 6 columns]
+[2024-03-05 07:14:33,837] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-05 07:14:34,670] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-05 07:14:43,598] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-05 07:14:44,469] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-05 07:14:49,819] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
