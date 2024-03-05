@@ -5057,3 +5057,33 @@ urllib.error.HTTPError: HTTP Error 500: Internal Server Error
 [2024-03-05 07:53:16,367] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-05 07:53:17,279] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-05 07:53:24,600] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-05 08:14:20,358] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-05 08:14:20,775] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-05 08:14:21,299] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-05 08:14:23,744] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-05 08:14:24,622] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-05 08:14:41,985] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-05 08:14:42,763] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-05 08:16:52,073] 	ERROR 	107 	bribe_data.py 	<module>() 	Null Data. Error:                   name_x                  bribes  ... price decimals
+23  RETRO/liveRetro (1%)  9163815086274435737136  ...   NaN      NaN
+
+[1 rows x 6 columns]
+[2024-03-05 08:16:53,509] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-05 08:16:54,344] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-05 08:18:33,516] 	ERROR 	107 	fee_data.py 	<module>() 	Null Data. Error:                    name_x                    fees  ... price decimals
+78         stERN/ERN (1%)      221147258038899510  ...   NaN      NaN
+103     CASH/TAROT (0.3%)      608400000000000000  ...   NaN      NaN
+105   CASH/fxDOLA (0.05%)       23014191733908684  ...   NaN      NaN
+107  RETRO/liveRetro (1%)  2581558494695820984604  ...   NaN      NaN
+108         MVX/WETH (1%)        8052141738900504  ...   NaN      NaN
+111   WMATIC/elRETRO (1%)    29058082145066624594  ...   NaN      NaN
+116  USDC.e/fxDOLA (0.3%)        4076891783008734  ...   NaN      NaN
+124    WETH/JARVIS (0.3%)   236946936160589560435  ...   NaN      NaN
+128   USDC.e/USDC (0.01%)                17418341  ...   NaN      NaN
+
+[9 rows x 6 columns]
+[2024-03-05 08:18:36,509] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-05 08:18:37,311] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-05 08:18:45,866] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-05 08:18:46,695] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-05 08:18:52,612] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
