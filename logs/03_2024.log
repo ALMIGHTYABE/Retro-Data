@@ -13807,3 +13807,31 @@ Traceback (most recent call last):
 ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-03-12 05:31:13,644] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-12 05:31:21,003] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-12 05:35:40,151] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-12 05:35:40,642] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-12 05:35:41,232] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-12 05:35:42,732] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-12 05:35:43,565] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-12 05:36:00,664] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-12 05:36:01,466] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-12 05:36:25,752] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+Traceback (most recent call last):
+  File "bribe_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 198, in request_blocking
+    return self.formatted_response(response,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 171, in formatted_response
+    raise ValueError(response["error"])
+ValueError: {'code': 0, 'message': "we can't execute this request"}
+[2024-03-12 05:36:26,591] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-12 05:38:21,840] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-12 05:38:22,651] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-12 05:38:30,680] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-12 05:38:31,491] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-12 05:38:36,166] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
