@@ -13650,3 +13650,20 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-03-12 03:32:29,075] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-12 03:32:29,862] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-12 03:32:38,882] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-12 03:36:34,424] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-12 03:36:34,900] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-12 03:36:35,419] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-12 03:36:37,136] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-12 03:36:38,031] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-12 03:37:04,701] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xdeB25Dd2d5D168Fd6f80F154d96a2Dab81d61845, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-12 03:37:04,986] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x777a87889f42C33f9A1E5c117774694bbd857075, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-12 03:37:05,270] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/ICHI (0.3%), Address: 0x13d5e61838D93F7962C52dc921FD7C0Ccc092E35, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-12 03:37:13,726] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-12 03:37:14,524] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-12 03:40:12,785] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-12 03:40:13,574] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-12 03:42:52,557] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-12 03:42:53,349] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-12 03:43:01,900] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-12 03:43:02,680] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-12 03:43:11,312] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
