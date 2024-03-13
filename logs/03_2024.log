@@ -14886,3 +14886,18 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-03-13 00:54:52,533] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-13 00:54:53,308] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-13 00:54:59,102] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-13 01:46:42,405] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-13 01:46:42,777] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-13 01:46:43,354] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-13 01:46:45,575] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-13 01:46:46,519] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-13 01:47:02,494] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fE272540Ecd34661B91252f2aB4b7f7A4CE, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-13 01:47:27,338] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-13 01:47:28,100] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-13 01:50:04,497] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-13 01:50:05,260] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-13 01:52:54,130] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-13 01:52:54,904] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-13 01:53:04,487] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-13 01:53:05,259] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-13 01:53:15,608] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
