@@ -21151,3 +21151,18 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-03-17 22:40:47,354] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-17 22:40:48,131] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-17 22:40:54,124] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-17 22:49:16,353] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-17 22:49:16,640] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-17 22:49:17,278] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-17 22:49:19,879] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-17 22:49:20,856] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-17 22:49:52,979] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC.e/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-17 22:50:27,414] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-17 22:50:28,185] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-17 22:53:06,749] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-17 22:53:07,522] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-17 22:55:08,024] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-17 22:55:08,807] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-17 22:55:18,937] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-17 22:55:19,720] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-17 22:55:26,845] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
