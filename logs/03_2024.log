@@ -24386,3 +24386,19 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-03-20 14:55:03,286] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-20 14:55:04,087] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-20 14:55:10,723] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-20 15:12:09,711] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-20 15:12:10,431] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-20 15:12:11,150] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-20 15:12:14,295] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-20 15:12:15,459] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-20 15:12:37,163] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0x99583057951987beD85CE6934473160bFD4921b9, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-20 15:12:37,253] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0x53C49b9308c3DB176d351d7914Cec0Fb5D7f1129, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-20 15:12:47,559] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-20 15:12:48,317] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-20 15:15:56,826] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-20 15:15:57,581] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-20 15:18:23,453] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-20 15:18:24,205] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-20 15:18:35,434] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-20 15:18:36,189] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-20 15:18:49,662] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
