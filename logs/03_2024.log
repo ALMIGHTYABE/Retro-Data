@@ -25909,3 +25909,17 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2024-03-21 16:55:59,189] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-21 16:56:00,061] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-21 16:56:07,314] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-21 17:10:14,412] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-21 17:10:14,744] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-21 17:10:15,443] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-21 17:10:16,791] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-21 17:10:18,185] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-21 17:10:36,007] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-21 17:10:36,837] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-21 17:13:21,435] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-21 17:13:22,246] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-21 17:15:36,893] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-21 17:15:37,696] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-21 17:15:48,542] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-21 17:15:49,374] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-21 17:15:55,506] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
