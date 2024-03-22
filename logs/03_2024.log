@@ -27036,3 +27036,22 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2024-03-22 15:17:40,960] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-22 15:17:41,808] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-22 15:17:47,829] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-22 15:23:07,590] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-22 15:23:07,869] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-22 15:23:08,577] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-22 15:23:58,525] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+KeyError: 'data'
+[2024-03-22 15:23:59,834] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-22 15:24:04,615] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x63ca6ED3D390C725b7FEb617BAdcab78a61038E8, Error: 'data'
+[2024-03-22 15:24:22,395] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-22 15:24:23,219] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-22 15:29:04,886] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-22 15:29:05,753] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-22 15:32:36,602] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-22 15:32:37,484] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-22 15:32:54,040] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-22 15:32:54,910] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-22 15:33:02,968] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
