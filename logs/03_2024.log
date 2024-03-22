@@ -26931,3 +26931,24 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2024-03-22 13:21:50,366] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-22 13:21:51,168] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-22 13:21:58,482] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-22 13:23:46,322] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-22 13:23:46,820] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-22 13:23:47,536] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-22 13:23:56,401] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-22 13:23:57,465] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-22 13:25:20,822] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-22 13:25:20,922] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2024-03-22 13:25:21,013] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC.e (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: 'data'
+[2024-03-22 13:25:21,108] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/WETH (0.05%), Address: 0xCE67850420c82dB45eb7fEeCcD2d181300D2BDB3, Error: 'data'
+[2024-03-22 13:25:21,214] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: 'data'
+[2024-03-22 13:25:21,324] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0xB580229645b240A368768ec3E88cb67A41eBBC5B, Error: 'data'
+[2024-03-22 13:26:09,790] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0x0A46B0712974F201BeD15c2458a023EbED25eF4F, Error: 'data'
+[2024-03-22 13:26:58,919] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-22 13:26:59,741] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-22 13:30:04,734] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-22 13:30:05,517] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-22 13:32:29,944] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-22 13:32:30,727] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-22 13:32:42,508] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-22 13:32:43,296] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-22 13:32:57,083] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
