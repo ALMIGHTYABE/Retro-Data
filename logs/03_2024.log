@@ -28488,3 +28488,25 @@ KeyError: 'data'
 [2024-03-23 14:14:37,475] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-23 14:14:38,270] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-23 14:14:44,312] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-23 14:23:21,390] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-23 14:23:22,135] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-23 14:23:22,744] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-23 14:23:54,956] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-23 14:23:55,866] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-23 14:24:56,247] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC.e/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-23 14:24:56,418] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fE272540Ecd34661B91252f2aB4b7f7A4CE, Error: 'data'
+[2024-03-23 14:24:56,583] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: 'data'
+[2024-03-23 14:24:56,747] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2024-03-23 14:24:56,913] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC.e (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: 'data'
+[2024-03-23 14:24:59,506] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: 'data'
+[2024-03-23 14:24:59,642] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDT (0.05%), Address: 0xB580229645b240A368768ec3E88cb67A41eBBC5B, Error: 'data'
+[2024-03-23 14:26:38,309] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0x160FBF00AB5fbF0200c0Cd4929aEaa2AdD25FB5b, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-23 14:28:16,942] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-23 14:28:17,725] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-23 14:32:52,009] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-23 14:32:52,799] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-23 14:36:13,133] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-23 14:36:13,997] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-23 14:36:31,899] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-23 14:36:32,694] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-23 14:36:39,148] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
