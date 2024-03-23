@@ -28078,3 +28078,26 @@ KeyError: 'data'
 [2024-03-23 08:17:12,619] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-23 08:17:13,395] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-23 08:17:18,777] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-23 08:25:05,445] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-23 08:25:06,646] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-23 08:25:07,194] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-23 08:25:12,417] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+KeyError: 'data'
+[2024-03-23 08:25:13,303] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-23 08:25:18,631] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC.e/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: 'data'
+[2024-03-23 08:25:18,774] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fE272540Ecd34661B91252f2aB4b7f7A4CE, Error: 'data'
+[2024-03-23 08:25:18,914] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: 'data'
+[2024-03-23 08:25:19,074] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2024-03-23 08:26:19,136] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC.e (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-23 08:28:06,454] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-23 08:28:07,253] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-23 08:32:26,968] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-23 08:32:27,763] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-23 08:35:41,893] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-23 08:35:42,699] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-23 08:35:58,567] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-23 08:35:59,455] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-23 08:36:05,695] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
