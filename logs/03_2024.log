@@ -27781,3 +27781,19 @@ KeyError: 'data'
 [2024-03-23 03:18:20,194] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-23 03:18:20,983] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-23 03:18:28,498] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-23 03:24:28,807] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-23 03:24:29,008] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-23 03:24:29,620] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-23 03:25:26,044] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-23 03:25:26,919] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-23 03:26:27,104] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC.e/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-23 03:27:37,438] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/miMATIC (0.3%), Address: 0xb090BE2D2F02646057d4DF997A7A983dFb265de0, Error: 'data'
+[2024-03-23 03:27:50,541] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-23 03:27:51,313] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-23 03:30:35,074] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-23 03:30:35,911] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-23 03:32:42,337] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-23 03:32:43,155] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-23 03:32:52,455] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-23 03:32:53,246] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-23 03:32:59,692] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
