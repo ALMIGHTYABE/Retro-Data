@@ -31986,3 +31986,40 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [2024-03-25 17:16:41,161] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-25 17:16:42,028] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-25 17:16:53,518] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-25 17:24:24,354] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-25 17:24:24,763] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-25 17:24:25,346] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-25 17:24:28,301] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-25 17:24:29,354] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-25 17:25:29,854] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-25 17:25:30,021] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2024-03-25 17:25:30,147] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC.e (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: 'data'
+[2024-03-25 17:27:26,150] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-25 17:27:31,159] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/CASH (0.01%), Address: 0x619259F699839dD1498FFC22297044462483bD27, Error: 'data'
+[2024-03-25 17:27:32,217] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0x1e683586fCB45a769ef2C7d9d7b1803E9C1AEE79, Error: 'data'
+[2024-03-25 17:27:33,079] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0xb47A07966cE6812702C0567d03725F1b37E27877, Error: 'data'
+[2024-03-25 17:27:33,255] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0x35394eED0Be676ec6470fE6531daD809265310ff, Error: 'data'
+[2024-03-25 17:27:33,420] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/RETRO (1%), Address: 0x547FD24AA2ED09d86dAC02E36b8Ce84A59fD644F, Error: 'data'
+[2024-03-25 17:27:34,930] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/EURA (1%), Address: 0x15949526fF03fE6ab5f49dA6a86749c20141b3f1, Error: 'data'
+[2024-03-25 17:27:36,712] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x07dBf448cCC68cA64247da04F2E24643eCf57385, Error: 'data'
+[2024-03-25 17:27:36,850] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x91248C85DD408BD216254C3cFb51fc326290cF7e, Error: 'data'
+[2024-03-25 17:27:38,797] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0x99583057951987beD85CE6934473160bFD4921b9, Error: 'data'
+[2024-03-25 17:27:39,103] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/LUCHA (0.3%), Address: 0x52BeedA850A7048e9D543668BF54E0d9E1B667E0, Error: 'data'
+[2024-03-25 17:27:40,176] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0x8ceD58A2dE3C2ea5D3cED3eb4331158c8cf985Fb, Error: 'data'
+[2024-03-25 17:27:41,073] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x4FcdB2DCc4Ce156c723aD541dba8B39d47284FC5, Error: 'data'
+[2024-03-25 17:27:41,200] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC.e (0.3%), Address: 0x8c862d100B94d95a49D91958c9e8C2c348d00F04, Error: 'data'
+[2024-03-25 17:27:42,558] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x7D480cBf5Aee75E72eF26F223937f3981d67a860, Error: 'data'
+[2024-03-25 17:27:43,101] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x6333BB8b6f1DDa6f929d70eDEB9e31c8148dC9ef, Error: 'data'
+[2024-03-25 17:27:43,430] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0x6794Db07e2efE1307b8594FBbBFad78E50eC76fa, Error: 'data'
+[2024-03-25 17:27:43,762] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/IBEX (1%), Address: 0x53D8c25B3d130D2810591cDc7A41Bd848bF79B63, Error: 'data'
+[2024-03-25 17:27:44,108] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/FRAX (0.3%), Address: 0x091236A16952BC9e4bB817FFA7aB40263183f658, Error: 'data'
+[2024-03-25 17:27:44,239] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/USDC.e (0.3%), Address: 0x459F42C788E6F8faCe4854DDD59C81a6Ad8BB1Aa, Error: 'data'
+[2024-03-25 17:27:49,152] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-25 17:27:49,941] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-25 17:30:56,754] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-25 17:30:57,617] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-25 17:33:11,861] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-25 17:33:12,649] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-25 17:33:22,996] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-25 17:33:23,788] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-25 17:33:34,809] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
