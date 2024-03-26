@@ -33333,3 +33333,43 @@ KeyError: 'data'
 [2024-03-26 13:17:38,857] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-03-26 13:17:39,653] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-26 13:17:57,110] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-26 13:23:56,848] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-26 13:23:57,230] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-26 13:23:57,943] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-26 13:24:58,093] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-03-26 13:24:59,008] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-26 13:24:59,208] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC.e/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: 'data'
+[2024-03-26 13:24:59,321] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WMATIC/elRETRO, Address: 0x90a09fE272540Ecd34661B91252f2aB4b7f7A4CE, Error: 'data'
+[2024-03-26 13:24:59,444] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: 'data'
+[2024-03-26 13:25:59,483] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-03-26 13:27:13,910] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: 'data'
+[2024-03-26 13:27:24,685] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x63ca6ED3D390C725b7FEb617BAdcab78a61038E8, Error: 'data'
+[2024-03-26 13:27:24,804] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0x0A46B0712974F201BeD15c2458a023EbED25eF4F, Error: 'data'
+[2024-03-26 13:28:36,914] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-26 13:28:37,724] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-26 13:31:20,679] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-26 13:31:21,498] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-26 13:33:27,481] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-26 13:33:28,323] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-26 13:33:38,391] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-26 13:33:39,228] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-26 13:33:45,861] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
