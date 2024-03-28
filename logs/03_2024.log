@@ -36489,3 +36489,17 @@ Traceback (most recent call last):
 urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2024-03-28 23:16:58,880] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-28 23:17:09,467] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-28 23:22:17,718] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-03-28 23:22:18,139] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-03-28 23:22:18,710] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-28 23:22:20,427] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-28 23:22:21,356] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-28 23:22:38,238] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-28 23:22:39,028] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-28 23:26:19,115] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-28 23:26:19,947] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-28 23:29:09,165] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-28 23:29:09,952] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-03-28 23:29:22,466] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-03-28 23:29:23,274] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-28 23:29:30,124] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
