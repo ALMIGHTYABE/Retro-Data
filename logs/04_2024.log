@@ -15393,3 +15393,18 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2024-04-12 21:25:24,170] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-12 21:25:24,953] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-12 21:25:31,055] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-12 21:34:19,105] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-12 21:34:19,358] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-12 21:34:20,168] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-12 21:34:23,213] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-12 21:34:25,515] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-12 21:34:33,996] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-12 21:34:51,823] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-12 21:34:52,595] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-12 21:39:26,236] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-12 21:39:27,058] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-12 21:42:55,347] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-12 21:42:56,135] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-12 21:43:11,981] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-12 21:43:12,763] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-12 21:43:37,067] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
