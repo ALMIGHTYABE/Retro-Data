@@ -20280,3 +20280,36 @@ KeyError: 'data'
 [2024-04-17 19:58:20,571] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-17 19:58:21,397] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-17 19:58:31,877] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-17 20:11:32,659] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-17 20:11:33,081] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-17 20:11:33,752] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-17 20:11:49,311] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-04-17 20:11:50,523] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-17 20:12:11,239] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-17 20:12:12,055] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-17 20:15:22,361] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-17 20:15:23,151] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-17 20:17:44,046] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-17 20:17:44,905] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-17 20:17:56,104] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-17 20:17:56,979] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-17 20:18:02,656] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
