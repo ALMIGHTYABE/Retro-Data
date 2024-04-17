@@ -19898,3 +19898,21 @@ KeyError: 'data'
 [2024-04-17 12:25:29,749] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-17 12:25:30,527] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-17 12:25:46,429] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-17 12:47:17,734] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-17 12:47:18,117] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-17 12:47:18,831] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-17 12:47:19,036] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+KeyError: 'data'
+[2024-04-17 12:47:20,360] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-17 12:47:40,089] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-17 12:47:40,925] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-17 12:52:18,099] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-17 12:52:18,906] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-17 12:55:45,455] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-17 12:55:46,267] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-17 12:56:02,784] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-17 12:56:03,578] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-17 12:56:20,621] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
