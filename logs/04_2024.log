@@ -20541,3 +20541,17 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6934, in drop
     raise KeyError(f"{list(labels[mask])} not found in axis")
 KeyError: "['evt_tx_hash', 'evt_index', 'evt_block_time', 'evt_block_number'] not found in axis"
+[2024-04-18 01:45:14,357] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-18 01:45:14,624] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-18 01:45:15,181] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-18 01:45:18,317] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-18 01:45:19,273] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-18 01:45:41,334] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-18 01:45:42,171] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-18 01:50:26,949] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-18 01:50:27,784] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-18 01:53:58,438] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-18 01:53:59,241] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-18 01:54:15,182] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-18 01:54:15,971] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-18 01:54:29,236] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
