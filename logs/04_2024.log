@@ -20559,3 +20559,25 @@ KeyError: "['evt_tx_hash', 'evt_index', 'evt_block_time', 'evt_block_number'] no
 [2024-04-18 02:27:30,847] 	INFO 	196 	partner_data.py 	<module>() 	Partner Vote Data Ended
 [2024-04-18 02:27:31,797] 	INFO 	24 	apr_data.py 	<module>() 	APR Data Started
 [2024-04-18 02:27:33,560] 	INFO 	101 	apr_data.py 	<module>() 	APR Data Ended
+[2024-04-18 02:32:48,429] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-18 02:32:49,042] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-18 02:32:49,665] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-18 02:32:52,608] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-18 02:32:53,761] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-18 02:33:15,345] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-18 02:33:16,183] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-18 02:38:12,415] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Bribe DF is Empty.
+Traceback (most recent call last):
+  File "bribe_data.py", line 90, in <module>
+    raise Exception("Bribe DF is Empty.")
+Exception: Bribe DF is Empty.
+[2024-04-18 02:38:13,215] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-18 02:41:53,662] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-04-18 02:41:54,471] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-18 02:42:12,350] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-18 02:42:13,163] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-18 02:42:20,609] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
