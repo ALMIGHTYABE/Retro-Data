@@ -24197,3 +24197,17 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-04-20 17:44:31,455] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-20 17:44:32,250] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-20 17:44:44,367] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-20 17:49:00,820] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-20 17:49:01,228] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-20 17:49:01,779] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-20 17:49:03,557] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-20 17:49:04,384] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-20 17:49:20,524] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-20 17:49:21,307] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-20 17:51:48,160] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-20 17:51:48,945] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-20 17:53:38,738] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-20 17:53:39,524] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-20 17:53:48,198] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-20 17:53:48,980] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-20 17:53:58,826] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
