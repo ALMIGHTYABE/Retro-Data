@@ -24237,3 +24237,17 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
     raise APIError(response)
 gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-04-20 18:28:30,104] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-20 18:28:30,310] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-20 18:28:30,981] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-20 18:28:32,986] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-20 18:28:34,236] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-20 18:28:51,547] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-20 18:28:52,344] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-20 18:31:20,797] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-20 18:31:21,590] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-20 18:33:37,767] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-20 18:33:38,560] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-20 18:33:51,361] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-20 18:33:52,164] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-20 18:34:02,872] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
