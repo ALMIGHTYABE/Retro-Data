@@ -26117,3 +26117,20 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
     raise APIError(response)
 gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-04-22 07:11:02,160] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-22 07:11:02,839] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-22 07:11:03,358] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-22 07:11:04,624] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-22 07:11:05,418] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-22 07:11:30,399] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.3%), Address: 0xB8dD18F9b7C3Ad4bDd4B94cB819eda3bd4465119, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 07:11:30,645] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.3%), Address: 0x11275C625A7DEE3532E062Eef6915f00af85C3B5, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 07:11:31,134] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WBTC (0.3%), Address: 0x2981A1f699eA7149aa08121A07F000cf82846A9e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 07:11:37,646] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-22 07:11:38,417] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-22 07:13:39,665] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-22 07:13:40,441] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-22 07:15:16,723] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-22 07:15:17,500] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-22 07:15:26,174] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-22 07:15:26,957] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-22 07:15:44,815] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
