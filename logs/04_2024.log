@@ -26455,3 +26455,20 @@ KeyError: 'data'
 [2024-04-22 12:53:38,684] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-22 12:53:39,507] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-22 12:53:46,961] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-22 13:12:26,569] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-22 13:12:26,793] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-22 13:12:27,381] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-22 13:12:33,552] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-22 13:12:34,400] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-22 13:13:02,691] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/DEUS (1%), Address: 0xB5cB765e44Eca4bc5a434fFaf6Bf7De235Bc60a5, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 13:13:02,849] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WBTC (0.3%), Address: 0x2981A1f699eA7149aa08121A07F000cf82846A9e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 13:13:03,130] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aEb0667b79584FBf6265B74a8cD22E1245fdC, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 13:13:09,437] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-22 13:13:10,222] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-22 13:16:06,279] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-22 13:16:07,109] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-22 13:18:19,465] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-22 13:18:20,260] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-22 13:18:31,093] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-22 13:18:31,887] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-22 13:18:47,431] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
