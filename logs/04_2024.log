@@ -26430,3 +26430,28 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2024-04-22 12:26:38,642] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-22 12:26:39,551] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-22 12:26:48,339] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-22 12:48:15,728] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-22 12:48:15,928] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-22 12:48:16,493] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-22 12:48:16,666] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+KeyError: 'data'
+[2024-04-22 12:48:17,503] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-22 12:48:18,009] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: 'data'
+[2024-04-22 12:48:18,162] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2024-04-22 12:48:19,419] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/CASH (0.05%), Address: 0x63ca6ED3D390C725b7FEb617BAdcab78a61038E8, Error: 'data'
+[2024-04-22 12:48:19,753] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/CASH (0.01%), Address: 0x619259F699839dD1498FFC22297044462483bD27, Error: 'data'
+[2024-04-22 12:48:19,887] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0x160FBF00AB5fbF0200c0Cd4929aEaa2AdD25FB5b, Error: 'data'
+[2024-04-22 12:48:20,035] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0x1e683586fCB45a769ef2C7d9d7b1803E9C1AEE79, Error: 'data'
+[2024-04-22 12:48:20,631] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x72289129Dc4937a5d406d1ECeD8b2A17d007A650, Error: 'data'
+[2024-04-22 12:48:35,236] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-22 12:48:36,036] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-22 12:51:18,380] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-22 12:51:19,215] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-22 12:53:26,114] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-22 12:53:26,905] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-22 12:53:38,684] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-22 12:53:39,507] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-22 12:53:46,961] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
