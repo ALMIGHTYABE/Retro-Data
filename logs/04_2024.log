@@ -27835,3 +27835,17 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [2024-04-23 16:38:08,355] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-23 16:38:09,154] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-23 16:38:19,189] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-23 16:49:29,813] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-23 16:49:30,257] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-23 16:49:31,064] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-23 16:49:32,853] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-23 16:49:34,618] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-23 16:49:53,002] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-23 16:49:53,791] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-23 16:53:44,278] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-23 16:53:45,065] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-23 16:56:43,602] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-23 16:56:44,421] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-23 16:56:57,974] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-23 16:56:58,767] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-23 16:57:18,057] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
