@@ -28535,3 +28535,20 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [2024-04-24 08:01:28,442] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-04-24 08:01:29,233] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-04-24 08:01:41,408] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-24 08:15:20,234] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-04-24 08:15:20,699] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-04-24 08:15:21,967] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-24 08:16:04,381] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-24 08:16:06,170] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-24 08:19:10,574] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-04-24 08:19:12,189] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/USDC.e (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: 'data'
+[2024-04-24 08:28:10,153] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0x35394eED0Be676ec6470fE6531daD809265310ff, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-04-24 08:30:12,831] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-24 08:30:13,610] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-24 08:32:24,814] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-24 08:32:25,596] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-24 08:34:01,622] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-24 08:34:02,409] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-04-24 08:34:11,584] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-04-24 08:34:12,375] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-24 08:34:17,081] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
