@@ -4646,3 +4646,25 @@ KeyError: 'date'
 [2024-05-04 17:40:32,490] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-05-04 17:40:33,262] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-05-04 17:40:39,532] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-04 17:49:10,547] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-04 17:49:10,898] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-04 17:49:11,452] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-04 17:49:13,494] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-04 17:49:14,435] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-04 17:49:29,713] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-04 17:49:30,480] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-04 17:52:14,996] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-04 17:52:15,764] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-04 17:54:26,972] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-04 17:54:27,742] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-04 17:54:37,833] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "vote_data.py", line 114, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-05-04 17:54:38,609] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-04 17:54:55,083] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
