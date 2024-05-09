@@ -10431,3 +10431,21 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2024-05-09 13:36:24,196] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-09 13:36:24,658] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-09 13:36:25,307] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-09 13:36:28,168] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-09 13:36:28,982] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-09 13:36:46,543] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-09 13:36:47,325] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-09 13:40:23,507] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-09 13:40:24,292] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-09 13:43:03,328] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-05-09 13:43:04,104] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-09 13:43:15,992] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-05-09 13:43:16,777] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-09 13:43:23,922] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
