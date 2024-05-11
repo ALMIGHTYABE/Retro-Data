@@ -12543,3 +12543,17 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-05-11 09:16:39,373] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-05-11 09:16:40,238] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-05-11 09:16:46,132] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-11 09:23:32,302] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-11 09:23:32,888] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-11 09:23:33,567] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-11 09:23:35,921] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-11 09:23:37,275] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-11 09:23:49,110] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-11 09:23:49,883] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-11 09:26:31,102] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-11 09:26:31,882] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-11 09:28:31,442] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-11 09:28:32,238] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-11 09:28:42,008] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-05-11 09:28:42,791] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-11 09:28:48,257] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
