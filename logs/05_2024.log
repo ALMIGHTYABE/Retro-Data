@@ -22963,3 +22963,29 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-05-20 08:35:08,646] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-05-20 08:35:09,461] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-05-20 08:35:23,568] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-20 08:49:07,790] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-20 08:49:08,111] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-20 08:49:08,728] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-20 08:49:11,979] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-20 08:49:12,791] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-20 08:49:30,887] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-20 08:49:31,696] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-20 08:51:59,179] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-20 08:51:59,981] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-20 08:53:49,906] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-20 08:53:50,688] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-20 08:53:59,913] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-05-20 08:54:00,715] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-20 08:57:09,765] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "revenue_data.py", line 137, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
