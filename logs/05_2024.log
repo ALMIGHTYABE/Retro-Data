@@ -25025,3 +25025,27 @@ urllib.error.HTTPError: HTTP Error 500: Internal Server Error
 [2024-05-22 04:58:16,080] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-05-22 04:58:16,864] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-05-22 04:58:24,015] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-22 05:13:03,876] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-22 05:13:04,247] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-22 05:13:04,928] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-22 05:13:06,664] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-22 05:13:07,797] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-22 05:13:27,830] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-22 05:13:28,615] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-22 05:16:30,147] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-22 05:16:30,938] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-22 05:18:46,664] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-22 05:18:47,473] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-22 05:18:57,269] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-05-22 05:18:58,065] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-22 05:20:42,872] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "revenue_data.py", line 141, in <module>
+    worksheet1.clear()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1966, in clear
+    return self.spreadsheet.values_clear(absolute_range_name(self.title))
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 163, in values_clear
+    r = self.client.request("post", url)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
