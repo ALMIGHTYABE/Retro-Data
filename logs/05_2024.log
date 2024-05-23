@@ -25989,3 +25989,21 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-05-23 02:00:31,904] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-05-23 02:00:32,696] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-05-23 02:00:40,156] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-23 02:25:40,527] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-23 02:25:40,722] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-23 02:25:41,324] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-23 02:25:44,145] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-23 02:25:45,309] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-23 02:26:11,577] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-23 02:26:12,358] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-23 02:29:00,000] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-23 02:29:00,783] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-23 02:31:09,149] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-05-23 02:31:09,927] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-23 02:31:19,937] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-05-23 02:31:20,724] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-23 02:31:27,252] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
