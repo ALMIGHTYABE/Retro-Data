@@ -34609,3 +34609,17 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
     raise APIError(response)
 gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-05-31 04:24:23,433] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-05-31 04:24:23,699] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-05-31 04:24:24,285] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-31 04:24:27,939] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-31 04:24:29,106] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-31 04:24:52,283] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-31 04:24:53,105] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-31 04:29:31,017] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-31 04:29:31,819] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-31 04:32:53,905] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-31 04:32:54,708] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-05-31 04:33:10,601] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-05-31 04:33:11,399] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-31 04:33:19,386] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
