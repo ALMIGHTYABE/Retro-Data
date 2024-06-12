@@ -7464,3 +7464,18 @@ Exception: Fee DF is Empty.
 [2024-06-12 16:48:11,876] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-12 16:48:12,674] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-12 16:48:24,882] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-12 17:18:00,072] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-12 17:18:00,358] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-12 17:18:01,060] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-12 17:18:03,646] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-12 17:18:04,790] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-12 17:18:12,384] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x38df0c93bf69a9EfB3d3647fF459eF27235A8968, Error: Expecting value: line 1 column 1 (char 0)
+[2024-06-12 17:18:28,495] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-12 17:18:29,382] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-12 17:21:10,889] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-12 17:21:11,734] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-12 17:23:14,604] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-12 17:23:15,395] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-12 17:23:27,008] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-12 17:23:27,810] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-12 17:23:40,449] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
