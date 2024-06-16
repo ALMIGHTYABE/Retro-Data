@@ -10021,3 +10021,18 @@ Exception: Fee DF is Empty.
 [2024-06-16 14:43:44,663] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-16 14:43:45,470] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-16 14:43:51,824] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-16 15:20:31,705] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-16 15:20:32,097] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-16 15:20:32,693] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-16 15:20:35,930] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-16 15:20:37,056] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-16 15:21:45,215] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xdeB25Dd2d5D168Fd6f80F154d96a2Dab81d61845, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-06-16 15:21:55,394] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-16 15:21:56,241] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-16 15:24:10,164] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-16 15:24:10,987] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-16 15:25:53,072] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-16 15:25:53,906] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-16 15:26:02,656] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-16 15:26:03,472] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-16 15:26:08,913] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
