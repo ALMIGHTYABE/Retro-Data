@@ -10764,3 +10764,20 @@ Exception: Fee DF is Empty.
 [2024-06-17 19:44:40,022] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-17 19:44:40,821] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-17 19:44:46,493] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-17 20:18:39,271] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-17 20:18:39,932] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-17 20:18:40,592] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-17 20:18:44,789] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-17 20:18:45,836] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-17 20:18:51,062] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x72289129Dc4937a5d406d1ECeD8b2A17d007A650, Error: 'data'
+[2024-06-17 20:18:51,209] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0xb47A07966cE6812702C0567d03725F1b37E27877, Error: 'data'
+[2024-06-17 20:18:59,431] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0x3baEa49B71461DEaB46E6F42548D0005359ff629, Error: 'data'
+[2024-06-17 20:19:13,723] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-17 20:19:14,529] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-17 20:22:32,531] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-17 20:22:33,336] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-17 20:25:09,014] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-17 20:25:09,824] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-17 20:25:22,802] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-17 20:25:23,631] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-17 20:25:30,492] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
