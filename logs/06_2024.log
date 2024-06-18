@@ -10949,3 +10949,18 @@ Exception: Fee DF is Empty.
 [2024-06-18 03:48:45,353] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-18 03:48:46,150] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-18 03:48:52,618] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-18 04:23:32,925] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-18 04:23:33,242] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-18 04:23:33,943] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-18 04:23:36,927] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-18 04:23:38,123] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-18 04:23:57,637] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/JARVIS (0.3%), Address: 0xf310d505B85E0378790Af9fDB9b79b40736f7b4D, Error: 'data'
+[2024-06-18 04:24:03,461] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-18 04:24:04,296] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-18 04:28:21,610] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-18 04:28:22,406] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-18 04:31:28,115] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-18 04:31:28,904] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-18 04:31:45,050] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-18 04:31:45,843] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-18 04:31:52,922] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
