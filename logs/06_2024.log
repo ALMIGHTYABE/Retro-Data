@@ -11930,3 +11930,76 @@ ValueError: {'code': 0, 'message': "we can't execute this request"}
 [2024-06-19 15:27:27,222] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-19 15:27:28,076] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-19 15:27:33,730] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-19 15:38:40,167] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-19 15:38:40,719] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-19 15:38:41,313] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-19 15:38:44,330] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-19 15:38:45,422] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-19 15:39:05,088] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-19 15:39:05,940] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-19 15:41:44,710] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-19 15:41:45,548] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-19 15:43:51,934] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-19 15:43:52,751] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-19 15:44:03,233] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-19 15:44:04,065] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-19 15:46:19,731] 	ERROR 	152 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: <urlopen error [Errno 101] Network is unreachable>
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 1354, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 1256, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 1302, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 1251, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 1011, in _send_output
+    self.send(msg)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 951, in send
+    self.connect()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 1418, in connect
+    super().connect()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 922, in connect
+    self.sock = self._create_connection(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "revenue_data.py", line 44, in <module>
+    fee_df = pd.read_csv(fee_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 1397, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 1357, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
