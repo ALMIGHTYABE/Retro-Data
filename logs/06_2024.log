@@ -12243,3 +12243,21 @@ urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
 [2024-06-20 01:31:29,407] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-20 01:31:30,247] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-20 01:31:37,777] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-20 02:19:24,438] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-20 02:19:24,757] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-20 02:19:25,346] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-20 02:19:28,933] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-20 02:19:29,914] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-20 02:20:00,754] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-20 02:20:01,547] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-20 02:22:57,647] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-20 02:22:58,452] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-20 02:25:02,899] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Fee DF is Empty.
+Traceback (most recent call last):
+  File "fee_data.py", line 90, in <module>
+    raise Exception("Fee DF is Empty.")
+Exception: Fee DF is Empty.
+[2024-06-20 02:25:03,698] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-20 02:25:13,823] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-20 02:25:14,640] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-20 02:25:20,183] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
