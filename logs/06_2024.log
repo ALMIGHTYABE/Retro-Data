@@ -12901,3 +12901,17 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/adapters.py", line 501, in send
     raise ConnectionError(err, request=request)
 requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[2024-06-20 19:16:03,823] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-20 19:16:04,176] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-20 19:16:04,824] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-20 19:16:06,767] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-20 19:16:08,081] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-20 19:16:34,627] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-20 19:16:35,425] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-20 19:21:18,374] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-20 19:21:19,167] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-20 19:24:26,769] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-20 19:24:27,631] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-20 19:24:41,773] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-20 19:24:42,583] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-20 19:24:49,290] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
