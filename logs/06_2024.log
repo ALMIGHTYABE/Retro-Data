@@ -15428,3 +15428,29 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 [2024-06-24 21:26:26,069] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-24 21:26:26,930] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-24 21:26:35,468] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-24 21:39:26,572] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-24 21:39:26,975] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-24 21:39:27,532] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-24 21:39:29,417] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-24 21:39:30,266] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-24 21:39:48,217] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-24 21:39:49,054] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-24 21:46:11,360] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "bribe_data.py", line 147, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-06-24 21:46:12,190] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-24 21:48:20,466] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-24 21:48:21,303] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-24 21:48:31,601] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-24 21:48:32,440] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-24 21:48:43,131] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
