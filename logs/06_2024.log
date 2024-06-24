@@ -14931,3 +14931,19 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 [2024-06-24 03:27:42,140] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-24 03:27:42,929] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-24 03:27:52,776] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-24 03:39:10,568] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-24 03:39:11,146] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-24 03:39:11,747] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-24 03:39:14,407] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-24 03:39:15,494] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-24 03:39:19,282] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x72289129Dc4937a5d406d1ECeD8b2A17d007A650, Error: 'data'
+[2024-06-24 03:39:19,615] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0x35394eED0Be676ec6470fE6531daD809265310ff, Error: 'data'
+[2024-06-24 03:39:38,146] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-24 03:39:38,945] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-24 03:44:32,003] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-24 03:44:32,792] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-24 03:48:05,358] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-24 03:48:06,146] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-24 03:48:22,421] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-24 03:48:23,211] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-24 03:48:37,579] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
