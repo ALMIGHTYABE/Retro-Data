@@ -15581,3 +15581,20 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-06-25 03:48:38,810] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-25 03:48:39,659] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-25 03:48:51,797] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-25 04:23:10,313] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-25 04:23:10,893] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-25 04:23:11,591] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-25 04:23:14,215] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-25 04:23:15,414] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-25 04:23:29,317] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aEb0667b79584FBf6265B74a8cD22E1245fdC, Error: 'data'
+[2024-06-25 04:23:29,974] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WMATIC/elRETRO (1%), Address: 0x6794Db07e2efE1307b8594FBbBFad78E50eC76fa, Error: 'data'
+[2024-06-25 04:23:30,273] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/IBEX (1%), Address: 0x53D8c25B3d130D2810591cDc7A41Bd848bF79B63, Error: 'data'
+[2024-06-25 04:23:37,677] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-25 04:23:38,452] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-25 04:27:32,006] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-25 04:27:32,779] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-25 04:30:31,977] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-25 04:30:32,762] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-25 04:30:46,217] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-25 04:30:46,991] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-25 04:31:00,647] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
