@@ -15683,3 +15683,18 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-06-25 07:25:41,795] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-25 07:25:42,590] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-25 07:25:57,259] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-25 07:38:28,948] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2024-06-25 07:38:29,251] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2024-06-25 07:38:29,901] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-25 07:38:31,882] 	INFO 	71 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-25 07:38:32,916] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-25 07:38:41,806] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/WETH (0.3%), Address: 0x058F5330Fef74445878110e201B04F36f8a51c9b, Error: 'data'
+[2024-06-25 07:38:49,777] 	INFO 	101 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-25 07:38:50,570] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-25 07:40:46,198] 	INFO 	157 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-25 07:40:46,995] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-25 07:42:10,464] 	INFO 	157 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-25 07:42:11,266] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2024-06-25 07:42:19,522] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
+[2024-06-25 07:42:20,321] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-25 07:42:33,198] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
