@@ -22316,3 +22316,17 @@ Exception: Fee DF is Empty.
 [2024-06-27 02:25:56,034] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-06-27 02:25:57,051] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-06-27 02:26:08,236] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-27 02:35:24,838] 	INFO 	29 	partner_data.py 	<module>() 	Partner Vote Data Started
+[2024-06-27 02:35:40,538] 	ERROR 	198 	partner_data.py 	<module>() 	Error occurred during Partner Vote Data process. Error: 'epoch'
+Traceback (most recent call last):
+  File "partner_data.py", line 155, in <module>
+    vote_df.sort_values("epoch", ascending=False, inplace=True)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 6912, in sort_values
+    k = self._get_label_or_level_values(by, axis=axis)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/generic.py", line 1850, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'epoch'
+[2024-06-27 02:35:41,342] 	INFO 	24 	apr_data.py 	<module>() 	APR Data Started
+[2024-06-27 02:35:43,166] 	INFO 	101 	apr_data.py 	<module>() 	APR Data Ended
