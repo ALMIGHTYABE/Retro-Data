@@ -28394,3 +28394,21 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2024-12-04 23:42:19,494] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2024-12-04 23:42:20,328] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-12-04 23:42:43,104] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-12-05 01:44:26,228] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-12-05 01:44:33,434] 	ERROR 	133 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: "['evt_tx_hash', 'evt_index', 'evt_block_time', 'evt_block_number'] not found in axis"
+Traceback (most recent call last):
+  File "emissions_data.py", line 92, in <module>
+    df.drop(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 5399, in drop
+    return super().drop(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/generic.py", line 4505, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/generic.py", line 4546, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6934, in drop
+    raise KeyError(f"{list(labels[mask])} not found in axis")
+KeyError: "['evt_tx_hash', 'evt_index', 'evt_block_time', 'evt_block_number'] not found in axis"
