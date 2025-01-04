@@ -25993,3 +25993,239 @@ Exception: Fee DF is Empty.
 [2025-01-04 05:44:32,415] 	INFO 	116 	vote_data.py 	<module>() 	Vote Data Ended
 [2025-01-04 05:44:33,247] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
 [2025-01-04 05:44:42,340] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2025-01-04 06:29:51,103] 	INFO 	20 	id_data.py 	<module>() 	ID Data Started
+[2025-01-04 06:29:51,537] 	INFO 	31 	id_data.py 	<module>() 	ID Data Ended
+[2025-01-04 06:29:52,264] 	INFO 	24 	day_data.py 	<module>() 	Day Data Fusion Started
+[2025-01-04 06:29:52,463] 	ERROR 	73 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+Traceback (most recent call last):
+  File "day_data.py", line 41, in <module>
+    data = response.json()["data"]["uniswapDayDatas"]
+KeyError: 'data'
+[2025-01-04 06:29:53,709] 	INFO 	35 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2025-01-04 06:29:54,174] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-USDC.e/USDT, Address: 0xB38245b7fE8D594d883A27DB1055bf67926F6B27, Error: 'data'
+[2025-01-04 06:29:54,295] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: vAMM-WPOL/elRETRO, Address: 0x90a09fE272540Ecd34661B91252f2aB4b7f7A4CE, Error: 'data'
+[2025-01-04 06:29:54,406] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: sAMM-oRETRO/elRETRO, Address: 0xc58Eb718892Da5D519587A3ec87063A8a46c9feb, Error: 'data'
+[2025-01-04 06:29:54,525] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/WETH (0.05%), Address: 0x1a34EaBbe928Bf431B679959379b2225d60D9cdA, Error: 'data'
+[2025-01-04 06:29:54,633] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/USDC.e (0.05%), Address: 0xEC15624FBB314eb05BaaD4cA49b7904C0Cb6b645, Error: 'data'
+[2025-01-04 06:29:54,743] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/WETH (0.05%), Address: 0xCE67850420c82dB45eb7fEeCcD2d181300D2BDB3, Error: 'data'
+[2025-01-04 06:29:54,846] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.05%), Address: 0xb694E3bdd4BCdF843510983D257679D1E627C474, Error: 'data'
+[2025-01-04 06:29:54,957] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/USDT (0.05%), Address: 0xB580229645b240A368768ec3E88cb67A41eBBC5B, Error: 'data'
+[2025-01-04 06:29:55,067] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/CASH (0.05%), Address: 0x63ca6ED3D390C725b7FEb617BAdcab78a61038E8, Error: 'data'
+[2025-01-04 06:29:55,181] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/WETH (0.05%), Address: 0x0A46B0712974F201BeD15c2458a023EbED25eF4F, Error: 'data'
+[2025-01-04 06:29:55,289] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/CASH (0.01%), Address: 0x619259F699839dD1498FFC22297044462483bD27, Error: 'data'
+[2025-01-04 06:29:55,404] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/USDT (0.01%), Address: 0x160FBF00AB5fbF0200c0Cd4929aEaa2AdD25FB5b, Error: 'data'
+[2025-01-04 06:29:55,515] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/DAI (0.01%), Address: 0x1e683586fCB45a769ef2C7d9d7b1803E9C1AEE79, Error: 'data'
+[2025-01-04 06:29:55,641] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/miMATIC (0.01%), Address: 0xeB80047F7d5D4C4A3BC6319250d6b1b8aEe2d0D2, Error: 'data'
+[2025-01-04 06:29:55,746] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/MaticX (0.05%), Address: 0xb98F8DF0DC6750A3e54540A1e094186C8bED780a, Error: 'data'
+[2025-01-04 06:29:55,871] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/EURA (0.05%), Address: 0xC2CB03a819F785bD8eb8D628BAD41Cd7c1C71F4B, Error: 'data'
+[2025-01-04 06:29:55,991] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/CASH (0.01%), Address: 0x72289129Dc4937a5d406d1ECeD8b2A17d007A650, Error: 'data'
+[2025-01-04 06:29:56,095] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/RETRO (1%), Address: 0xb47A07966cE6812702C0567d03725F1b37E27877, Error: 'data'
+[2025-01-04 06:29:56,213] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/RETRO (1%), Address: 0x35394eED0Be676ec6470fE6531daD809265310ff, Error: 'data'
+[2025-01-04 06:29:56,331] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/RETRO (1%), Address: 0x547FD24AA2ED09d86dAC02E36b8Ce84A59fD644F, Error: 'data'
+[2025-01-04 06:29:56,499] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/RETRO (1%), Address: 0x0F73E719a76947752E4b26A2c3FC80a580e68fB4, Error: 'data'
+[2025-01-04 06:29:56,607] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stMATIC/RETRO (1%), Address: 0x0973698BB6399c39d628698f9300430C4e7c9bf9, Error: 'data'
+[2025-01-04 06:29:56,737] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/RETRO (1%), Address: 0xc7d8B9c270D0E31A6a0Cf4496fe019766Be42E15, Error: 'data'
+[2025-01-04 06:29:56,856] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/USDT (1%), Address: 0x69dCAE97A1286B112a8BD75bD9147bD0a3207756, Error: 'data'
+[2025-01-04 06:29:56,967] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: miMATIC/RETRO (1%), Address: 0xd98eEf295f78ddDd104a8645854C7F8714B39B88, Error: 'data'
+[2025-01-04 06:29:57,088] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/RETRO (1%), Address: 0x7761c7233924C3D72F27Fae6a81B074C0152e03a, Error: 'data'
+[2025-01-04 06:29:57,215] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/EURA (1%), Address: 0x15949526fF03fE6ab5f49dA6a86749c20141b3f1, Error: 'data'
+[2025-01-04 06:29:57,330] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/USDT (0.01%), Address: 0x772510189425ac63f9a5A5eF2fd0C7FDA58CBFC7, Error: 'data'
+[2025-01-04 06:29:57,453] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/DAI (0.01%), Address: 0x219116F23BDC11EB25e4D0FbE92eD0972d86BE20, Error: 'data'
+[2025-01-04 06:29:57,578] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/MaticX (0.01%), Address: 0x9aa18301055091e9da7C57b81633632Fa33B9a80, Error: 'data'
+[2025-01-04 06:29:57,703] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wstETH/WETH (0.01%), Address: 0xa9439Db1D7025Ce4aAc513Baf5eee5220172126C, Error: 'data'
+[2025-01-04 06:29:57,831] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/stMATIC (0.01%), Address: 0x2d623c33673248E95C7a1C26aE7065eb7A7Ac0Ea, Error: 'data'
+[2025-01-04 06:29:57,932] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/frxETH (0.01%), Address: 0xe5069a75Bdfe8F676B778B0aaDCcC597841F819B, Error: 'data'
+[2025-01-04 06:29:58,046] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/frxETH (0.05%), Address: 0x38df0c93bf69a9EfB3d3647fF459eF27235A8968, Error: 'data'
+[2025-01-04 06:29:58,158] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/frxETH (0.05%), Address: 0x44AAE81BE8435b6998A66d9642f66DE57DD03FC2, Error: 'data'
+[2025-01-04 06:29:58,271] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: xbb-t-USD/CASH (0.01%), Address: 0x07dBf448cCC68cA64247da04F2E24643eCf57385, Error: 'data'
+[2025-01-04 06:29:58,382] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (0.3%), Address: 0x91248C85DD408BD216254C3cFb51fc326290cF7e, Error: 'data'
+[2025-01-04 06:29:58,495] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (0.3%), Address: 0xc666c4b402Bd797185EA419261D22a8f22DDFce6, Error: 'data'
+[2025-01-04 06:29:58,598] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/miMATIC (0.3%), Address: 0xb090BE2D2F02646057d4DF997A7A983dFb265de0, Error: 'data'
+[2025-01-04 06:29:58,706] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/miMATIC (0.3%), Address: 0xdeB25Dd2d5D168Fd6f80F154d96a2Dab81d61845, Error: 'data'
+[2025-01-04 06:29:58,825] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/miMATIC (0.3%), Address: 0xC571445Fc93666e1E4FaE2E84A7b74FE6ed3978D, Error: 'data'
+[2025-01-04 06:29:58,935] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/ERN (0.3%), Address: 0x777a87889f42C33f9A1E5c117774694bbd857075, Error: 'data'
+[2025-01-04 06:29:59,052] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/RETRO (1%), Address: 0xC26E1a0cDab4Bf5141530C49F3360f162C5Db5Db, Error: 'data'
+[2025-01-04 06:29:59,176] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/ICHI (0.3%), Address: 0x13d5e61838D93F7962C52dc921FD7C0Ccc092E35, Error: 'data'
+[2025-01-04 06:29:59,286] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: SD/MaticX (0.3%), Address: 0xB97c62834e096858BD0B996b758942dd43d7B5eE, Error: 'data'
+[2025-01-04 06:29:59,402] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: stERN/ERN (1%), Address: 0x99583057951987beD85CE6934473160bFD4921b9, Error: 'data'
+[2025-01-04 06:29:59,511] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (0.05%), Address: 0x53C49b9308c3DB176d351d7914Cec0Fb5D7f1129, Error: 'data'
+[2025-01-04 06:29:59,620] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/LUCHA (0.3%), Address: 0x52BeedA850A7048e9D543668BF54E0d9E1B667E0, Error: 'data'
+[2025-01-04 06:29:59,736] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (0.3%), Address: 0x13136EA148331a07497087bfc31fBCcD9b99123c, Error: 'data'
+[2025-01-04 06:29:59,848] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: JRT/WETH (0.3%), Address: 0xAE107e52ebdF151E61d9Fb4Bd800C86c31741465, Error: 'data'
+[2025-01-04 06:30:00,014] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: axlLqdr/CASH (0.3%), Address: 0x22c10e61A05a03bcd8BF61a7E648f2330ecdA270, Error: 'data'
+[2025-01-04 06:30:00,119] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: XOC/jMXN (0.01%), Address: 0xccE01e3615785771b84Eb5F88EC612AC6704FdE2, Error: 'data'
+[2025-01-04 06:30:00,238] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ICHI/CASH (1%), Address: 0x8ceD58A2dE3C2ea5D3cED3eb4331158c8cf985Fb, Error: 'data'
+[2025-01-04 06:30:00,356] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: wUSDR/CASH (0.3%), Address: 0x3baEa49B71461DEaB46E6F42548D0005359ff629, Error: 'data'
+[2025-01-04 06:30:00,474] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/STAR (0.05%), Address: 0x88C522E526E5Eea8d636fd6805cA7fEB488780D0, Error: 'data'
+[2025-01-04 06:30:00,577] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/STAR (0.01%), Address: 0x6De0CA91Ef19A6ce9f02A423ae2dF89Fe09Bff0F, Error: 'data'
+[2025-01-04 06:30:00,686] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/STAR (1%), Address: 0xaC44f57eEF260eB6E0f896b61984Da8d86FeE9ed, Error: 'data'
+[2025-01-04 06:30:00,802] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: tUSDC/CASH (1%), Address: 0x4FcdB2DCc4Ce156c723aD541dba8B39d47284FC5, Error: 'data'
+[2025-01-04 06:30:00,921] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/USDC.e (0.3%), Address: 0x8c862d100B94d95a49D91958c9e8C2c348d00F04, Error: 'data'
+[2025-01-04 06:30:01,026] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/WETH (0.3%), Address: 0xB8dD18F9b7C3Ad4bDd4B94cB819eda3bd4465119, Error: 'data'
+[2025-01-04 06:30:01,167] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/WETH (0.3%), Address: 0x058F5330Fef74445878110e201B04F36f8a51c9b, Error: 'data'
+[2025-01-04 06:30:01,268] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/WETH (0.3%), Address: 0x11275C625A7DEE3532E062Eef6915f00af85C3B5, Error: 'data'
+[2025-01-04 06:30:01,389] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/WETH (0.3%), Address: 0x555eABEEfe6a047747071525A2c0fFd96d945f69, Error: 'data'
+[2025-01-04 06:30:01,518] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/CASH (0.3%), Address: 0x2C8F7d92Dc7A414D343CbFB687E31a11F525d29e, Error: 'data'
+[2025-01-04 06:30:01,635] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/DEUS (1%), Address: 0xB5cB765e44Eca4bc5a434fFaf6Bf7De235Bc60a5, Error: 'data'
+[2025-01-04 06:30:01,748] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/WBTC (0.3%), Address: 0x2981A1f699eA7149aa08121A07F000cf82846A9e, Error: 'data'
+[2025-01-04 06:30:01,867] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: FRAX/STAR (0.05%), Address: 0x7D480cBf5Aee75E72eF26F223937f3981d67a860, Error: 'data'
+[2025-01-04 06:30:01,975] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/TAROT (0.3%), Address: 0x217aEb0667b79584FBf6265B74a8cD22E1245fdC, Error: 'data'
+[2025-01-04 06:30:02,082] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/fxDOLA (0.05%), Address: 0x4b4B895a0dD744B4893aA4370A8F7eDbde5Fd90e, Error: 'data'
+[2025-01-04 06:30:02,229] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: RETRO/liveRetro (1%), Address: 0x6333BB8b6f1DDa6f929d70eDEB9e31c8148dC9ef, Error: 'data'
+[2025-01-04 06:30:02,351] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: MVX/WETH (1%), Address: 0xCC72276de3BCc1b159F1B60A86B0211116022B42, Error: 'data'
+[2025-01-04 06:30:02,454] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/elRETRO (1%), Address: 0x6794Db07e2efE1307b8594FBbBFad78E50eC76fa, Error: 'data'
+[2025-01-04 06:30:02,576] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: OATH/WETH (1%), Address: 0x0c74834d67c4bf5e6a44D18b2BAc767cddB4CdBf, Error: 'data'
+[2025-01-04 06:30:02,681] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/IBEX (1%), Address: 0x53D8c25B3d130D2810591cDc7A41Bd848bF79B63, Error: 'data'
+[2025-01-04 06:30:02,795] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/fxDOLA (0.3%), Address: 0x896ffE2cd28Ba13ddDa98103a3B66E82bb36BeE3, Error: 'data'
+[2025-01-04 06:30:02,903] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/FRAX (0.3%), Address: 0x091236A16952BC9e4bB817FFA7aB40263183f658, Error: 'data'
+[2025-01-04 06:30:03,015] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WBTC/USDC.e (0.3%), Address: 0x459F42C788E6F8faCe4854DDD59C81a6Ad8BB1Aa, Error: 'data'
+[2025-01-04 06:30:03,134] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/ERN (0.3%), Address: 0xCF2093da3CeBb8731747EEaCbd486A7fcE2Db901, Error: 'data'
+[2025-01-04 06:30:03,268] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WETH/JARVIS (0.3%), Address: 0xf310d505B85E0378790Af9fDB9b79b40736f7b4D, Error: 'data'
+[2025-01-04 06:30:03,381] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: jEUR/CASH (0.05%), Address: 0x65E6b7C7DfE071E52D6923E4079E3C0FcBeaA401, Error: 'data'
+[2025-01-04 06:30:03,483] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: USDC.e/USDC (0.01%), Address: 0x1e0aa3f6C3130294845B8e162d838e221d170016, Error: 'data'
+[2025-01-04 06:30:03,592] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LUCHA/WETH (1%), Address: 0x098c1e4BB34DEcDF49D5966014B5153Af326E766, Error: 'data'
+[2025-01-04 06:30:03,703] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: WPOL/LUCHA (1%), Address: 0xde4C8898CD50EBE9C167313b312D147D10d1C898, Error: 'data'
+[2025-01-04 06:30:03,818] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: LINK/LUCHA (1%), Address: 0xA97B2b9AcA65aab57A6b0840B45777bd66fbcf33, Error: 'data'
+[2025-01-04 06:30:03,936] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: CASH/LUCHA (1%), Address: 0x5c09352B1aa703d18dbcF48c98655BFA19d07FBB, Error: 'data'
+[2025-01-04 06:30:04,091] 	ERROR 	103 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'date'
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 68, in <module>
+    pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'date'
+[2025-01-04 06:30:04,977] 	INFO 	36 	bribe_data.py 	<module>() 	Bribe Data Started
+[2025-01-04 06:30:06,947] 	ERROR 	159 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "bribe_data.py", line 76, in <module>
+    contract_instance.functions.rewardTokens(reward_num).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+[2025-01-04 06:30:07,789] 	INFO 	36 	fee_data.py 	<module>() 	Fee Data Started
+[2025-01-04 06:30:08,096] 	ERROR 	159 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "fee_data.py", line 80, in <module>
+    rewarddata = contract_instance.functions.rewardData(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+[2025-01-04 06:30:08,935] 	INFO 	37 	vote_data.py 	<module>() 	Vote Data Started
+[2025-01-04 06:30:10,147] 	ERROR 	118 	vote_data.py 	<module>() 	Error occurred during Vote Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+Traceback (most recent call last):
+  File "vote_data.py", line 79, in <module>
+    contract_instance.functions.totalSupplyAt(timestamp).call()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/polygon
+[2025-01-04 06:30:11,017] 	INFO 	30 	revenue_data.py 	<module>() 	Revenue Data Started
+[2025-01-04 06:30:20,468] 	INFO 	150 	revenue_data.py 	<module>() 	Revenue Data Ended
