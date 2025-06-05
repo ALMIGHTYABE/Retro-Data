@@ -31393,3 +31393,18 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 975, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2025-06-05 01:52:32,666] 	INFO 	26 	emissions_data.py 	<module>() 	Emissions Data Started
+[2025-06-05 01:56:29,417] 	ERROR 	133 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: Length mismatch: Expected axis has 6 elements, new values have 2 elements
+Traceback (most recent call last):
+  File "emissions_data.py", line 98, in <module>
+    df.columns = ["gauge.address", "emissions"]
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/generic.py", line 5915, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas/_libs/properties.pyx", line 69, in pandas._libs.properties.AxisProperty.__set__
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/generic.py", line 823, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 230, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/internals/base.py", line 70, in _validate_set_axis
+    raise ValueError(
+ValueError: Length mismatch: Expected axis has 6 elements, new values have 2 elements
